@@ -1,0 +1,8433 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03757,
+          45.06098
+        ]
+      },
+      "properties": {
+        "altitude": "728.4",
+        "distance": "0"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037465,
+          45.061411
+        ]
+      },
+      "properties": {
+        "altitude": "729.1",
+        "distance": "48.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037236,
+          45.061965
+        ]
+      },
+      "properties": {
+        "altitude": "728.7",
+        "distance": "112.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037038,
+          45.06231
+        ]
+      },
+      "properties": {
+        "altitude": "729.1",
+        "distance": "153.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037,
+          45.062675
+        ]
+      },
+      "properties": {
+        "altitude": "729.7",
+        "distance": "194.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037127,
+          45.062949
+        ]
+      },
+      "properties": {
+        "altitude": "729.5",
+        "distance": "226.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.037334,
+          45.063102
+        ]
+      },
+      "properties": {
+        "altitude": "729.8",
+        "distance": "249.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0378,
+          45.063461
+        ]
+      },
+      "properties": {
+        "altitude": "730.2",
+        "distance": "302.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038203,
+          45.063703
+        ]
+      },
+      "properties": {
+        "altitude": "731.2",
+        "distance": "346.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038652,
+          45.064014
+        ]
+      },
+      "properties": {
+        "altitude": "732.9",
+        "distance": "396"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039161,
+          45.064339
+        ]
+      },
+      "properties": {
+        "altitude": "734.1",
+        "distance": "451.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039489,
+          45.06455
+        ]
+      },
+      "properties": {
+        "altitude": "733.5",
+        "distance": "488"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039618,
+          45.064634
+        ]
+      },
+      "properties": {
+        "altitude": "733.4",
+        "distance": "503.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039971,
+          45.064898
+        ]
+      },
+      "properties": {
+        "altitude": "734.3",
+        "distance": "543.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04016,
+          45.06516
+        ]
+      },
+      "properties": {
+        "altitude": "734.9",
+        "distance": "576.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04015,
+          45.065303
+        ]
+      },
+      "properties": {
+        "altitude": "735.6",
+        "distance": "592.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039981,
+          45.065722
+        ]
+      },
+      "properties": {
+        "altitude": "739",
+        "distance": "641.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039873,
+          45.065914
+        ]
+      },
+      "properties": {
+        "altitude": "741.1",
+        "distance": "665.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039849,
+          45.065967
+        ]
+      },
+      "properties": {
+        "altitude": "741.7",
+        "distance": "671.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039791,
+          45.066116
+        ]
+      },
+      "properties": {
+        "altitude": "743.2",
+        "distance": "688.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039653,
+          45.066396
+        ]
+      },
+      "properties": {
+        "altitude": "747",
+        "distance": "722.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039583,
+          45.066524
+        ]
+      },
+      "properties": {
+        "altitude": "748.6",
+        "distance": "739"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039512,
+          45.066701
+        ]
+      },
+      "properties": {
+        "altitude": "751.1",
+        "distance": "760.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039481,
+          45.066866
+        ]
+      },
+      "properties": {
+        "altitude": "753.1",
+        "distance": "780.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03944,
+          45.067033
+        ]
+      },
+      "properties": {
+        "altitude": "755.2",
+        "distance": "800"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039411,
+          45.067257
+        ]
+      },
+      "properties": {
+        "altitude": "757.9",
+        "distance": "825.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039385,
+          45.067416
+        ]
+      },
+      "properties": {
+        "altitude": "760",
+        "distance": "843.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039337,
+          45.06769
+        ]
+      },
+      "properties": {
+        "altitude": "763.2",
+        "distance": "875.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03926,
+          45.067858
+        ]
+      },
+      "properties": {
+        "altitude": "765.6",
+        "distance": "896.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039229,
+          45.06796
+        ]
+      },
+      "properties": {
+        "altitude": "767",
+        "distance": "907.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039144,
+          45.068195
+        ]
+      },
+      "properties": {
+        "altitude": "769.7",
+        "distance": "934.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039201,
+          45.068402
+        ]
+      },
+      "properties": {
+        "altitude": "772.3",
+        "distance": "956.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039239,
+          45.068585
+        ]
+      },
+      "properties": {
+        "altitude": "774.3",
+        "distance": "978.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03921,
+          45.068721
+        ]
+      },
+      "properties": {
+        "altitude": "776",
+        "distance": "994.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039153,
+          45.068949
+        ]
+      },
+      "properties": {
+        "altitude": "778.5",
+        "distance": "1020.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0391,
+          45.069229
+        ]
+      },
+      "properties": {
+        "altitude": "781.4",
+        "distance": "1050.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038945,
+          45.069491
+        ]
+      },
+      "properties": {
+        "altitude": "784.9",
+        "distance": "1081.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038805,
+          45.069758
+        ]
+      },
+      "properties": {
+        "altitude": "788.5",
+        "distance": "1112.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038724,
+          45.069898
+        ]
+      },
+      "properties": {
+        "altitude": "790",
+        "distance": "1129.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038586,
+          45.070055
+        ]
+      },
+      "properties": {
+        "altitude": "792.8",
+        "distance": "1152.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038578,
+          45.070181
+        ]
+      },
+      "properties": {
+        "altitude": "794.6",
+        "distance": "1166.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03855,
+          45.070353
+        ]
+      },
+      "properties": {
+        "altitude": "796.6",
+        "distance": "1185.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038558,
+          45.0705
+        ]
+      },
+      "properties": {
+        "altitude": "798.6",
+        "distance": "1202.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038609,
+          45.070709
+        ]
+      },
+      "properties": {
+        "altitude": "801.1",
+        "distance": "1224.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038675,
+          45.07086
+        ]
+      },
+      "properties": {
+        "altitude": "802.5",
+        "distance": "1241.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038727,
+          45.070997
+        ]
+      },
+      "properties": {
+        "altitude": "804.6",
+        "distance": "1256.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038798,
+          45.07118
+        ]
+      },
+      "properties": {
+        "altitude": "806.2",
+        "distance": "1275.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.03891,
+          45.071435
+        ]
+      },
+      "properties": {
+        "altitude": "808.7",
+        "distance": "1301.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038977,
+          45.071643
+        ]
+      },
+      "properties": {
+        "altitude": "811.2",
+        "distance": "1324.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.038999,
+          45.071793
+        ]
+      },
+      "properties": {
+        "altitude": "812.7",
+        "distance": "1340.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039146,
+          45.071764
+        ]
+      },
+      "properties": {
+        "altitude": "813.4",
+        "distance": "1356.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039156,
+          45.071686
+        ]
+      },
+      "properties": {
+        "altitude": "813.7",
+        "distance": "1364.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039102,
+          45.071416
+        ]
+      },
+      "properties": {
+        "altitude": "816",
+        "distance": "1395.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039072,
+          45.071225
+        ]
+      },
+      "properties": {
+        "altitude": "818.2",
+        "distance": "1417.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039034,
+          45.07101
+        ]
+      },
+      "properties": {
+        "altitude": "820.7",
+        "distance": "1442.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039118,
+          45.070806
+        ]
+      },
+      "properties": {
+        "altitude": "822.8",
+        "distance": "1467.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039215,
+          45.070611
+        ]
+      },
+      "properties": {
+        "altitude": "825.5",
+        "distance": "1491.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039311,
+          45.070472
+        ]
+      },
+      "properties": {
+        "altitude": "827.1",
+        "distance": "1509.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039486,
+          45.070295
+        ]
+      },
+      "properties": {
+        "altitude": "829.4",
+        "distance": "1533.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039644,
+          45.070136
+        ]
+      },
+      "properties": {
+        "altitude": "831.6",
+        "distance": "1554.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.039885,
+          45.069954
+        ]
+      },
+      "properties": {
+        "altitude": "834.8",
+        "distance": "1582.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040016,
+          45.069848
+        ]
+      },
+      "properties": {
+        "altitude": "836.4",
+        "distance": "1597.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040196,
+          45.069647
+        ]
+      },
+      "properties": {
+        "altitude": "839.2",
+        "distance": "1623.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040372,
+          45.069503
+        ]
+      },
+      "properties": {
+        "altitude": "841.4",
+        "distance": "1643.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040639,
+          45.069336
+        ]
+      },
+      "properties": {
+        "altitude": "844.1",
+        "distance": "1671.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040778,
+          45.069245
+        ]
+      },
+      "properties": {
+        "altitude": "845.9",
+        "distance": "1686.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040851,
+          45.069108
+        ]
+      },
+      "properties": {
+        "altitude": "847.4",
+        "distance": "1703.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040906,
+          45.068823
+        ]
+      },
+      "properties": {
+        "altitude": "850.5",
+        "distance": "1736.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.040967,
+          45.068564
+        ]
+      },
+      "properties": {
+        "altitude": "853.3",
+        "distance": "1767.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041028,
+          45.068347
+        ]
+      },
+      "properties": {
+        "altitude": "856.2",
+        "distance": "1794.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041079,
+          45.06815
+        ]
+      },
+      "properties": {
+        "altitude": "858.6",
+        "distance": "1817.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041153,
+          45.067964
+        ]
+      },
+      "properties": {
+        "altitude": "861.2",
+        "distance": "1841.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041275,
+          45.067771
+        ]
+      },
+      "properties": {
+        "altitude": "864.1",
+        "distance": "1867.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041405,
+          45.067544
+        ]
+      },
+      "properties": {
+        "altitude": "866.6",
+        "distance": "1893.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041485,
+          45.067379
+        ]
+      },
+      "properties": {
+        "altitude": "868.6",
+        "distance": "1912.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041585,
+          45.067225
+        ]
+      },
+      "properties": {
+        "altitude": "870.6",
+        "distance": "1930.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041619,
+          45.067175
+        ]
+      },
+      "properties": {
+        "altitude": "871.2",
+        "distance": "1936.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041673,
+          45.067076
+        ]
+      },
+      "properties": {
+        "altitude": "872.5",
+        "distance": "1947.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041814,
+          45.066842
+        ]
+      },
+      "properties": {
+        "altitude": "875.6",
+        "distance": "1974.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041917,
+          45.066656
+        ]
+      },
+      "properties": {
+        "altitude": "877.9",
+        "distance": "1995.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041927,
+          45.066629
+        ]
+      },
+      "properties": {
+        "altitude": "878.2",
+        "distance": "1999.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042035,
+          45.06643
+        ]
+      },
+      "properties": {
+        "altitude": "879.6",
+        "distance": "2022.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042129,
+          45.066408
+        ]
+      },
+      "properties": {
+        "altitude": "880.2",
+        "distance": "2032"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042285,
+          45.066527
+        ]
+      },
+      "properties": {
+        "altitude": "880.3",
+        "distance": "2049.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042267,
+          45.0667
+        ]
+      },
+      "properties": {
+        "altitude": "880.7",
+        "distance": "2065.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042245,
+          45.066738
+        ]
+      },
+      "properties": {
+        "altitude": "881",
+        "distance": "2068.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042121,
+          45.066988
+        ]
+      },
+      "properties": {
+        "altitude": "882.7",
+        "distance": "2098.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042061,
+          45.06719
+        ]
+      },
+      "properties": {
+        "altitude": "884.6",
+        "distance": "2118.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041994,
+          45.067382
+        ]
+      },
+      "properties": {
+        "altitude": "886",
+        "distance": "2137.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041869,
+          45.067567
+        ]
+      },
+      "properties": {
+        "altitude": "888.8",
+        "distance": "2161.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041807,
+          45.067722
+        ]
+      },
+      "properties": {
+        "altitude": "890.5",
+        "distance": "2185.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041853,
+          45.067836
+        ]
+      },
+      "properties": {
+        "altitude": "892.6",
+        "distance": "2202.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0419,
+          45.067984
+        ]
+      },
+      "properties": {
+        "altitude": "894.8",
+        "distance": "2221"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041918,
+          45.068005
+        ]
+      },
+      "properties": {
+        "altitude": "894.8",
+        "distance": "2224"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042059,
+          45.067968
+        ]
+      },
+      "properties": {
+        "altitude": "894.8",
+        "distance": "2237.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042029,
+          45.067851
+        ]
+      },
+      "properties": {
+        "altitude": "895.1",
+        "distance": "2249.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042001,
+          45.067816
+        ]
+      },
+      "properties": {
+        "altitude": "895.2",
+        "distance": "2253.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041891,
+          45.067584
+        ]
+      },
+      "properties": {
+        "altitude": "897.5",
+        "distance": "2279.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.041935,
+          45.067424
+        ]
+      },
+      "properties": {
+        "altitude": "899.2",
+        "distance": "2297.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04209,
+          45.067247
+        ]
+      },
+      "properties": {
+        "altitude": "901.8",
+        "distance": "2321.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042432,
+          45.066965
+        ]
+      },
+      "properties": {
+        "altitude": "905.8",
+        "distance": "2362.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042601,
+          45.066786
+        ]
+      },
+      "properties": {
+        "altitude": "908.7",
+        "distance": "2386.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042715,
+          45.066576
+        ]
+      },
+      "properties": {
+        "altitude": "911",
+        "distance": "2411.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042872,
+          45.066261
+        ]
+      },
+      "properties": {
+        "altitude": "915.4",
+        "distance": "2448.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043012,
+          45.066028
+        ]
+      },
+      "properties": {
+        "altitude": "918.3",
+        "distance": "2478.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043194,
+          45.065904
+        ]
+      },
+      "properties": {
+        "altitude": "920",
+        "distance": "2498.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043339,
+          45.065952
+        ]
+      },
+      "properties": {
+        "altitude": "920.6",
+        "distance": "2511.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043365,
+          45.066074
+        ]
+      },
+      "properties": {
+        "altitude": "920.6",
+        "distance": "2525.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043283,
+          45.066244
+        ]
+      },
+      "properties": {
+        "altitude": "922.8",
+        "distance": "2545.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04324,
+          45.066372
+        ]
+      },
+      "properties": {
+        "altitude": "924.5",
+        "distance": "2561.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043185,
+          45.066584
+        ]
+      },
+      "properties": {
+        "altitude": "927.3",
+        "distance": "2585.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043132,
+          45.066722
+        ]
+      },
+      "properties": {
+        "altitude": "928.8",
+        "distance": "2601.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04303,
+          45.066882
+        ]
+      },
+      "properties": {
+        "altitude": "931",
+        "distance": "2621"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042886,
+          45.06707
+        ]
+      },
+      "properties": {
+        "altitude": "933.5",
+        "distance": "2644.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04283,
+          45.067287
+        ]
+      },
+      "properties": {
+        "altitude": "936.7",
+        "distance": "2668.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04284,
+          45.067337
+        ]
+      },
+      "properties": {
+        "altitude": "937.4",
+        "distance": "2674.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042846,
+          45.067533
+        ]
+      },
+      "properties": {
+        "altitude": "940.3",
+        "distance": "2696.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042774,
+          45.067746
+        ]
+      },
+      "properties": {
+        "altitude": "942.2",
+        "distance": "2721.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042673,
+          45.067975
+        ]
+      },
+      "properties": {
+        "altitude": "944.6",
+        "distance": "2748.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042628,
+          45.068228
+        ]
+      },
+      "properties": {
+        "altitude": "948",
+        "distance": "2777"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042643,
+          45.068408
+        ]
+      },
+      "properties": {
+        "altitude": "950.1",
+        "distance": "2797.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042665,
+          45.068574
+        ]
+      },
+      "properties": {
+        "altitude": "952.3",
+        "distance": "2816.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042687,
+          45.068752
+        ]
+      },
+      "properties": {
+        "altitude": "954.4",
+        "distance": "2836.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0427,
+          45.068803
+        ]
+      },
+      "properties": {
+        "altitude": "955",
+        "distance": "2842.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042823,
+          45.068831
+        ]
+      },
+      "properties": {
+        "altitude": "955.4",
+        "distance": "2854.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042852,
+          45.068733
+        ]
+      },
+      "properties": {
+        "altitude": "955.4",
+        "distance": "2865.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042822,
+          45.06866
+        ]
+      },
+      "properties": {
+        "altitude": "955.7",
+        "distance": "2874.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042764,
+          45.068437
+        ]
+      },
+      "properties": {
+        "altitude": "957.8",
+        "distance": "2899.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042801,
+          45.068216
+        ]
+      },
+      "properties": {
+        "altitude": "960.4",
+        "distance": "2923.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.042921,
+          45.068046
+        ]
+      },
+      "properties": {
+        "altitude": "962.4",
+        "distance": "2945.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043176,
+          45.067773
+        ]
+      },
+      "properties": {
+        "altitude": "966",
+        "distance": "2982.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043375,
+          45.06755
+        ]
+      },
+      "properties": {
+        "altitude": "969.9",
+        "distance": "3013.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04347,
+          45.06742
+        ]
+      },
+      "properties": {
+        "altitude": "971.6",
+        "distance": "3030.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043642,
+          45.067245
+        ]
+      },
+      "properties": {
+        "altitude": "973.7",
+        "distance": "3054.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.043842,
+          45.067167
+        ]
+      },
+      "properties": {
+        "altitude": "974.8",
+        "distance": "3072.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04403,
+          45.067205
+        ]
+      },
+      "properties": {
+        "altitude": "975.3",
+        "distance": "3087.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044238,
+          45.067375
+        ]
+      },
+      "properties": {
+        "altitude": "977.1",
+        "distance": "3112.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044492,
+          45.067625
+        ]
+      },
+      "properties": {
+        "altitude": "979.4",
+        "distance": "3147.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044654,
+          45.067881
+        ]
+      },
+      "properties": {
+        "altitude": "981.3",
+        "distance": "3178.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044774,
+          45.068233
+        ]
+      },
+      "properties": {
+        "altitude": "983.6",
+        "distance": "3217.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044836,
+          45.068475
+        ]
+      },
+      "properties": {
+        "altitude": "985.4",
+        "distance": "3244.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044899,
+          45.068753
+        ]
+      },
+      "properties": {
+        "altitude": "987.5",
+        "distance": "3275.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045063,
+          45.068948
+        ]
+      },
+      "properties": {
+        "altitude": "988.7",
+        "distance": "3300.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045338,
+          45.069133
+        ]
+      },
+      "properties": {
+        "altitude": "989.8",
+        "distance": "3331.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04558,
+          45.069395
+        ]
+      },
+      "properties": {
+        "altitude": "991.9",
+        "distance": "3366.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045624,
+          45.069465
+        ]
+      },
+      "properties": {
+        "altitude": "992.8",
+        "distance": "3374.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045775,
+          45.069759
+        ]
+      },
+      "properties": {
+        "altitude": "995.5",
+        "distance": "3408.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045978,
+          45.070094
+        ]
+      },
+      "properties": {
+        "altitude": "998.9",
+        "distance": "3449.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046324,
+          45.070294
+        ]
+      },
+      "properties": {
+        "altitude": "1001.9",
+        "distance": "3485.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046669,
+          45.070481
+        ]
+      },
+      "properties": {
+        "altitude": "1005.5",
+        "distance": "3519.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046896,
+          45.070617
+        ]
+      },
+      "properties": {
+        "altitude": "1006.8",
+        "distance": "3543.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046991,
+          45.0707
+        ]
+      },
+      "properties": {
+        "altitude": "1008.3",
+        "distance": "3555.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04713,
+          45.070861
+        ]
+      },
+      "properties": {
+        "altitude": "1009.3",
+        "distance": "3575.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047317,
+          45.071064
+        ]
+      },
+      "properties": {
+        "altitude": "1011.5",
+        "distance": "3602.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047491,
+          45.071251
+        ]
+      },
+      "properties": {
+        "altitude": "1013.6",
+        "distance": "3627.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047632,
+          45.071397
+        ]
+      },
+      "properties": {
+        "altitude": "1015.3",
+        "distance": "3647.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047782,
+          45.071569
+        ]
+      },
+      "properties": {
+        "altitude": "1016.7",
+        "distance": "3668.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047877,
+          45.071652
+        ]
+      },
+      "properties": {
+        "altitude": "1017.9",
+        "distance": "3680.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048056,
+          45.071783
+        ]
+      },
+      "properties": {
+        "altitude": "1019.5",
+        "distance": "3702.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048197,
+          45.071924
+        ]
+      },
+      "properties": {
+        "altitude": "1021.4",
+        "distance": "3722.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048192,
+          45.071947
+        ]
+      },
+      "properties": {
+        "altitude": "1021.4",
+        "distance": "3725.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048024,
+          45.071995
+        ]
+      },
+      "properties": {
+        "altitude": "1022.1",
+        "distance": "3742.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047881,
+          45.071906
+        ]
+      },
+      "properties": {
+        "altitude": "1022.2",
+        "distance": "3756.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047844,
+          45.071868
+        ]
+      },
+      "properties": {
+        "altitude": "1022.3",
+        "distance": "3761.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047539,
+          45.071575
+        ]
+      },
+      "properties": {
+        "altitude": "1024.5",
+        "distance": "3800.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047294,
+          45.071391
+        ]
+      },
+      "properties": {
+        "altitude": "1027.1",
+        "distance": "3829.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046974,
+          45.071217
+        ]
+      },
+      "properties": {
+        "altitude": "1029.5",
+        "distance": "3860.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046663,
+          45.071094
+        ]
+      },
+      "properties": {
+        "altitude": "1031.5",
+        "distance": "3888.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046278,
+          45.071067
+        ]
+      },
+      "properties": {
+        "altitude": "1034.3",
+        "distance": "3918.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04572,
+          45.071091
+        ]
+      },
+      "properties": {
+        "altitude": "1037.5",
+        "distance": "3962.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045173,
+          45.071105
+        ]
+      },
+      "properties": {
+        "altitude": "1041.1",
+        "distance": "4005.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044765,
+          45.071062
+        ]
+      },
+      "properties": {
+        "altitude": "1043.3",
+        "distance": "4038.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044361,
+          45.070917
+        ]
+      },
+      "properties": {
+        "altitude": "1046.2",
+        "distance": "4073.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044313,
+          45.071015
+        ]
+      },
+      "properties": {
+        "altitude": "1047.2",
+        "distance": "4088.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044518,
+          45.071124
+        ]
+      },
+      "properties": {
+        "altitude": "1048.3",
+        "distance": "4108.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.044605,
+          45.071162
+        ]
+      },
+      "properties": {
+        "altitude": "1048.8",
+        "distance": "4116.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045031,
+          45.07133
+        ]
+      },
+      "properties": {
+        "altitude": "1051.9",
+        "distance": "4153.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045524,
+          45.071412
+        ]
+      },
+      "properties": {
+        "altitude": "1055.5",
+        "distance": "4192.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.045863,
+          45.071473
+        ]
+      },
+      "properties": {
+        "altitude": "1057.6",
+        "distance": "4220.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0462,
+          45.071531
+        ]
+      },
+      "properties": {
+        "altitude": "1060",
+        "distance": "4247.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046562,
+          45.071689
+        ]
+      },
+      "properties": {
+        "altitude": "1062.9",
+        "distance": "4280.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.046785,
+          45.071842
+        ]
+      },
+      "properties": {
+        "altitude": "1065.1",
+        "distance": "4305.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047022,
+          45.072065
+        ]
+      },
+      "properties": {
+        "altitude": "1067.4",
+        "distance": "4336.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047157,
+          45.072242
+        ]
+      },
+      "properties": {
+        "altitude": "1069",
+        "distance": "4358.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047326,
+          45.072489
+        ]
+      },
+      "properties": {
+        "altitude": "1071.6",
+        "distance": "4386.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047521,
+          45.072766
+        ]
+      },
+      "properties": {
+        "altitude": "1074.4",
+        "distance": "4419.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047683,
+          45.072977
+        ]
+      },
+      "properties": {
+        "altitude": "1076.4",
+        "distance": "4446.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047735,
+          45.073185
+        ]
+      },
+      "properties": {
+        "altitude": "1078.5",
+        "distance": "4470.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047788,
+          45.073444
+        ]
+      },
+      "properties": {
+        "altitude": "1080.4",
+        "distance": "4500.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047997,
+          45.073588
+        ]
+      },
+      "properties": {
+        "altitude": "1081.7",
+        "distance": "4523.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048281,
+          45.073636
+        ]
+      },
+      "properties": {
+        "altitude": "1083.2",
+        "distance": "4546.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048654,
+          45.073674
+        ]
+      },
+      "properties": {
+        "altitude": "1085.3",
+        "distance": "4577.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048864,
+          45.073598
+        ]
+      },
+      "properties": {
+        "altitude": "1087.2",
+        "distance": "4595.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049047,
+          45.073455
+        ]
+      },
+      "properties": {
+        "altitude": "1089.3",
+        "distance": "4616.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049343,
+          45.073284
+        ]
+      },
+      "properties": {
+        "altitude": "1091.9",
+        "distance": "4646.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049691,
+          45.073227
+        ]
+      },
+      "properties": {
+        "altitude": "1094.2",
+        "distance": "4676"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049876,
+          45.073141
+        ]
+      },
+      "properties": {
+        "altitude": "1096.2",
+        "distance": "4694.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050123,
+          45.072996
+        ]
+      },
+      "properties": {
+        "altitude": "1098.7",
+        "distance": "4719"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050338,
+          45.072867
+        ]
+      },
+      "properties": {
+        "altitude": "1101.1",
+        "distance": "4741.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050525,
+          45.07274
+        ]
+      },
+      "properties": {
+        "altitude": "1103.1",
+        "distance": "4762.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050705,
+          45.07263
+        ]
+      },
+      "properties": {
+        "altitude": "1104.8",
+        "distance": "4781.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050928,
+          45.072498
+        ]
+      },
+      "properties": {
+        "altitude": "1107.4",
+        "distance": "4804.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051173,
+          45.072424
+        ]
+      },
+      "properties": {
+        "altitude": "1109.5",
+        "distance": "4825.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051206,
+          45.072432
+        ]
+      },
+      "properties": {
+        "altitude": "1109.5",
+        "distance": "4828.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05125,
+          45.072548
+        ]
+      },
+      "properties": {
+        "altitude": "1110.5",
+        "distance": "4842.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051187,
+          45.072619
+        ]
+      },
+      "properties": {
+        "altitude": "1110.7",
+        "distance": "4851.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050909,
+          45.072818
+        ]
+      },
+      "properties": {
+        "altitude": "1112.7",
+        "distance": "4881.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050764,
+          45.07293
+        ]
+      },
+      "properties": {
+        "altitude": "1114",
+        "distance": "4898.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050613,
+          45.073108
+        ]
+      },
+      "properties": {
+        "altitude": "1116.1",
+        "distance": "4920.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050499,
+          45.073245
+        ]
+      },
+      "properties": {
+        "altitude": "1118",
+        "distance": "4938.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05033,
+          45.073459
+        ]
+      },
+      "properties": {
+        "altitude": "1120.5",
+        "distance": "4965.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050132,
+          45.073652
+        ]
+      },
+      "properties": {
+        "altitude": "1122.7",
+        "distance": "4992.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04989,
+          45.073852
+        ]
+      },
+      "properties": {
+        "altitude": "1125.7",
+        "distance": "5021.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0497,
+          45.074034
+        ]
+      },
+      "properties": {
+        "altitude": "1128.3",
+        "distance": "5047.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049634,
+          45.07419
+        ]
+      },
+      "properties": {
+        "altitude": "1130.1",
+        "distance": "5066.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049629,
+          45.074263
+        ]
+      },
+      "properties": {
+        "altitude": "1131.5",
+        "distance": "5074.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049583,
+          45.074438
+        ]
+      },
+      "properties": {
+        "altitude": "1133",
+        "distance": "5093"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049478,
+          45.074667
+        ]
+      },
+      "properties": {
+        "altitude": "1135.2",
+        "distance": "5118.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049274,
+          45.074845
+        ]
+      },
+      "properties": {
+        "altitude": "1137.5",
+        "distance": "5144.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049016,
+          45.074955
+        ]
+      },
+      "properties": {
+        "altitude": "1139.9",
+        "distance": "5169.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048817,
+          45.075026
+        ]
+      },
+      "properties": {
+        "altitude": "1141.8",
+        "distance": "5188.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048563,
+          45.075092
+        ]
+      },
+      "properties": {
+        "altitude": "1143.9",
+        "distance": "5211.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048351,
+          45.075064
+        ]
+      },
+      "properties": {
+        "altitude": "1145.3",
+        "distance": "5229.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04806,
+          45.074946
+        ]
+      },
+      "properties": {
+        "altitude": "1147.3",
+        "distance": "5254.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047768,
+          45.074824
+        ]
+      },
+      "properties": {
+        "altitude": "1149.6",
+        "distance": "5281"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047638,
+          45.074855
+        ]
+      },
+      "properties": {
+        "altitude": "1150.4",
+        "distance": "5294"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047717,
+          45.074931
+        ]
+      },
+      "properties": {
+        "altitude": "1151.2",
+        "distance": "5304.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047812,
+          45.074954
+        ]
+      },
+      "properties": {
+        "altitude": "1151",
+        "distance": "5312.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048114,
+          45.075028
+        ]
+      },
+      "properties": {
+        "altitude": "1152.5",
+        "distance": "5337.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048391,
+          45.075137
+        ]
+      },
+      "properties": {
+        "altitude": "1153.8",
+        "distance": "5362"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048651,
+          45.075238
+        ]
+      },
+      "properties": {
+        "altitude": "1156.3",
+        "distance": "5385.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048952,
+          45.075266
+        ]
+      },
+      "properties": {
+        "altitude": "1158.2",
+        "distance": "5408.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049264,
+          45.075234
+        ]
+      },
+      "properties": {
+        "altitude": "1160.1",
+        "distance": "5431.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049591,
+          45.075185
+        ]
+      },
+      "properties": {
+        "altitude": "1162.1",
+        "distance": "5455.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049858,
+          45.075107
+        ]
+      },
+      "properties": {
+        "altitude": "1164.6",
+        "distance": "5479"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050002,
+          45.074994
+        ]
+      },
+      "properties": {
+        "altitude": "1166.5",
+        "distance": "5496.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050096,
+          45.074813
+        ]
+      },
+      "properties": {
+        "altitude": "1168.4",
+        "distance": "5518"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050201,
+          45.07455
+        ]
+      },
+      "properties": {
+        "altitude": "1171.3",
+        "distance": "5548.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050318,
+          45.074388
+        ]
+      },
+      "properties": {
+        "altitude": "1172.8",
+        "distance": "5569.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050468,
+          45.074313
+        ]
+      },
+      "properties": {
+        "altitude": "1174.2",
+        "distance": "5584.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050721,
+          45.074208
+        ]
+      },
+      "properties": {
+        "altitude": "1176",
+        "distance": "5607.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051015,
+          45.074005
+        ]
+      },
+      "properties": {
+        "altitude": "1178.3",
+        "distance": "5640.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051311,
+          45.073777
+        ]
+      },
+      "properties": {
+        "altitude": "1181",
+        "distance": "5674.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051693,
+          45.073495
+        ]
+      },
+      "properties": {
+        "altitude": "1184.7",
+        "distance": "5717.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051872,
+          45.073303
+        ]
+      },
+      "properties": {
+        "altitude": "1186.4",
+        "distance": "5743.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052076,
+          45.073163
+        ]
+      },
+      "properties": {
+        "altitude": "1187.6",
+        "distance": "5767.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052187,
+          45.073278
+        ]
+      },
+      "properties": {
+        "altitude": "1188.2",
+        "distance": "5785"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052061,
+          45.073436
+        ]
+      },
+      "properties": {
+        "altitude": "1188.7",
+        "distance": "5803.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051689,
+          45.073748
+        ]
+      },
+      "properties": {
+        "altitude": "1191.1",
+        "distance": "5846.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051458,
+          45.073989
+        ]
+      },
+      "properties": {
+        "altitude": "1193.3",
+        "distance": "5878.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051227,
+          45.074241
+        ]
+      },
+      "properties": {
+        "altitude": "1196",
+        "distance": "5911.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051008,
+          45.074487
+        ]
+      },
+      "properties": {
+        "altitude": "1198.7",
+        "distance": "5943.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050885,
+          45.074698
+        ]
+      },
+      "properties": {
+        "altitude": "1200.9",
+        "distance": "5969.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050809,
+          45.074901
+        ]
+      },
+      "properties": {
+        "altitude": "1202.9",
+        "distance": "5993.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050726,
+          45.075213
+        ]
+      },
+      "properties": {
+        "altitude": "1205.4",
+        "distance": "6029.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050641,
+          45.075429
+        ]
+      },
+      "properties": {
+        "altitude": "1207.2",
+        "distance": "6054.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050484,
+          45.075597
+        ]
+      },
+      "properties": {
+        "altitude": "1209.2",
+        "distance": "6076.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05029,
+          45.075834
+        ]
+      },
+      "properties": {
+        "altitude": "1212.2",
+        "distance": "6107.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050036,
+          45.075975
+        ]
+      },
+      "properties": {
+        "altitude": "1214.2",
+        "distance": "6132.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049669,
+          45.076079
+        ]
+      },
+      "properties": {
+        "altitude": "1216.7",
+        "distance": "6163.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049356,
+          45.076188
+        ]
+      },
+      "properties": {
+        "altitude": "1219",
+        "distance": "6190.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048972,
+          45.076345
+        ]
+      },
+      "properties": {
+        "altitude": "1221.9",
+        "distance": "6225.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048703,
+          45.076403
+        ]
+      },
+      "properties": {
+        "altitude": "1223.5",
+        "distance": "6247.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048342,
+          45.076371
+        ]
+      },
+      "properties": {
+        "altitude": "1226.2",
+        "distance": "6276.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048008,
+          45.07632
+        ]
+      },
+      "properties": {
+        "altitude": "1229.1",
+        "distance": "6304.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047764,
+          45.076374
+        ]
+      },
+      "properties": {
+        "altitude": "1231",
+        "distance": "6325"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047359,
+          45.076534
+        ]
+      },
+      "properties": {
+        "altitude": "1233.9",
+        "distance": "6362"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047325,
+          45.076557
+        ]
+      },
+      "properties": {
+        "altitude": "1234.2",
+        "distance": "6365.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047351,
+          45.076643
+        ]
+      },
+      "properties": {
+        "altitude": "1234.7",
+        "distance": "6377.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047491,
+          45.076614
+        ]
+      },
+      "properties": {
+        "altitude": "1235.7",
+        "distance": "6388.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047836,
+          45.076494
+        ]
+      },
+      "properties": {
+        "altitude": "1237.7",
+        "distance": "6416.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048143,
+          45.076503
+        ]
+      },
+      "properties": {
+        "altitude": "1239.8",
+        "distance": "6440.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048417,
+          45.07657
+        ]
+      },
+      "properties": {
+        "altitude": "1241.9",
+        "distance": "6462.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048607,
+          45.07666
+        ]
+      },
+      "properties": {
+        "altitude": "1243.7",
+        "distance": "6480.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048935,
+          45.076708
+        ]
+      },
+      "properties": {
+        "altitude": "1245.6",
+        "distance": "6506.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049315,
+          45.07668
+        ]
+      },
+      "properties": {
+        "altitude": "1248.5",
+        "distance": "6534.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049353,
+          45.07668
+        ]
+      },
+      "properties": {
+        "altitude": "1248.6",
+        "distance": "6537.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049647,
+          45.076629
+        ]
+      },
+      "properties": {
+        "altitude": "1251.1",
+        "distance": "6562.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04988,
+          45.076528
+        ]
+      },
+      "properties": {
+        "altitude": "1253.1",
+        "distance": "6583.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050145,
+          45.076465
+        ]
+      },
+      "properties": {
+        "altitude": "1255.3",
+        "distance": "6604.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050356,
+          45.07646
+        ]
+      },
+      "properties": {
+        "altitude": "1257",
+        "distance": "6622.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050628,
+          45.076459
+        ]
+      },
+      "properties": {
+        "altitude": "1259",
+        "distance": "6645.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05082,
+          45.076398
+        ]
+      },
+      "properties": {
+        "altitude": "1260.8",
+        "distance": "6662.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051078,
+          45.076268
+        ]
+      },
+      "properties": {
+        "altitude": "1263.2",
+        "distance": "6688"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051292,
+          45.076132
+        ]
+      },
+      "properties": {
+        "altitude": "1265.2",
+        "distance": "6710.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051518,
+          45.07597
+        ]
+      },
+      "properties": {
+        "altitude": "1267.8",
+        "distance": "6736.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051752,
+          45.075706
+        ]
+      },
+      "properties": {
+        "altitude": "1271.1",
+        "distance": "6770.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051887,
+          45.075545
+        ]
+      },
+      "properties": {
+        "altitude": "1273.3",
+        "distance": "6792.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051997,
+          45.075334
+        ]
+      },
+      "properties": {
+        "altitude": "1275.4",
+        "distance": "6817.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052153,
+          45.07508
+        ]
+      },
+      "properties": {
+        "altitude": "1278.8",
+        "distance": "6848.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052198,
+          45.074886
+        ]
+      },
+      "properties": {
+        "altitude": "1281",
+        "distance": "6870.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052302,
+          45.074796
+        ]
+      },
+      "properties": {
+        "altitude": "1281.9",
+        "distance": "6884.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052347,
+          45.074786
+        ]
+      },
+      "properties": {
+        "altitude": "1281.9",
+        "distance": "6887.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052482,
+          45.07487
+        ]
+      },
+      "properties": {
+        "altitude": "1281.6",
+        "distance": "6904.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052438,
+          45.074986
+        ]
+      },
+      "properties": {
+        "altitude": "1282",
+        "distance": "6917.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052275,
+          45.075241
+        ]
+      },
+      "properties": {
+        "altitude": "1284.3",
+        "distance": "6948.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052183,
+          45.075463
+        ]
+      },
+      "properties": {
+        "altitude": "1286.2",
+        "distance": "6974"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052057,
+          45.07567
+        ]
+      },
+      "properties": {
+        "altitude": "1289.3",
+        "distance": "6998.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051971,
+          45.075888
+        ]
+      },
+      "properties": {
+        "altitude": "1291.5",
+        "distance": "7023.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051941,
+          45.07608
+        ]
+      },
+      "properties": {
+        "altitude": "1293.2",
+        "distance": "7046.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051912,
+          45.076259
+        ]
+      },
+      "properties": {
+        "altitude": "1295.7",
+        "distance": "7066.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051822,
+          45.076558
+        ]
+      },
+      "properties": {
+        "altitude": "1298.5",
+        "distance": "7100.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051752,
+          45.076706
+        ]
+      },
+      "properties": {
+        "altitude": "1300.6",
+        "distance": "7118.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051635,
+          45.076857
+        ]
+      },
+      "properties": {
+        "altitude": "1302",
+        "distance": "7137.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051549,
+          45.076927
+        ]
+      },
+      "properties": {
+        "altitude": "1304.2",
+        "distance": "7148.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051359,
+          45.077064
+        ]
+      },
+      "properties": {
+        "altitude": "1305.8",
+        "distance": "7170.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051088,
+          45.077189
+        ]
+      },
+      "properties": {
+        "altitude": "1307.5",
+        "distance": "7196.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05084,
+          45.077316
+        ]
+      },
+      "properties": {
+        "altitude": "1310.3",
+        "distance": "7220.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050608,
+          45.077466
+        ]
+      },
+      "properties": {
+        "altitude": "1313.3",
+        "distance": "7246"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050386,
+          45.077595
+        ]
+      },
+      "properties": {
+        "altitude": "1315.4",
+        "distance": "7268.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0502,
+          45.077708
+        ]
+      },
+      "properties": {
+        "altitude": "1317",
+        "distance": "7288.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050041,
+          45.077782
+        ]
+      },
+      "properties": {
+        "altitude": "1318.8",
+        "distance": "7304.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049902,
+          45.07784
+        ]
+      },
+      "properties": {
+        "altitude": "1320.2",
+        "distance": "7316.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049682,
+          45.077947
+        ]
+      },
+      "properties": {
+        "altitude": "1323.1",
+        "distance": "7338.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049524,
+          45.078027
+        ]
+      },
+      "properties": {
+        "altitude": "1324.3",
+        "distance": "7353.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049285,
+          45.078057
+        ]
+      },
+      "properties": {
+        "altitude": "1326.2",
+        "distance": "7373"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049172,
+          45.078021
+        ]
+      },
+      "properties": {
+        "altitude": "1327.1",
+        "distance": "7383.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048954,
+          45.077953
+        ]
+      },
+      "properties": {
+        "altitude": "1328.6",
+        "distance": "7402.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048677,
+          45.077954
+        ]
+      },
+      "properties": {
+        "altitude": "1330.8",
+        "distance": "7423.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048424,
+          45.077955
+        ]
+      },
+      "properties": {
+        "altitude": "1332.2",
+        "distance": "7443.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048117,
+          45.077884
+        ]
+      },
+      "properties": {
+        "altitude": "1335.2",
+        "distance": "7468.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0479,
+          45.077824
+        ]
+      },
+      "properties": {
+        "altitude": "1336.9",
+        "distance": "7487"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.047855,
+          45.077906
+        ]
+      },
+      "properties": {
+        "altitude": "1337.5",
+        "distance": "7499.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048008,
+          45.07797
+        ]
+      },
+      "properties": {
+        "altitude": "1338.3",
+        "distance": "7513.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048097,
+          45.077989
+        ]
+      },
+      "properties": {
+        "altitude": "1338.5",
+        "distance": "7520.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048432,
+          45.07806
+        ]
+      },
+      "properties": {
+        "altitude": "1339.9",
+        "distance": "7547.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048692,
+          45.078131
+        ]
+      },
+      "properties": {
+        "altitude": "1342.3",
+        "distance": "7568.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.048902,
+          45.078217
+        ]
+      },
+      "properties": {
+        "altitude": "1344",
+        "distance": "7588.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049131,
+          45.07833
+        ]
+      },
+      "properties": {
+        "altitude": "1346.4",
+        "distance": "7610.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049297,
+          45.07839
+        ]
+      },
+      "properties": {
+        "altitude": "1347.6",
+        "distance": "7625.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.04946,
+          45.078391
+        ]
+      },
+      "properties": {
+        "altitude": "1349.1",
+        "distance": "7637.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049687,
+          45.078384
+        ]
+      },
+      "properties": {
+        "altitude": "1351",
+        "distance": "7654.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.049889,
+          45.078376
+        ]
+      },
+      "properties": {
+        "altitude": "1352.3",
+        "distance": "7670.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050141,
+          45.078337
+        ]
+      },
+      "properties": {
+        "altitude": "1353.6",
+        "distance": "7688.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05032,
+          45.07828
+        ]
+      },
+      "properties": {
+        "altitude": "1355",
+        "distance": "7702.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050547,
+          45.078231
+        ]
+      },
+      "properties": {
+        "altitude": "1356.8",
+        "distance": "7726.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.050824,
+          45.078129
+        ]
+      },
+      "properties": {
+        "altitude": "1359.5",
+        "distance": "7752.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051046,
+          45.078058
+        ]
+      },
+      "properties": {
+        "altitude": "1360.9",
+        "distance": "7771.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051312,
+          45.077964
+        ]
+      },
+      "properties": {
+        "altitude": "1363.3",
+        "distance": "7795.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051569,
+          45.077872
+        ]
+      },
+      "properties": {
+        "altitude": "1365.2",
+        "distance": "7818.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.051858,
+          45.077777
+        ]
+      },
+      "properties": {
+        "altitude": "1367.9",
+        "distance": "7843.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052139,
+          45.077724
+        ]
+      },
+      "properties": {
+        "altitude": "1370.4",
+        "distance": "7866.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052462,
+          45.077601
+        ]
+      },
+      "properties": {
+        "altitude": "1373.1",
+        "distance": "7894.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.052763,
+          45.077425
+        ]
+      },
+      "properties": {
+        "altitude": "1375.4",
+        "distance": "7925.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053038,
+          45.077183
+        ]
+      },
+      "properties": {
+        "altitude": "1377.7",
+        "distance": "7959.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053253,
+          45.077046
+        ]
+      },
+      "properties": {
+        "altitude": "1379.4",
+        "distance": "7982.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053401,
+          45.077071
+        ]
+      },
+      "properties": {
+        "altitude": "1379.8",
+        "distance": "7995.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053556,
+          45.077226
+        ]
+      },
+      "properties": {
+        "altitude": "1380.4",
+        "distance": "8016.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053649,
+          45.077449
+        ]
+      },
+      "properties": {
+        "altitude": "1381.9",
+        "distance": "8042.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053696,
+          45.077633
+        ]
+      },
+      "properties": {
+        "altitude": "1384.3",
+        "distance": "8064.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053748,
+          45.077723
+        ]
+      },
+      "properties": {
+        "altitude": "1385.3",
+        "distance": "8075"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.053878,
+          45.07788
+        ]
+      },
+      "properties": {
+        "altitude": "1387.2",
+        "distance": "8095.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054047,
+          45.078059
+        ]
+      },
+      "properties": {
+        "altitude": "1389.4",
+        "distance": "8119.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054165,
+          45.078246
+        ]
+      },
+      "properties": {
+        "altitude": "1391.5",
+        "distance": "8141.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054274,
+          45.07844
+        ]
+      },
+      "properties": {
+        "altitude": "1392.9",
+        "distance": "8165"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054376,
+          45.078615
+        ]
+      },
+      "properties": {
+        "altitude": "1394.8",
+        "distance": "8185.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054428,
+          45.078713
+        ]
+      },
+      "properties": {
+        "altitude": "1396.1",
+        "distance": "8198.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05449,
+          45.078813
+        ]
+      },
+      "properties": {
+        "altitude": "1397.2",
+        "distance": "8210.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054571,
+          45.07892
+        ]
+      },
+      "properties": {
+        "altitude": "1398.3",
+        "distance": "8225.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054648,
+          45.079034
+        ]
+      },
+      "properties": {
+        "altitude": "1399.6",
+        "distance": "8240.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054736,
+          45.079208
+        ]
+      },
+      "properties": {
+        "altitude": "1401.7",
+        "distance": "8260.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054751,
+          45.079339
+        ]
+      },
+      "properties": {
+        "altitude": "1402.9",
+        "distance": "8276.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054731,
+          45.079493
+        ]
+      },
+      "properties": {
+        "altitude": "1404.5",
+        "distance": "8293.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054676,
+          45.079671
+        ]
+      },
+      "properties": {
+        "altitude": "1406.3",
+        "distance": "8313.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0547,
+          45.079832
+        ]
+      },
+      "properties": {
+        "altitude": "1407.4",
+        "distance": "8332.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054769,
+          45.080017
+        ]
+      },
+      "properties": {
+        "altitude": "1409.2",
+        "distance": "8355.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054805,
+          45.08021
+        ]
+      },
+      "properties": {
+        "altitude": "1410.9",
+        "distance": "8375.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054858,
+          45.080432
+        ]
+      },
+      "properties": {
+        "altitude": "1413.2",
+        "distance": "8399.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.054936,
+          45.080597
+        ]
+      },
+      "properties": {
+        "altitude": "1415.1",
+        "distance": "8420.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055051,
+          45.080708
+        ]
+      },
+      "properties": {
+        "altitude": "1416.6",
+        "distance": "8436.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055195,
+          45.080774
+        ]
+      },
+      "properties": {
+        "altitude": "1417.5",
+        "distance": "8449.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055389,
+          45.080779
+        ]
+      },
+      "properties": {
+        "altitude": "1418.3",
+        "distance": "8465.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05552,
+          45.0807
+        ]
+      },
+      "properties": {
+        "altitude": "1419.3",
+        "distance": "8480.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055609,
+          45.080494
+        ]
+      },
+      "properties": {
+        "altitude": "1421.8",
+        "distance": "8503.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055701,
+          45.080334
+        ]
+      },
+      "properties": {
+        "altitude": "1423.8",
+        "distance": "8523"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055833,
+          45.080209
+        ]
+      },
+      "properties": {
+        "altitude": "1425.2",
+        "distance": "8541"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056065,
+          45.080126
+        ]
+      },
+      "properties": {
+        "altitude": "1427",
+        "distance": "8561.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056439,
+          45.080065
+        ]
+      },
+      "properties": {
+        "altitude": "1428.8",
+        "distance": "8591.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056863,
+          45.080051
+        ]
+      },
+      "properties": {
+        "altitude": "1430.1",
+        "distance": "8623.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057241,
+          45.080171
+        ]
+      },
+      "properties": {
+        "altitude": "1431.4",
+        "distance": "8655.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05765,
+          45.080371
+        ]
+      },
+      "properties": {
+        "altitude": "1433.2",
+        "distance": "8693.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057972,
+          45.080502
+        ]
+      },
+      "properties": {
+        "altitude": "1435.3",
+        "distance": "8723.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058383,
+          45.080651
+        ]
+      },
+      "properties": {
+        "altitude": "1438.3",
+        "distance": "8759.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058695,
+          45.080784
+        ]
+      },
+      "properties": {
+        "altitude": "1440.7",
+        "distance": "8788.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058899,
+          45.080927
+        ]
+      },
+      "properties": {
+        "altitude": "1442.8",
+        "distance": "8811.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059167,
+          45.08109
+        ]
+      },
+      "properties": {
+        "altitude": "1444.9",
+        "distance": "8839.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059455,
+          45.081187
+        ]
+      },
+      "properties": {
+        "altitude": "1447.3",
+        "distance": "8864.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059715,
+          45.081284
+        ]
+      },
+      "properties": {
+        "altitude": "1449.7",
+        "distance": "8888.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059927,
+          45.081409
+        ]
+      },
+      "properties": {
+        "altitude": "1451.6",
+        "distance": "8910.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06009,
+          45.081504
+        ]
+      },
+      "properties": {
+        "altitude": "1453.6",
+        "distance": "8928.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06025,
+          45.081548
+        ]
+      },
+      "properties": {
+        "altitude": "1455",
+        "distance": "8942.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060455,
+          45.081621
+        ]
+      },
+      "properties": {
+        "altitude": "1457.1",
+        "distance": "8960.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06066,
+          45.081673
+        ]
+      },
+      "properties": {
+        "altitude": "1458.9",
+        "distance": "8977.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060881,
+          45.081746
+        ]
+      },
+      "properties": {
+        "altitude": "1460.6",
+        "distance": "8997.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061065,
+          45.081805
+        ]
+      },
+      "properties": {
+        "altitude": "1461.8",
+        "distance": "9013.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061288,
+          45.081866
+        ]
+      },
+      "properties": {
+        "altitude": "1464",
+        "distance": "9032.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061535,
+          45.081926
+        ]
+      },
+      "properties": {
+        "altitude": "1466",
+        "distance": "9053.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061855,
+          45.081998
+        ]
+      },
+      "properties": {
+        "altitude": "1468.3",
+        "distance": "9079.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06225,
+          45.082156
+        ]
+      },
+      "properties": {
+        "altitude": "1471",
+        "distance": "9115.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062362,
+          45.082264
+        ]
+      },
+      "properties": {
+        "altitude": "1471.6",
+        "distance": "9130.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062341,
+          45.082326
+        ]
+      },
+      "properties": {
+        "altitude": "1471.7",
+        "distance": "9138.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062148,
+          45.082351
+        ]
+      },
+      "properties": {
+        "altitude": "1472.8",
+        "distance": "9155.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062097,
+          45.082332
+        ]
+      },
+      "properties": {
+        "altitude": "1473.2",
+        "distance": "9159.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061646,
+          45.082157
+        ]
+      },
+      "properties": {
+        "altitude": "1474.6",
+        "distance": "9198.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06135,
+          45.082132
+        ]
+      },
+      "properties": {
+        "altitude": "1476.3",
+        "distance": "9222.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060968,
+          45.082142
+        ]
+      },
+      "properties": {
+        "altitude": "1478.6",
+        "distance": "9252.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060641,
+          45.082171
+        ]
+      },
+      "properties": {
+        "altitude": "1480.4",
+        "distance": "9278.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060209,
+          45.082203
+        ]
+      },
+      "properties": {
+        "altitude": "1483.4",
+        "distance": "9312.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059951,
+          45.082223
+        ]
+      },
+      "properties": {
+        "altitude": "1485.2",
+        "distance": "9332.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059455,
+          45.08224
+        ]
+      },
+      "properties": {
+        "altitude": "1487.5",
+        "distance": "9371.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059112,
+          45.082249
+        ]
+      },
+      "properties": {
+        "altitude": "1489.7",
+        "distance": "9398.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058684,
+          45.082269
+        ]
+      },
+      "properties": {
+        "altitude": "1492",
+        "distance": "9432"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0581,
+          45.082291
+        ]
+      },
+      "properties": {
+        "altitude": "1493.3",
+        "distance": "9477.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057797,
+          45.082391
+        ]
+      },
+      "properties": {
+        "altitude": "1494",
+        "distance": "9504.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057688,
+          45.082522
+        ]
+      },
+      "properties": {
+        "altitude": "1494.7",
+        "distance": "9522.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057644,
+          45.082685
+        ]
+      },
+      "properties": {
+        "altitude": "1496.7",
+        "distance": "9540.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05764,
+          45.082862
+        ]
+      },
+      "properties": {
+        "altitude": "1498.5",
+        "distance": "9560.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057639,
+          45.083121
+        ]
+      },
+      "properties": {
+        "altitude": "1501",
+        "distance": "9589.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057585,
+          45.08333
+        ]
+      },
+      "properties": {
+        "altitude": "1503.4",
+        "distance": "9612.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057553,
+          45.083508
+        ]
+      },
+      "properties": {
+        "altitude": "1504.6",
+        "distance": "9632.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057547,
+          45.083596
+        ]
+      },
+      "properties": {
+        "altitude": "1505.2",
+        "distance": "9642.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057661,
+          45.083638
+        ]
+      },
+      "properties": {
+        "altitude": "1506.2",
+        "distance": "9655.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057748,
+          45.083543
+        ]
+      },
+      "properties": {
+        "altitude": "1507.1",
+        "distance": "9668.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057923,
+          45.08336
+        ]
+      },
+      "properties": {
+        "altitude": "1509.1",
+        "distance": "9693.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058096,
+          45.083237
+        ]
+      },
+      "properties": {
+        "altitude": "1511",
+        "distance": "9710.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05816,
+          45.083212
+        ]
+      },
+      "properties": {
+        "altitude": "1511.1",
+        "distance": "9717.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058572,
+          45.083057
+        ]
+      },
+      "properties": {
+        "altitude": "1514.6",
+        "distance": "9753.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058833,
+          45.082999
+        ]
+      },
+      "properties": {
+        "altitude": "1516.1",
+        "distance": "9774.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059134,
+          45.083
+        ]
+      },
+      "properties": {
+        "altitude": "1518.2",
+        "distance": "9798.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059402,
+          45.083001
+        ]
+      },
+      "properties": {
+        "altitude": "1520.3",
+        "distance": "9819.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059709,
+          45.083016
+        ]
+      },
+      "properties": {
+        "altitude": "1522.9",
+        "distance": "9843.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06001,
+          45.083037
+        ]
+      },
+      "properties": {
+        "altitude": "1525.1",
+        "distance": "9867.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060264,
+          45.083072
+        ]
+      },
+      "properties": {
+        "altitude": "1526.4",
+        "distance": "9888.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060566,
+          45.083138
+        ]
+      },
+      "properties": {
+        "altitude": "1528.9",
+        "distance": "9913"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06088,
+          45.083202
+        ]
+      },
+      "properties": {
+        "altitude": "1531",
+        "distance": "9939.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061126,
+          45.08325
+        ]
+      },
+      "properties": {
+        "altitude": "1532.8",
+        "distance": "9959.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061458,
+          45.083311
+        ]
+      },
+      "properties": {
+        "altitude": "1535.3",
+        "distance": "9986.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061727,
+          45.083377
+        ]
+      },
+      "properties": {
+        "altitude": "1537.7",
+        "distance": "10009.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061995,
+          45.083438
+        ]
+      },
+      "properties": {
+        "altitude": "1539.9",
+        "distance": "10032.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062216,
+          45.083473
+        ]
+      },
+      "properties": {
+        "altitude": "1541.5",
+        "distance": "10050.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062425,
+          45.083469
+        ]
+      },
+      "properties": {
+        "altitude": "1543.1",
+        "distance": "10066.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062619,
+          45.083543
+        ]
+      },
+      "properties": {
+        "altitude": "1543.5",
+        "distance": "10084.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062564,
+          45.083648
+        ]
+      },
+      "properties": {
+        "altitude": "1544.2",
+        "distance": "10099.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062466,
+          45.083664
+        ]
+      },
+      "properties": {
+        "altitude": "1544.8",
+        "distance": "10107.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062025,
+          45.083642
+        ]
+      },
+      "properties": {
+        "altitude": "1546.5",
+        "distance": "10141.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061627,
+          45.083634
+        ]
+      },
+      "properties": {
+        "altitude": "1548.9",
+        "distance": "10171.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061383,
+          45.083661
+        ]
+      },
+      "properties": {
+        "altitude": "1550.6",
+        "distance": "10191.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061104,
+          45.083758
+        ]
+      },
+      "properties": {
+        "altitude": "1552.6",
+        "distance": "10215.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060997,
+          45.083809
+        ]
+      },
+      "properties": {
+        "altitude": "1553.8",
+        "distance": "10225.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060694,
+          45.083947
+        ]
+      },
+      "properties": {
+        "altitude": "1556.2",
+        "distance": "10254"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060447,
+          45.084114
+        ]
+      },
+      "properties": {
+        "altitude": "1558.7",
+        "distance": "10281.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060299,
+          45.084336
+        ]
+      },
+      "properties": {
+        "altitude": "1560.8",
+        "distance": "10309.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060232,
+          45.084566
+        ]
+      },
+      "properties": {
+        "altitude": "1563.5",
+        "distance": "10336.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060141,
+          45.084908
+        ]
+      },
+      "properties": {
+        "altitude": "1567",
+        "distance": "10375.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06007,
+          45.085131
+        ]
+      },
+      "properties": {
+        "altitude": "1569",
+        "distance": "10400.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059939,
+          45.08543
+        ]
+      },
+      "properties": {
+        "altitude": "1572.4",
+        "distance": "10435.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059792,
+          45.085643
+        ]
+      },
+      "properties": {
+        "altitude": "1574.5",
+        "distance": "10462.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059532,
+          45.08591
+        ]
+      },
+      "properties": {
+        "altitude": "1577.6",
+        "distance": "10498.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05923,
+          45.086184
+        ]
+      },
+      "properties": {
+        "altitude": "1580.9",
+        "distance": "10536.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058966,
+          45.086443
+        ]
+      },
+      "properties": {
+        "altitude": "1583.5",
+        "distance": "10572.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05872,
+          45.086702
+        ]
+      },
+      "properties": {
+        "altitude": "1586.8",
+        "distance": "10607.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058522,
+          45.086951
+        ]
+      },
+      "properties": {
+        "altitude": "1589.8",
+        "distance": "10639.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058366,
+          45.087177
+        ]
+      },
+      "properties": {
+        "altitude": "1592.3",
+        "distance": "10667.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058192,
+          45.08744
+        ]
+      },
+      "properties": {
+        "altitude": "1595.2",
+        "distance": "10699.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057936,
+          45.087677
+        ]
+      },
+      "properties": {
+        "altitude": "1598.3",
+        "distance": "10732.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057611,
+          45.087896
+        ]
+      },
+      "properties": {
+        "altitude": "1600.7",
+        "distance": "10768.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057229,
+          45.088116
+        ]
+      },
+      "properties": {
+        "altitude": "1604.2",
+        "distance": "10807.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056879,
+          45.088308
+        ]
+      },
+      "properties": {
+        "altitude": "1607.4",
+        "distance": "10842.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056672,
+          45.088367
+        ]
+      },
+      "properties": {
+        "altitude": "1608.7",
+        "distance": "10861.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0564,
+          45.08837
+        ]
+      },
+      "properties": {
+        "altitude": "1610.5",
+        "distance": "10882.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056199,
+          45.088295
+        ]
+      },
+      "properties": {
+        "altitude": "1611.8",
+        "distance": "10900.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055941,
+          45.088155
+        ]
+      },
+      "properties": {
+        "altitude": "1614",
+        "distance": "10925.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05587,
+          45.088213
+        ]
+      },
+      "properties": {
+        "altitude": "1614.8",
+        "distance": "10937.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055923,
+          45.088278
+        ]
+      },
+      "properties": {
+        "altitude": "1615.7",
+        "distance": "10945.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056078,
+          45.088468
+        ]
+      },
+      "properties": {
+        "altitude": "1618",
+        "distance": "10970.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056205,
+          45.088655
+        ]
+      },
+      "properties": {
+        "altitude": "1620.1",
+        "distance": "10993.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056302,
+          45.088783
+        ]
+      },
+      "properties": {
+        "altitude": "1621.7",
+        "distance": "11010.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056462,
+          45.088955
+        ]
+      },
+      "properties": {
+        "altitude": "1623.6",
+        "distance": "11032.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056546,
+          45.088998
+        ]
+      },
+      "properties": {
+        "altitude": "1625",
+        "distance": "11041.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056786,
+          45.08906
+        ]
+      },
+      "properties": {
+        "altitude": "1626.6",
+        "distance": "11061"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057088,
+          45.089108
+        ]
+      },
+      "properties": {
+        "altitude": "1628.8",
+        "distance": "11085.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05747,
+          45.089134
+        ]
+      },
+      "properties": {
+        "altitude": "1631.5",
+        "distance": "11115.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057836,
+          45.089143
+        ]
+      },
+      "properties": {
+        "altitude": "1634.1",
+        "distance": "11144.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058107,
+          45.089141
+        ]
+      },
+      "properties": {
+        "altitude": "1636.5",
+        "distance": "11165.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05835,
+          45.089109
+        ]
+      },
+      "properties": {
+        "altitude": "1638.4",
+        "distance": "11185"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058662,
+          45.089055
+        ]
+      },
+      "properties": {
+        "altitude": "1640.7",
+        "distance": "11210.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058906,
+          45.089007
+        ]
+      },
+      "properties": {
+        "altitude": "1642.3",
+        "distance": "11230.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059176,
+          45.088959
+        ]
+      },
+      "properties": {
+        "altitude": "1644.5",
+        "distance": "11252.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059467,
+          45.088909
+        ]
+      },
+      "properties": {
+        "altitude": "1646.1",
+        "distance": "11275.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059795,
+          45.088851
+        ]
+      },
+      "properties": {
+        "altitude": "1648.9",
+        "distance": "11302.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060097,
+          45.088766
+        ]
+      },
+      "properties": {
+        "altitude": "1651.3",
+        "distance": "11328.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060311,
+          45.088696
+        ]
+      },
+      "properties": {
+        "altitude": "1652.9",
+        "distance": "11347.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060383,
+          45.088687
+        ]
+      },
+      "properties": {
+        "altitude": "1653.6",
+        "distance": "11353.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060475,
+          45.088753
+        ]
+      },
+      "properties": {
+        "altitude": "1654.8",
+        "distance": "11365.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060424,
+          45.088819
+        ]
+      },
+      "properties": {
+        "altitude": "1655.4",
+        "distance": "11374.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060167,
+          45.089046
+        ]
+      },
+      "properties": {
+        "altitude": "1658",
+        "distance": "11406.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060026,
+          45.089217
+        ]
+      },
+      "properties": {
+        "altitude": "1660.3",
+        "distance": "11428.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05988,
+          45.089382
+        ]
+      },
+      "properties": {
+        "altitude": "1662.4",
+        "distance": "11450.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059664,
+          45.089603
+        ]
+      },
+      "properties": {
+        "altitude": "1664.5",
+        "distance": "11479.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059472,
+          45.089775
+        ]
+      },
+      "properties": {
+        "altitude": "1667.3",
+        "distance": "11503.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059232,
+          45.089954
+        ]
+      },
+      "properties": {
+        "altitude": "1669.7",
+        "distance": "11530.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058948,
+          45.090148
+        ]
+      },
+      "properties": {
+        "altitude": "1672.4",
+        "distance": "11561.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058711,
+          45.090312
+        ]
+      },
+      "properties": {
+        "altitude": "1674.9",
+        "distance": "11587.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058521,
+          45.090448
+        ]
+      },
+      "properties": {
+        "altitude": "1677.1",
+        "distance": "11609"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058326,
+          45.090589
+        ]
+      },
+      "properties": {
+        "altitude": "1679",
+        "distance": "11631.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058133,
+          45.090707
+        ]
+      },
+      "properties": {
+        "altitude": "1680.3",
+        "distance": "11651"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057855,
+          45.090854
+        ]
+      },
+      "properties": {
+        "altitude": "1683.1",
+        "distance": "11678.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057532,
+          45.091018
+        ]
+      },
+      "properties": {
+        "altitude": "1685.9",
+        "distance": "11710.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057153,
+          45.09122
+        ]
+      },
+      "properties": {
+        "altitude": "1689",
+        "distance": "11747.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056835,
+          45.091329
+        ]
+      },
+      "properties": {
+        "altitude": "1692.2",
+        "distance": "11775.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056434,
+          45.091438
+        ]
+      },
+      "properties": {
+        "altitude": "1695.1",
+        "distance": "11809.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056162,
+          45.091452
+        ]
+      },
+      "properties": {
+        "altitude": "1697",
+        "distance": "11830.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055779,
+          45.091427
+        ]
+      },
+      "properties": {
+        "altitude": "1699.1",
+        "distance": "11861"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05546,
+          45.091397
+        ]
+      },
+      "properties": {
+        "altitude": "1700.7",
+        "distance": "11886.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055439,
+          45.091491
+        ]
+      },
+      "properties": {
+        "altitude": "1701.9",
+        "distance": "11900.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055525,
+          45.091519
+        ]
+      },
+      "properties": {
+        "altitude": "1702.2",
+        "distance": "11907.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.055821,
+          45.09155
+        ]
+      },
+      "properties": {
+        "altitude": "1704.8",
+        "distance": "11931"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056112,
+          45.091601
+        ]
+      },
+      "properties": {
+        "altitude": "1706.8",
+        "distance": "11954.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056451,
+          45.091686
+        ]
+      },
+      "properties": {
+        "altitude": "1709.4",
+        "distance": "11982.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.056853,
+          45.091783
+        ]
+      },
+      "properties": {
+        "altitude": "1712",
+        "distance": "12015.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057311,
+          45.091828
+        ]
+      },
+      "properties": {
+        "altitude": "1714.6",
+        "distance": "12051"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.057774,
+          45.091797
+        ]
+      },
+      "properties": {
+        "altitude": "1717",
+        "distance": "12087.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058129,
+          45.09179
+        ]
+      },
+      "properties": {
+        "altitude": "1719.4",
+        "distance": "12115.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.05838,
+          45.091758
+        ]
+      },
+      "properties": {
+        "altitude": "1720.7",
+        "distance": "12135.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.058796,
+          45.091733
+        ]
+      },
+      "properties": {
+        "altitude": "1723.7",
+        "distance": "12169.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059136,
+          45.091698
+        ]
+      },
+      "properties": {
+        "altitude": "1725.9",
+        "distance": "12196.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059523,
+          45.091616
+        ]
+      },
+      "properties": {
+        "altitude": "1729",
+        "distance": "12228.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.059978,
+          45.091523
+        ]
+      },
+      "properties": {
+        "altitude": "1732",
+        "distance": "12265.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060336,
+          45.091445
+        ]
+      },
+      "properties": {
+        "altitude": "1734.9",
+        "distance": "12294.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060593,
+          45.091387
+        ]
+      },
+      "properties": {
+        "altitude": "1737",
+        "distance": "12316.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.060791,
+          45.091349
+        ]
+      },
+      "properties": {
+        "altitude": "1738.4",
+        "distance": "12332.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061095,
+          45.091276
+        ]
+      },
+      "properties": {
+        "altitude": "1740.4",
+        "distance": "12358.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061395,
+          45.091213
+        ]
+      },
+      "properties": {
+        "altitude": "1743",
+        "distance": "12383"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061607,
+          45.091147
+        ]
+      },
+      "properties": {
+        "altitude": "1744.6",
+        "distance": "12401.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061834,
+          45.091059
+        ]
+      },
+      "properties": {
+        "altitude": "1746.3",
+        "distance": "12422"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062137,
+          45.090971
+        ]
+      },
+      "properties": {
+        "altitude": "1749.1",
+        "distance": "12448"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062396,
+          45.090911
+        ]
+      },
+      "properties": {
+        "altitude": "1751.1",
+        "distance": "12469.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062718,
+          45.090834
+        ]
+      },
+      "properties": {
+        "altitude": "1753.5",
+        "distance": "12496"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063075,
+          45.090753
+        ]
+      },
+      "properties": {
+        "altitude": "1756.2",
+        "distance": "12525.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063149,
+          45.090743
+        ]
+      },
+      "properties": {
+        "altitude": "1757.1",
+        "distance": "12531.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063532,
+          45.090704
+        ]
+      },
+      "properties": {
+        "altitude": "1759.4",
+        "distance": "12562.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063743,
+          45.090688
+        ]
+      },
+      "properties": {
+        "altitude": "1760.4",
+        "distance": "12578.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.064172,
+          45.090561
+        ]
+      },
+      "properties": {
+        "altitude": "1760.3",
+        "distance": "12614.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.064655,
+          45.090463
+        ]
+      },
+      "properties": {
+        "altitude": "1760.7",
+        "distance": "12653"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065191,
+          45.090413
+        ]
+      },
+      "properties": {
+        "altitude": "1760.9",
+        "distance": "12695.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065485,
+          45.090472
+        ]
+      },
+      "properties": {
+        "altitude": "1762.2",
+        "distance": "12721"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065469,
+          45.090493
+        ]
+      },
+      "properties": {
+        "altitude": "1762.3",
+        "distance": "12726.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.06553,
+          45.090478
+        ]
+      },
+      "properties": {
+        "altitude": "1763.8",
+        "distance": "12743.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065483,
+          45.090533
+        ]
+      },
+      "properties": {
+        "altitude": "1765.2",
+        "distance": "12759.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065491,
+          45.090862
+        ]
+      },
+      "properties": {
+        "altitude": "1765.5",
+        "distance": "12772.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065311,
+          45.091019
+        ]
+      },
+      "properties": {
+        "altitude": "1766.9",
+        "distance": "12789"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065205,
+          45.091029
+        ]
+      },
+      "properties": {
+        "altitude": "1767.5",
+        "distance": "12794.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065126,
+          45.091036
+        ]
+      },
+      "properties": {
+        "altitude": "1768.2",
+        "distance": "12800.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.064777,
+          45.091033
+        ]
+      },
+      "properties": {
+        "altitude": "1769.7",
+        "distance": "12825.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.064408,
+          45.091089
+        ]
+      },
+      "properties": {
+        "altitude": "1771.2",
+        "distance": "12856.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063976,
+          45.091254
+        ]
+      },
+      "properties": {
+        "altitude": "1772.4",
+        "distance": "12895.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.0637,
+          45.091474
+        ]
+      },
+      "properties": {
+        "altitude": "1774.8",
+        "distance": "12929"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063521,
+          45.091613
+        ]
+      },
+      "properties": {
+        "altitude": "1776.2",
+        "distance": "12949.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063429,
+          45.091667
+        ]
+      },
+      "properties": {
+        "altitude": "1777.5",
+        "distance": "12959"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063074,
+          45.091833
+        ]
+      },
+      "properties": {
+        "altitude": "1778.9",
+        "distance": "12992.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062878,
+          45.091895
+        ]
+      },
+      "properties": {
+        "altitude": "1779.5",
+        "distance": "13008.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062523,
+          45.092096
+        ]
+      },
+      "properties": {
+        "altitude": "1779.9",
+        "distance": "13044.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062216,
+          45.09232
+        ]
+      },
+      "properties": {
+        "altitude": "1781.4",
+        "distance": "13079"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061896,
+          45.092548
+        ]
+      },
+      "properties": {
+        "altitude": "1784.6",
+        "distance": "13115.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061633,
+          45.092655
+        ]
+      },
+      "properties": {
+        "altitude": "1786.5",
+        "distance": "13139.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061412,
+          45.092698
+        ]
+      },
+      "properties": {
+        "altitude": "1786.8",
+        "distance": "13157.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061271,
+          45.092784
+        ]
+      },
+      "properties": {
+        "altitude": "1787.9",
+        "distance": "13175.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061421,
+          45.092815
+        ]
+      },
+      "properties": {
+        "altitude": "1789.3",
+        "distance": "13189"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061477,
+          45.092801
+        ]
+      },
+      "properties": {
+        "altitude": "1789.3",
+        "distance": "13193.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.061958,
+          45.092699
+        ]
+      },
+      "properties": {
+        "altitude": "1791.5",
+        "distance": "13229.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062472,
+          45.092648
+        ]
+      },
+      "properties": {
+        "altitude": "1794.9",
+        "distance": "13270.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.062809,
+          45.092615
+        ]
+      },
+      "properties": {
+        "altitude": "1796.5",
+        "distance": "13297.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063357,
+          45.092567
+        ]
+      },
+      "properties": {
+        "altitude": "1799.9",
+        "distance": "13340.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063741,
+          45.092579
+        ]
+      },
+      "properties": {
+        "altitude": "1800.9",
+        "distance": "13371.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063856,
+          45.092588
+        ]
+      },
+      "properties": {
+        "altitude": "1801.6",
+        "distance": "13380.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.063967,
+          45.092605
+        ]
+      },
+      "properties": {
+        "altitude": "1802.2",
+        "distance": "13389.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.064682,
+          45.092679
+        ]
+      },
+      "properties": {
+        "altitude": "1804.7",
+        "distance": "13446.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065267,
+          45.092768
+        ]
+      },
+      "properties": {
+        "altitude": "1807",
+        "distance": "13493.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.065779,
+          45.092869
+        ]
+      },
+      "properties": {
+        "altitude": "1808.3",
+        "distance": "13535.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.066436,
+          45.092953
+        ]
+      },
+      "properties": {
+        "altitude": "1810.3",
+        "distance": "13588.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.066907,
+          45.093007
+        ]
+      },
+      "properties": {
+        "altitude": "1811.7",
+        "distance": "13625.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.067402,
+          45.09323
+        ]
+      },
+      "properties": {
+        "altitude": "1812.9",
+        "distance": "13671.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.067743,
+          45.093259
+        ]
+      },
+      "properties": {
+        "altitude": "1813.8",
+        "distance": "13699"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.067928,
+          45.093196
+        ]
+      },
+      "properties": {
+        "altitude": "1812.4",
+        "distance": "13715.4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.068137,
+          45.093119
+        ]
+      },
+      "properties": {
+        "altitude": "1811.1",
+        "distance": "13734"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.068357,
+          45.093012
+        ]
+      },
+      "properties": {
+        "altitude": "1810.3",
+        "distance": "13755.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.068752,
+          45.092873
+        ]
+      },
+      "properties": {
+        "altitude": "1809.9",
+        "distance": "13789.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.069462,
+          45.092569
+        ]
+      },
+      "properties": {
+        "altitude": "1811.1",
+        "distance": "13853.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.069801,
+          45.092443
+        ]
+      },
+      "properties": {
+        "altitude": "1811.6",
+        "distance": "13884.2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.07041,
+          45.092375
+        ]
+      },
+      "properties": {
+        "altitude": "1810.9",
+        "distance": "13932.5"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071603,
+          45.092463
+        ]
+      },
+      "properties": {
+        "altitude": "1810.4",
+        "distance": "14026.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071961,
+          45.092486
+        ]
+      },
+      "properties": {
+        "altitude": "1810.5",
+        "distance": "14054.7"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.072134,
+          45.09267
+        ]
+      },
+      "properties": {
+        "altitude": "1810.6",
+        "distance": "14081"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.072043,
+          45.0928
+        ]
+      },
+      "properties": {
+        "altitude": "1810.6",
+        "distance": "14096.6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071875,
+          45.092979
+        ]
+      },
+      "properties": {
+        "altitude": "1811.9",
+        "distance": "14119.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071741,
+          45.093165
+        ]
+      },
+      "properties": {
+        "altitude": "1813.2",
+        "distance": "14142.8"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071521,
+          45.093536
+        ]
+      },
+      "properties": {
+        "altitude": "1816.3",
+        "distance": "14188.1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.07149,
+          45.093594
+        ]
+      },
+      "properties": {
+        "altitude": "1816.6",
+        "distance": "14195"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071307,
+          45.093934
+        ]
+      },
+      "properties": {
+        "altitude": "1820",
+        "distance": "14236"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071138,
+          45.094253
+        ]
+      },
+      "properties": {
+        "altitude": "1822.6",
+        "distance": "14274.3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.071023,
+          45.094485
+        ]
+      },
+      "properties": {
+        "altitude": "1824.5",
+        "distance": "14301.9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          6.070984,
+          45.094562
+        ]
+      },
+      "properties": {
+        "altitude": "1825.2",
+        "distance": "14311.1"
+      }
+    }
+  ]
+}
