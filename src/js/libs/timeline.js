@@ -390,6 +390,7 @@
     this.container.style.left = "0px";
     this.container.style.bottom = "0px";
     this.container.style.zIndex = "10000";
+    this.container.style.opacity = "0.9";
     document.body.appendChild(this.container);
 
     this.splitter = document.createElement("div");

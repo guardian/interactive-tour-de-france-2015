@@ -1,6 +1,7 @@
   var THREE = require('three')
   //var OrbitControls = require('three-orbit-controls')(THREE)
   var OrbitControls = require('./Orbit.js')(THREE)
+  var BufferGeometryLoader = require('./BufferGeometryLoader.js')(THREE)
 
   "use strict";
 
@@ -192,7 +193,7 @@
 
       // WebGLRenderer
       var bgcolor = Q3D.Options.bgcolor;
-      this.renderer = new THREE.WebGLRenderer({alpha: true,  antialias: true});
+      this.renderer = new THREE.WebGLRenderer({ alpha: true,  antialias: false });
       this.renderer.setSize(this.width, this.height);
       this.renderer.setClearColor(bgcolor || 0, (bgcolor === null) ? 0 : 1);
       this.container.appendChild(this.renderer.domElement);
@@ -999,6 +1000,7 @@
     constructor: Q3D.DEMBlock,
 
     build: function (layer) {
+      console.log(' in here ');
       var PlaneGeometry = (Q3D.Options.exportMode) ? THREE.PlaneGeometry : THREE.PlaneBufferGeometry,
           geom = new PlaneGeometry(this.plane.width, this.plane.height, this.width - 1, this.height - 1),
           dem_data = this.data;
@@ -1031,6 +1033,8 @@
     },
 
     buildSides: function (layer, material, z0) {
+      console.log(' in here ---');
+
       var PlaneGeometry = (Q3D.Options.exportMode) ? THREE.PlaneGeometry : THREE.PlaneBufferGeometry;
       var band_width = -z0 * 2, dem_data = this.data, w = this.width, h = this.height, HALF_PI = Math.PI / 2;
       var i, mesh;
@@ -1101,12 +1105,15 @@
 
       // bottom
       if (Q3D.Options.exportMode) {
-        var geom = new THREE.PlaneGeometry(this.plane.width, this.plane.height, w - 1, h - 1);
+        // var geom = new THREE.PlaneGeometry(this.plane.width, this.plane.height, w - 1, h - 1);
       }
       else {
-        var geom = new THREE.PlaneBufferGeometry(this.plane.width, this.plane.height, 1, 1);
+        //var geom = new THREE.PlaneBufferGeometry(this.plane.width, this.plane.height, 1, 1);
       }
-      mesh = new THREE.Mesh(geom, material);
+
+      var geom = this.geom;
+
+      // mesh = new THREE.Mesh(geom, material);
       mesh.position.z = z0;
       mesh.rotateOnAxis(Q3D.uv.i, Math.PI);
       layer.addObject(mesh, false);
@@ -1119,6 +1126,7 @@
     },
 
     contains: function (x, y) {
+      console.log(' in here ++++');
       var xmin = this.plane.offsetX - this.plane.width / 2,
           xmax = this.plane.offsetX + this.plane.width / 2,
           ymin = this.plane.offsetY - this.plane.height / 2,
@@ -1149,6 +1157,8 @@
 
       // set UVs
       Q3D.Utils.setGeometryUVs(geom, layer.project.width, layer.project.height);
+      // var loader = new BufferGeometryLoader();
+      // var geom = loader.parse( this.geom );
 
       var mesh = new THREE.Mesh(geom, layer.materials[this.m].m);
       if (this.plane.offsetX != 0) mesh.position.x = this.plane.offsetX;
@@ -1345,6 +1355,7 @@
     var BlockClass = (clipped) ? Q3D.ClippedDEMBlock : Q3D.DEMBlock,
         block = new BlockClass(params);
     this.blocks.push(block);
+    console.log(block, 'dfdf');
     return block;
   };
 
@@ -1422,6 +1433,7 @@
         m.push(obj);
       });
     });
+    console.log(m);
     return m;
   };
 

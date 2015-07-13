@@ -66,4 +66,17 @@ body {
 #webgl {
     width: 100%;
     height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.gv-wrapper {
+    z-index: 100;
+    position: relative;
+}
+
+.gv-header {
+      text-shadow: 0 0 12px #FFF;
 }

@@ -16,8 +16,9 @@ var isDebug = url.getParameterByName('debug');
 function boot(el) {
 	el.innerHTML = html;
 
-	var container = document.getElementById("webgl");
-	container.style.height = '80vh';
+	var container = document.getElementById('webgl');
+	container.style.height = '100vh';
+	container.style.width = '100%';
 	Q3D.Options.bgcolor = '#ffffff';
 	var app = Q3D.application;
 	app.init(container);
@@ -27,7 +28,10 @@ function boot(el) {
 	app.addEventListeners();
 	app.start();
 
+	// Fix sizing
+	setTimeout(app.eventListener.resize.bind(app), 0);
 	window.app = app;
+
 
 	var meshMount = app.scene.children[3].children[0];
 	var gpsLines = app.scene.children[4].children[0];
@@ -38,18 +42,20 @@ function boot(el) {
 	gpsLines.material.linewidth = 3;
 
 	app.scene.rotation.z = (Math.PI/180) * 90;
-	app.scene.scale.z = 0.01;
+	// app.scene.scale.z = 0.01;
 	meshMount.material.opacity = 1;
 	meshMount.material.transparent = true;
+
+
 	// Extend clip
 	app.camera.far = 2000;
 
 	var anim = Timeline.anim;
 
-	anim("app.camera.position",app.camera.position).to({"x":10},0).to({"x":10},1.6342105263157896).to({"x":74},2.92078947368421).to({"x":74},4.743536585365854, Timeline.Easing.Cubic.EaseInOut).to({"x":-33},3.0029268292682936, Timeline.Easing.Cubic.EaseInOut);
-anim("app.camera.position",app.camera.position).to({"y":0},0).to({"y":0},1.57).to({"y":-47},3, Timeline.Easing.Cubic.EaseInOut).to({"y":-47},4.715365853658536).to({"y":37},3.121463414634146);
-anim("app.camera.position",app.camera.position).to({"z":160},0).to({"z":160},1.59).to({"z":27},3.05, Timeline.Easing.Cubic.EaseInOut).to({"z":27},0.802631578947369).to({"z":27},3.8690757381258027).to({"z":43},3.279512195121951);
-anim("meshMount.material",meshMount.material).to({"opacity":1},0).to({"opacity":0},1.1752941176470588).to({"opacity":0},6.448991596638654, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},1.7532752613240419, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},0.2947919655667146, Timeline.Easing.Cubic.EaseOut);
+anim("app.camera.position",app.camera.position).to({"x":0.1},0).to({"x":0.1},1.6342105263157896).to({"x":74},2.92078947368421, Timeline.Easing.Cubic.EaseInOut).to({"x":74},3.4450000000000003, Timeline.Easing.Cubic.EaseInOut).to({"x":30},3.26, Timeline.Easing.Cubic.EaseInOut);
+anim("app.camera.position",app.camera.position).to({"y":0},0).to({"y":0},2.515609756097561).to({"y":-47},2.0543902439024393, Timeline.Easing.Cubic.EaseInOut).to({"y":-47},3.469999999999999).to({"y":50},3.214736842105264);
+anim("app.camera.position",app.camera.position).to({"z":160},0).to({"z":160},1.59).to({"z":27},3.05, Timeline.Easing.Cubic.EaseInOut).to({"z":27},3.32829268292683).to({"z":60},3.29170731707317);
+anim("meshMount.material",meshMount.material).to({"opacity":1},0).to({"opacity":0},1.1752941176470588).to({"opacity":0},6.448991596638654, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},1.8128571428571423, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},0.2352100840336142, Timeline.Easing.Cubic.EaseOut);
 anim("contourLines.material",contourLines.material).to({"opacity":0},0).to({"opacity":0},0.77).to({"opacity":1},0.9550000000000001, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},6.169285714285714).to({"opacity":0.2},1.4399999999999995);
 anim("app.scene.scale",app.scene.scale).to({"z":0.1},0).to({"z":0.1},5.066470588235294).to({"z":1},2.302941176470588, Timeline.Easing.Quadratic.EaseInOut).to({"z":1},0.3834453781512597);
 anim("gpsLines.material",gpsLines.material).to({"opacity":0},0).to({"opacity":0},1.71).to({"opacity":1},4.23, Timeline.Easing.Cubic.EaseOut);
