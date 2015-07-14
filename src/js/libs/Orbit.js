@@ -502,7 +502,7 @@ module.exports = function(THREE) {
 		mouseUpPoint.set( event.clientX, event.clientY );
 		if ( event.button == 0 && mouseDownPoint.equals( mouseUpPoint ) ) {
 
-			Q3D.application.canvasClicked( event );
+			// Q3D.application.canvasClicked( event );
 
 		}
 

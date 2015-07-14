@@ -303,11 +303,11 @@
     },
 
     addEventListeners: function () {
-      window.addEventListener("keydown", this.eventListener.keydown.bind(this));
+      //window.addEventListener("keydown", this.eventListener.keydown.bind(this));
       window.addEventListener("resize", this.eventListener.resize.bind(this));
 
-      var e = Q3D.$("closebtn");
-      if (e) e.addEventListener("click", this.closePopup.bind(this));
+      // var e = Q3D.$("closebtn");
+      // if (e) e.addEventListener("click", this.closePopup.bind(this));
     },
 
     eventListener: {

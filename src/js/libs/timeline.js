@@ -1226,19 +1226,13 @@
     props.forEach(function(prop) {
         var target = prop.id.substr(0, prop.id.lastIndexOf('.'));
         target = target.substr(target.indexOf('.') + 1);
-        if (target in out) {
-          out[target].values[prop.propertyName] = prop.target[prop.propertyName];
-        } else {
-          out[target] = {
-            'values': {},
-            'delay': 0,
-				    'duration': 2000
-          }
-          out[target].values[prop.propertyName] = prop.target[prop.propertyName];
+        if (!out.hasOwnProperty(target)) {
+          out[target] = {}
         }
+        out[target][prop.propertyName] = prop.target[prop.propertyName];
     })
 
-    console.log(JSON.stringify(out, null, '  '));
+    console.log(JSON.stringify(out));
     // for (var i = 0; i < this.tracks.length; i++) {
     //   var track = this.tracks[i];
     //   if (track.type == "object") continue;
@@ -1250,8 +1244,6 @@
     // }
 
     prompt("Copy this:", code);
-
-    console.log(code);
   }
 
   Timeline.prototype.save = function () {

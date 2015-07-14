@@ -70,13 +70,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: -1;
 }
 
-.gv-wrapper {
-    z-index: 100;
-    position: relative;
-}
 
 .gv-header {
       text-shadow: 0 0 12px #FFF;
+}
+
+
+// Fix dat.gui bug
+.dg.a.has-save ul {
+    margin-top: 0;
+}
+.dg.a.has-save > ul {
+  margin-top: 27px;
 }
