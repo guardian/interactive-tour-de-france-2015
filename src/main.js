@@ -5,6 +5,7 @@ var Q3D = require('./js/libs/Qgis2threejs.js');
 var project = require('./data/qgis3d-data');
 var Stats = require('./js/libs/stats.js');
 var THREE = require('three');
+var access = require('safe-access');
 
 var isDebug = url.getParameterByName('debug');
 
@@ -32,19 +33,19 @@ function boot(el) {
 	setTimeout(app.eventListener.resize.bind(app), 0);
 	window.app = app;
 
+	app.ref = {};
+	app.ref['meshMount'] = app.scene.children[3].children[0];
+	app.ref['gpsLines'] =  app.scene.children[4].children[0];
+	app.ref['contourLines'] = app.scene.children[5].children[0];
 
-	var meshMount = app.scene.children[3].children[0];
-	var gpsLines = app.scene.children[4].children[0];
-	var contourLines = app.scene.children[5].children[0];
-
-	gpsLines.material.opacity = 0;
-	gpsLines.material.transparent = true;
-	gpsLines.material.linewidth = 3;
+	app.ref.gpsLines.material.opacity = 0;
+	app.ref.gpsLines.material.transparent = true;
+	app.ref.gpsLines.material.linewidth = 3;
 
 	app.scene.rotation.z = (Math.PI/180) * 90;
 	// app.scene.scale.z = 0.01;
-	meshMount.material.opacity = 1;
-	meshMount.material.transparent = true;
+	app.ref.meshMount.material.opacity = 1;
+	app.ref.meshMount.material.transparent = true;
 
 
 	// Extend clip
@@ -60,10 +61,10 @@ function boot(el) {
 		anim("app.camera.position",app.camera.position).to({"x":0.1},0).to({"x":0.1},1.6342105263157896).to({"x":74},2.92078947368421, Timeline.Easing.Cubic.EaseInOut).to({"x":74},3.4450000000000003, Timeline.Easing.Cubic.EaseInOut).to({"x":30},3.26, Timeline.Easing.Cubic.EaseInOut);
 		anim("app.camera.position",app.camera.position).to({"y":0},0).to({"y":0},2.515609756097561).to({"y":-47},2.0543902439024393, Timeline.Easing.Cubic.EaseInOut).to({"y":-47},3.469999999999999).to({"y":50},3.214736842105264);
 		anim("app.camera.position",app.camera.position).to({"z":160},0).to({"z":160},1.59).to({"z":27},3.05, Timeline.Easing.Cubic.EaseInOut).to({"z":27},3.32829268292683).to({"z":60},3.29170731707317);
-		anim("meshMount.material",meshMount.material).to({"opacity":1},0).to({"opacity":0},1.1752941176470588).to({"opacity":0},6.448991596638654, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},1.8128571428571423, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},0.2352100840336142, Timeline.Easing.Cubic.EaseOut);
-		anim("contourLines.material",contourLines.material).to({"opacity":0},0).to({"opacity":0},0.77).to({"opacity":1},0.9550000000000001, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},6.169285714285714).to({"opacity":0.2},1.4399999999999995);
+		anim("app.ref.meshMount.material",app.ref.meshMount.material).to({"opacity":1},0).to({"opacity":0},1.1752941176470588).to({"opacity":0},6.448991596638654, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},1.8128571428571423, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},0.2352100840336142, Timeline.Easing.Cubic.EaseOut);
+		anim("app.ref.contourLines.material",app.ref.contourLines.material).to({"opacity":0},0).to({"opacity":0},0.77).to({"opacity":1},0.9550000000000001, Timeline.Easing.Cubic.EaseOut).to({"opacity":1},6.169285714285714).to({"opacity":0.2},1.4399999999999995);
 		anim("app.scene.scale",app.scene.scale).to({"z":0.1},0).to({"z":0.1},5.066470588235294).to({"z":1},2.302941176470588, Timeline.Easing.Quadratic.EaseInOut).to({"z":1},0.3834453781512597);
-		anim("gpsLines.material",gpsLines.material).to({"opacity":0},0).to({"opacity":0},1.71).to({"opacity":1},4.23, Timeline.Easing.Cubic.EaseOut);
+		anim("app.ref.gpsLines.material",app.ref.gpsLines.material).to({"opacity":0},0).to({"opacity":0},1.71).to({"opacity":1},4.23, Timeline.Easing.Cubic.EaseOut);
 		Timeline.getGlobalInstance().loop(-1); //loop forever
 
 	}
@@ -76,60 +77,170 @@ function boot(el) {
 		var tween2 = new TWEEN.Tween(app.scene.position).to({"y": 10}, 2000).delay(1000);
 
 
-		var ch1Anim = [
-			{
-				'target': app.scene.position,
-				'values': { 'x': 0 },
-				'delay': 0,
-				'duration': 2000
-			},
-			{
-				'target': app.scene.position,
-				'values': { 'y': 0 },
-				'delay': 1200,
-				'duration': 2000
-			}
-		];
+		var ch1Anim = {
+  "scene.position": {
+    "values": {
+      "x": 9.431284950488404
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "camera.position": {
+    "values": {
+      "x": 10,
+      "y": 0,
+      "z": 160
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.meshMount.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.contourLines.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "scene.scale": {
+    "values": {
+      "z": 0.1
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.gpsLines.material": {
+    "values": {
+      "opacity": 0
+    },
+    "delay": 0,
+    "duration": 2000
+  }
+};
+
+		var ch2Anim = {
+  "scene.position": {
+    "values": {
+      "x": 10
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "camera.position": {
+    "values": {
+      "x": 74,
+      "y": -47,
+      "z": 27.003794383269366
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.meshMount.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.contourLines.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "scene.scale": {
+    "values": {
+      "z": 0.1
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.gpsLines.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  }
+};
 
 
-		var ch2Anim = [
-			{
-				'target': app.scene.position,
-				'values': { 'x': -20 },
-				'delay': 0,
-				'duration': 2000
-			},
-			{
-				'target': app.scene.position,
-				'values': { 'y': -10 },
-				'delay': 300,
-				'duration': 2000
-			}
-		];
+var ch3Anim = {
+  "scene.position": {
+    "values": {
+      "x": 10
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "camera.position": {
+    "values": {
+      "x": 73.99304293944945,
+      "y": -45.88738196336902,
+      "z": 27.50039339103068
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.meshMount.material": {
+    "values": {
+      "opacity": 0.5828366736653596
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.contourLines.material": {
+    "values": {
+      "opacity": 0.895391705069124
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "scene.scale": {
+    "values": {
+      "z": 1
+    },
+    "delay": 0,
+    "duration": 2000
+  },
+  "ref.gpsLines.material": {
+    "values": {
+      "opacity": null
+    },
+    "delay": 0,
+    "duration": 2000
+  }
+};
 
-		var ch3Anim = [
-			{
-				'target': app.scene.position,
-				'values': { 'x': -60 },
-				'delay': 0,
-				'duration': 2000
-			},
-			{
-				'target': app.scene.position,
-				'values': { 'y': -70 },
-				'delay': 300,
-				'duration': 2000
-			}
-		];
+
+
+
 
 		function buildTweens(chapter) {
-			return chapter.map(function(animData) {
-				var tween = new TWEEN.Tween(animData.target);
-				tween.to(animData.values, animData.duration);
+
+			return Object.keys(chapter).map(function( key ) {
+				var tween = new TWEEN.Tween( access(app, key) );
+				tween.to(chapter[key].values, chapter[key].duration)
 				tween.easing( TWEEN.Easing.Quintic.InOut );
-				if (animData.delay) { tween.delay(animData.delay); }
 				return tween;
 			});
+
+
+
+			// return chapter.map(function(animData) {
+			// 	var tween = new TWEEN.Tween(animData.target);
+			// 	tween.to(animData.values, animData.duration);
+			// 	tween.easing( TWEEN.Easing.Quintic.InOut );
+			// 	if (animData.delay) { tween.delay(animData.delay); }
+			// 	return tween;
+			// });
 		}
 
 
@@ -149,11 +260,20 @@ function boot(el) {
 		}
 
 		ChapterTweens.prototype.jumpToEnd = function() {
-			this._chapterData.forEach(function(item) {
-				Object.keys(item.values).forEach(function(key) {
-					item.target[key] = item.values[key];
-				});
-			});
+			// this._chapterData.forEach(function(item) {
+			// 	Object.keys(item.values).forEach(function(key) {
+			// 		item.target[key] = item.values[key];
+			// 	});
+			// });
+
+			Object.keys(this._chapterData).forEach(function( key, index, arr ) {
+
+				Object.keys(this._chapterData[key].values).forEach(function( prop ) {
+					// console.log(app[key], app, key, app, this._chapterData[key].values[prop])
+					var p = access(app, key);
+					p[prop] = this._chapterData[key].values[prop];
+				}.bind(this));
+			}.bind(this));
 		}
 
 
@@ -164,7 +284,7 @@ function boot(el) {
 
 		Scene.prototype.jumpToChapter = function(chapterNumber) {
 			this._chapterTweens[chapterNumber].jumpToEnd();
-			this._currentChapte = chapterNumber;
+			this._currentChapter = chapterNumber;
 		}
 
 		Scene.prototype.nextChapter = function() {

@@ -1216,7 +1216,42 @@
       code += ';\n';
     }
 
+    var props = this.tracks.filter(function(track) {
+      return track.type === 'property';
+    });
+
+    var out = {};
+
+
+    props.forEach(function(prop) {
+        var target = prop.id.substr(0, prop.id.lastIndexOf('.'));
+        target = target.substr(target.indexOf('.') + 1);
+        if (target in out) {
+          out[target].values[prop.propertyName] = prop.target[prop.propertyName];
+        } else {
+          out[target] = {
+            'values': {},
+            'delay': 0,
+				    'duration': 2000
+          }
+          out[target].values[prop.propertyName] = prop.target[prop.propertyName];
+        }
+    })
+
+    console.log(JSON.stringify(out, null, '  '));
+    // for (var i = 0; i < this.tracks.length; i++) {
+    //   var track = this.tracks[i];
+    //   if (track.type == "object") continue;
+    //   if (track.anims.length == 0) continue;
+    //   code += '{"' + track.parent.name + '" :';
+    //   for (var j = 0; j < track.anims.length; j++) {
+
+    //   }
+    // }
+
     prompt("Copy this:", code);
+
+    console.log(code);
   }
 
   Timeline.prototype.save = function () {
@@ -1234,6 +1269,8 @@
       }
       data[track.id] = keysData;
     }
+
+
 
     localStorage["timeline.js.settings.canvasHeight"] = this.canvasHeight;
     localStorage["timeline.js.settings.timeScale"] = this.timeScale;

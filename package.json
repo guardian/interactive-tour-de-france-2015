@@ -26,6 +26,7 @@
     "json-loader": "^0.5.2",
     "ractive": "^0.7.3",
     "raw-loader": "^0.5.1",
+    "safe-access": "^0.1.0",
     "three": "^0.71.0"
   }
 }
