@@ -11,6 +11,7 @@
   "dependencies": {
     "autoprefixer-core": "^5.2.1",
     "csswring": "^3.0.5",
+    "es6-promise": "^2.3.0",
     "grunt": "^0.4.5",
     "grunt-aws": "^0.5.4",
     "grunt-contrib-clean": "~0.6.0",
@@ -22,6 +23,7 @@
     "grunt-sass": "^1.0.0",
     "grunt-text-replace": "^0.4.0",
     "grunt-webpack": "^1.0.10",
+    "hammerjs": "^2.0.4",
     "jit-grunt": "^0.9.1",
     "json-loader": "^0.5.2",
     "ractive": "^0.7.3",

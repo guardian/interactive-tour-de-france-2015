@@ -22,9 +22,18 @@ body {
     margin: 0;
 }
 
+.gv-container {
+    overflow: hidden;
+}
+
 // Note: Access images using absolute '/imgs/' paths
 .gv-wrapper {
     margin: 0 auto;
+    height: 100vh;
+    position: relative;
+
+    // Pass through pointer events to WebgGL
+    pointer-events: none;
 
     // Breakpoints
     @include mq(tablet) {
@@ -51,17 +60,6 @@ body {
     margin: 0;
 }
 
-.gv-guardian-logo {
-    float: right;
-    width: 80px;
-}
-
-.gv-table {
-    margin: 10px auto;
-    max-width: 500px;
-    @include fs-textSans(3);
-}
-
 
 #webgl {
     width: 100%;
@@ -70,12 +68,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: -1;
+    z-index: 0;
 }
 
 
 .gv-header {
-      text-shadow: 0 0 12px #FFF;
+    text-shadow: 0 0 12px #FFF;
+    display: none;
 }
 
 
@@ -85,4 +84,57 @@ body {
 }
 .dg.a.has-save > ul {
   margin-top: 27px;
+}
+
+
+
+.gv-modal {
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 5px 8px;
+  border-radius: 2px;
+  width: 40%;
+  max-width: 380px;
+  font-size: 12px;
+  font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  opacity: 1;
+
+  position: absolute;
+  bottom: 2%;
+  left: 3%;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border: solid 3px rgba(255, 255, 255, 1);
+    width: calc(100% + 2px);
+    min-height: calc(100% + 2px);
+    z-index: 10;
+    border-radius: 4px;
+  }
+
+  > p {
+      margin-top: 0;
+  }
+}
+
+.gv-modal-img {
+    width: 100%;
+}
+
+
+.gv-arrow {
+    width: 1em;
+    height: 1em;
+}
+
+.gv-arrow-next {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9I…ItOS44NSAyMi0yMi05Ljg1LTIyLTIyLTIyIiBmaWxsPSIjNzA3MDcwIi8+PC9nPjwvc3ZnPg==");
+}
+
+.gv-arrow-previous {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9I…AyMi05Ljg1IDIyLTIyLTkuODUtMjItMjItMjIiIGZpbGw9IiM3MDcwNzAiLz48L2c+PC9zdmc+");
 }
