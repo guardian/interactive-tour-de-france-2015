@@ -2,13 +2,14 @@ var Hammer = require('hammerjs');
 var TWEEN = require('tween.js');
 var access = require('safe-access');
 var Chapter = require('./chapter.js');
-
-
+var Pagination = require('./pagination.js');
 
 var Scene = function(el, modalEl, animChapters, app) {
 	this.el = el;
 	this.modalEl = modalEl;
 	this.currentChapter = 0;
+	this.pagination = new Pagination(animChapters.length);
+	this.el.appendChild(this.pagination.el);
 
 	this.chapterTweens = animChapters.map(function(item) {
 		return new Chapter(item, app);
@@ -41,8 +42,6 @@ Scene.prototype.jumpToChapter = function(chapterNumber) {
 	this.currentChapter = chapterNumber;
 }
 
-var bob = 'dd';
-
 Scene.prototype.nextChapter = function() {
 	if ( this.currentChapter + 1 >= this.chapterTweens.length ) {
 		return;
@@ -59,6 +58,7 @@ Scene.prototype.nextChapter = function() {
 	this.chapterTweens[this.currentChapter].stop();
 	this.currentChapter += 1;
 	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
+	this.pagination.goTo(this.currentChapter);
 }
 
 Scene.prototype.previousChapter = function() {
@@ -76,6 +76,7 @@ Scene.prototype.previousChapter = function() {
 	this.chapterTweens[this.currentChapter].stop();
 	this.currentChapter -= 1;
 	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
+	this.pagination.goTo(this.currentChapter);
 }
 
 Scene.prototype.showModal = function() {
@@ -90,6 +91,7 @@ Scene.prototype.showModal = function() {
 Scene.prototype.start = function() {
 	this.animate();
 	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
+	this.pagination.goTo(0);
 
 }
 

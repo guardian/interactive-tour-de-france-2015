@@ -100,7 +100,7 @@ body {
   opacity: 1;
 
   position: absolute;
-  bottom: 2%;
+  bottom: 6%;
   left: 3%;
 
   &:before {
@@ -137,4 +137,25 @@ body {
 
 .gv-arrow-previous {
     background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9I…AyMi05Ljg1IDIyLTIyLTkuODUtMjItMjItMjIiIGZpbGw9IiM3MDcwNzAiLz48L2c+PC9zdmc+");
+}
+
+
+.gv-pagination {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gv-pagination-dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0,0,0,0.2);
+  float: left;
+  margin: 0 7px;
+  border-radius: 50%;
+
+  &.active {
+      background-color: rgba(0,0,0,0.7);
+  }
 }
