@@ -182,14 +182,18 @@
       }
 
       if (container.clientWidth >= 0 && container.clientHeight >= 0) {
+        this.initial_height = container.clientHeight;
         this.width = container.clientWidth;
         this.height = container.clientHeight;
         this._fullWindow = false;
       } else {
+        this.initial_height = window.innerHeight;
         this.width = window.innerWidth;
         this.height = window.innerHeight;
         this._fullWindow = true;
       }
+
+
 
       // WebGLRenderer
       var bgcolor = Q3D.Options.bgcolor;
@@ -340,8 +344,12 @@
       this.width = width;
       this.height = height;
       this.camera.aspect = width / height;
+
+      this.camera.fov = ( 360 / Math.PI ) * Math.atan( this.tanFOV * ( window.innerHeight / this.initial_height ) );
+
       this.camera.updateProjectionMatrix();
       this.renderer.setSize(width, height);
+
     },
 
     buildDefaultLights: function (parent) {
@@ -373,6 +381,10 @@
       this.camera = new THREE.PerspectiveCamera(45, this.width / this.height, 0.1, 1000);
       // this.camera = new THREE.CombinedCamera(this.width, this.height, 45, 0.1, 1000, 0.1, 1000);
       this.camera.position.set(0, -100, 100);
+
+      var aspect = this.width / this.height;
+      this.camera.fov = 50 - (aspect * 7);
+      this.tanFOV = Math.tan( ( ( Math.PI / 180 ) * this.camera.fov / 2 ) );
     },
 
     currentViewUrl: function () {
