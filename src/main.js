@@ -4,7 +4,6 @@ var modalHTML = require('./html/modal.html');
 //var Timeline = require('./js/libs/timeline.js');
 var Q3D = require('./js/libs/Qgis2threejs.js');
 var project = require('./data/qgis3d-data');
-var chapterAnimJSON = require('./data/chapterAnims.json');
 var datView = require('./js/datView.js')
 var _ = require('underscore');
 
@@ -34,7 +33,6 @@ function boot(el) {
 	window.app = app;
 
 	app.ref = {};
-	console.log(app.scene.children[6].children[0]);
 	app.ref['meshMount'] = app.scene.children[3].children[0];
 	app.ref['bends'] =  app.scene.children[4].children[0]; // turns
 	app.ref['contourLines'] =  app.scene.children[6].children[0]; // Contour
@@ -61,21 +59,9 @@ function boot(el) {
 	// Timeline.getGlobalInstance().loop(-1); //loop forever
 
 
-	var animChapters = _.map(chapterAnimJSON.remembered, function(item, key) {
-		var params = {};
-		params['camera.position'] = item[0];
-		params['camera.rotation'] = item[1];
-		params['ref.meshMount.material'] = item[2];
-		params['ref.contourLines.material'] = item[3];
-		params['ref.gpsLines.material'] = item[4];
-		params['scene.scale'] = item[5];
-		params['ref.bends.material'] = item[6];
-		return params;
-	});
-
-
+	var chapters = require('./data/chapterData.js');
 	var Scene = require('./js/scene.js');
-	var scene = new Scene(el, modalEl, animChapters, app);
+	var scene = new Scene(el, modalEl, chapters, app);
 	console.log(scene);
 	scene.start();
 

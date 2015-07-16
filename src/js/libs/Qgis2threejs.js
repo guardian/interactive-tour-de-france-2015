@@ -1355,7 +1355,6 @@
     var BlockClass = (clipped) ? Q3D.ClippedDEMBlock : Q3D.DEMBlock,
         block = new BlockClass(params);
     this.blocks.push(block);
-    console.log(block, 'dfdf');
     return block;
   };
 

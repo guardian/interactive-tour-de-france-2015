@@ -2,6 +2,10 @@ var DAT = require('dat-gui');
 
 function init(app, chapterAnimJSON) {
 	var gui = new DAT.GUI({ load: chapterAnimJSON });
+	var duration = {duration: 0};
+	gui.remember(duration);
+	gui.add(duration, 'duration').min(0).max(60000);
+
 	gui.remember(app.camera.position);
 	gui.remember(app.camera.rotation);
 

@@ -4,18 +4,33 @@ var access = require('safe-access');
 var Chapter = require('./chapter.js');
 var Pagination = require('./pagination.js');
 
-var Scene = function(el, modalEl, animChapters, app) {
+var Scene = function(el, modalEl, chapters, app) {
 	this.el = el;
 	this.modalEl = modalEl;
 	this.currentChapter = 0;
-	this.pagination = new Pagination(animChapters.length);
+	this.pagination = new Pagination(chapters.length);
 	this.el.appendChild(this.pagination.el);
 
-	this.chapterTweens = animChapters.map(function(item) {
+	this.chapters = chapters.map(function(item) {
 		return new Chapter(item, app);
 	});
 
 
+	// Animations
+	this.MODAL_FADE_TIME = 400;
+	this.modalFadeOut = new TWEEN.Tween(this.modalEl.style);
+	this.modalFadeOut.to({ opacity: 0 }, this.MODAL_FADE_TIME)
+	.easing( TWEEN.Easing.Quartic.Out )
+	.onComplete(this.setModalHTML.bind(this));
+
+	this.modalFadeIn = new TWEEN.Tween(this.modalEl.style);
+	this.modalFadeIn.to({ opacity: 1 }, this.MODAL_FADE_TIME)
+	.easing( TWEEN.Easing.Quartic.Out );
+
+	this.modalFadeOut.chain(this.modalFadeIn);
+
+
+	// Interactions
 	this.touch = new Hammer(el, {});
 	this.touch.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	this.touch.on('pan', function(ev) {
@@ -38,65 +53,59 @@ var Scene = function(el, modalEl, animChapters, app) {
 }
 
 Scene.prototype.jumpToChapter = function(chapterNumber) {
-	this.chapterTweens[chapterNumber].jumpToEnd();
+	this.chapters[chapterNumber].jumpToEnd();
 	this.currentChapter = chapterNumber;
 }
 
 Scene.prototype.nextChapter = function() {
-	if ( this.currentChapter + 1 >= this.chapterTweens.length ) {
+	if ( this.currentChapter + 1 >= this.chapters.length ) {
 		return;
 	}
-
-	// Fade modal
-	var modalEl = this.modalEl;
-	var tween = new TWEEN.Tween({ x:  1});
-	tween.to({ x: 0 }, 500)
-	.easing( TWEEN.Easing.Quartic.Out )
-	.onUpdate(function() { modalEl.style.opacity = this.x; })
-	.start();
-
-	this.chapterTweens[this.currentChapter].stop();
-	this.currentChapter += 1;
-	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
-	this.pagination.goTo(this.currentChapter);
+	this.transitionChapter(1);
 }
 
 Scene.prototype.previousChapter = function() {
 	if ( this.currentChapter - 1 < 0 ) {
 		return;
 	}
+	this.transitionChapter(-1);
+}
 
-	var modalEl = this.modalEl;
-	var tween = new TWEEN.Tween({ x:  1})
-	tween.to({ x: 0 }, 200)
-	.easing( TWEEN.Easing.Quartic.In )
-	.onUpdate(function() { modalEl.style.opacity = this.x; })
-	.start();
+Scene.prototype.setModalHTML = function() {
+	var chapter = this.chapters[this.currentChapter];
+	this.modalEl.innerHTML = chapter.html
+}
 
-	this.chapterTweens[this.currentChapter].stop();
-	this.currentChapter -= 1;
-	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
+
+Scene.prototype.transitionChapter = function(val) {
+	this.chapters[this.currentChapter].stop();
+	this.currentChapter += val;
+	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(this.currentChapter);
+
+	this.modalFadeOut.stop();
+	this.modalFadeIn.stop();
+
+	// Sync show to end of animation tweens
+	var duration = this.chapters[this.currentChapter].duration;
+	var delay = duration - this.MODAL_FADE_TIME * 2;
+	delay = (delay < 0) ? 0 : delay;
+
+	this.modalFadeIn.delay(delay);
+	this.modalFadeOut.start();
 }
 
-Scene.prototype.showModal = function() {
-	var modalEl = this.modalEl;
-	var tween = new TWEEN.Tween({ x:  0})
-	tween.to({ x: 1 }, 200)
-	.easing( TWEEN.Easing.Quartic.In )
-	.onUpdate(function() { modalEl.style.opacity = this.x; })
-	.start();
-}
+
 
 Scene.prototype.start = function() {
 	this.animate();
-	this.chapterTweens[this.currentChapter].start(this.showModal.bind(this));
+	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(0);
 
 }
 
 Scene.prototype.stop = function() {
-	this.chapterTweens[this.currentChapter].stop();
+	this.chapters[this.currentChapter].stop();
 }
 
 

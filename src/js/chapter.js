@@ -2,19 +2,21 @@ require('es6-promise').polyfill();
 var access = require('safe-access');
 var TWEEN = require('tween.js');
 
-function buildTweens(chapter, app, tweenSpeed) {
-	return Object.keys(chapter).map(function( key ) {
+function buildTweens(anim, app) {
+	return Object.keys(anim.targets).map(function( key ) {
 		var tween = new TWEEN.Tween( access(app, key) );
-		tween.to(chapter[key], tweenSpeed)
+		tween.to(anim.targets[key], anim.duration)
 		tween.easing( TWEEN.Easing.Quintic.InOut );
 		return tween;
 	});
 }
 
-function Chapter(data, app, tweenSpeed) {
+function Chapter(data, app) {
 	this._chapterData = data;
-	this._tweens = buildTweens(this._chapterData, app, tweenSpeed);
-	this.tweenSpeed = tweenSpeed || 4000;
+	this.html = this._chapterData.html;
+	this.duration = this._chapterData.anim.duration;
+	this._tweens = buildTweens(this._chapterData.anim, app);
+	console.log(this.html);
 }
 
 Chapter.prototype.stop = function(callback) {
@@ -32,9 +34,9 @@ Chapter.prototype.start = function(callback) {
 		});
 	});
 
-	Promise.all(anims).then(function() {
-		if (callback) { callback(); }
-	});
+	// Promise.all(anims).then(function() {
+	// 	if (callback) { callback(); }
+	// });
 }
 
 Chapter.prototype.jumpToEnd = function() {
