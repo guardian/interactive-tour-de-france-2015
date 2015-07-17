@@ -16,7 +16,6 @@ function Chapter(data, app) {
 	this.html = this._chapterData.html;
 	this.duration = this._chapterData.anim.duration;
 	this._tweens = buildTweens(this._chapterData.anim, app);
-	console.log(this.html);
 }
 
 Chapter.prototype.stop = function(callback) {

@@ -1,7 +1,10 @@
-  var THREE = require('three')
-  //var OrbitControls = require('three-orbit-controls')(THREE)
-  var OrbitControls = require('./Orbit.js')(THREE)
-  var BufferGeometryLoader = require('./BufferGeometryLoader.js')(THREE)
+var THREE = require('three')
+//var OrbitControls = require('three-orbit-controls')(THREE)
+var OrbitControls = require('./Orbit.js')(THREE)
+var BufferGeometryLoader = require('./BufferGeometryLoader.js')(THREE);
+require('./SkyShader.js')(THREE);
+
+  window.THREE = THREE;
 
   "use strict";
 
@@ -27,29 +30,32 @@
     jsonLoader: "JSONLoader"  // JSONLoader or ObjectLoader
   };
 
-  // 	Q3D.Controls = {
 
-	//   type: "OrbitControls",
+  if (location.search.indexOf("debug") > 0) {
+  	Q3D.Controls = {
 
-	//   keyList: [
-	//     // "* Mouse",
-	//     // "Left button + Move : Orbit",
-	//     // "Middle button + Move : Zoom",
-	//     // "Right button + Move : Pan",
-	//     // "* Keys",
-	//     // "Arrow keys : Move Horizontally",
-	//     // "Shift + Arrow keys : Orbit",
-	//     // "Ctrl + Arrow keys : Rotate",
-	//     // "Shift + Ctrl + Up / Down : Zoom In / Out",
-	//     // "R : Auto Rotate On / Off",
-	//     // "U : Switch Upside Down"
-	//   ],
+  	  type: "OrbitControls",
 
-	//   create: function (camera, domElement) {
-  //     return new OrbitControls(camera, domElement);
-	//   }
+  	  keyList: [
+  	    // "* Mouse",
+  	    // "Left button + Move : Orbit",
+  	    // "Middle button + Move : Zoom",
+  	    // "Right button + Move : Pan",
+  	    // "* Keys",
+  	    // "Arrow keys : Move Horizontally",
+  	    // "Shift + Arrow keys : Orbit",
+  	    // "Ctrl + Arrow keys : Rotate",
+  	    // "Shift + Ctrl + Up / Down : Zoom In / Out",
+  	    // "R : Auto Rotate On / Off",
+  	    // "U : Switch Upside Down"
+  	  ],
 
-	// };
+  	  create: function (camera, domElement) {
+        return new OrbitControls(camera, domElement);
+  	  }
+
+  	};
+  }
 
   Q3D.LayerType = {DEM: "dem", Point: "point", Line: "line", Polygon: "polygon"};
   Q3D.MaterialType = {MeshLambert: 0, MeshPhong: 1, LineBasic: 2, Sprite: 3, Unknown: -1};
@@ -201,9 +207,11 @@
       this.renderer.setSize(this.width, this.height);
       this.renderer.setClearColor(bgcolor || 0, (bgcolor === null) ? 0 : 1);
       this.container.appendChild(this.renderer.domElement);
+      //this.renderer.setPixelRatio( window.devicePixelRatio );
 
       // scene
       this.scene = new THREE.Scene();
+      this.scene.fog = new THREE.Fog('#f00', 0.0025 );
 
       this._queryableObjects = [];
       this.queryObjNeedsUpdate = true;
@@ -946,6 +954,7 @@
       };
 
       // background option
+      console.log(fill_background);
       if (!fill_background) this.renderer.setClearColor(0, 0);
 
       // render

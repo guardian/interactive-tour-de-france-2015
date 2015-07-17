@@ -47,10 +47,10 @@
         "z": 0.3285700636377091
       },
       "3": {
-        "opacity": 0
+        "opacity": 1
       },
       "4": {
-        "opacity": 1
+        "opacity": 0
       },
       "5": {
         "opacity": 1
@@ -77,10 +77,10 @@
         "z": 0.7891635578114168
       },
       "3": {
-        "opacity": 0
+        "opacity": 1
       },
       "4": {
-        "opacity": 1
+        "opacity": 0
       },
       "5": {
         "opacity": 1

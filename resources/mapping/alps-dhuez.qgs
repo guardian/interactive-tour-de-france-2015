@@ -3,19 +3,19 @@
   <title></title>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="bend_locations20150713124651924" name="bend-locations">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="bend_locations20150713124651924" name="bend-locations">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="gps_line20150710131543308" name="gps-line">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="gps_line20150710131543308" name="gps-line">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="contour_geo20150708150627702" name="contour-geo">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="contour_geo20150708150627702" name="contour-geo">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Checked" id="clip_path20150713130424679" name="clip-path">
+    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="clip_path20150713130424679" name="clip-path">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" checked="Qt::Unchecked" id="OpenLayers_plugin_layer20150708151934090" name="Bing Aerial">
+    <layer-tree-layer expanded="1" checked="Qt::Checked" id="OpenLayers_plugin_layer20150717131254871" name="Bing Aerial">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" checked="Qt::Unchecked" id="alp_dheuz20150708105708021" name="alp_dheuz">
@@ -47,6 +47,7 @@
     </destinationsrs>
     <layer_coordinate_transform_info>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="test20150708120949127"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20150717131254871"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="alt_route20150708121213272"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="New_scratch_layer20150713125329698"/>
       <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="Tour_de_France___Alp_D_Huez_route___Sheet120150708120258469"/>
@@ -72,36 +73,36 @@
     <custom-order enabled="0">
       <item>alp_dheuz20150708105708021</item>
       <item>contour_geo20150708150627702</item>
-      <item>OpenLayers_plugin_layer20150708151934090</item>
       <item>gps_line20150710131543308</item>
       <item>bend_locations20150713124651924</item>
       <item>clip_path20150713130424679</item>
+      <item>OpenLayers_plugin_layer20150717131254871</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="bend-locations" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="bend-locations" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="bend_locations20150713124651924" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="bend_locations20150713124651924" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="gps-line" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="gps-line" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="gps_line20150710131543308" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="gps_line20150710131543308" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="contour-geo" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="contour-geo" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="contour_geo20150708150627702" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="contour_geo20150708150627702" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="clip-path" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="clip-path" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="clip_path20150713130424679" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="clip_path20150713130424679" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Bing Aerial" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Bing Aerial" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20150708151934090" visible="0"/>
+        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20150717131254871" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="alp_dheuz" showFeatureCount="0">
@@ -112,8 +113,8 @@
   </legend>
   <projectlayers layercount="6">
     <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
-      <id>OpenLayers_plugin_layer20150708151934090</id>
-      <datasource>.</datasource>
+      <id>OpenLayers_plugin_layer20150717131254871</id>
+      <datasource></datasource>
       <title></title>
       <abstract></abstract>
       <keywordList>
@@ -277,10 +278,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -518,10 +519,10 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <editform></editform>
+      <editform>.</editform>
       <editforminit/>
       <featformsuppress>0</featformsuppress>
-      <annotationform></annotationform>
+      <annotationform>.</annotationform>
       <editorlayout>generatedlayout</editorlayout>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -901,10 +902,10 @@
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>contour_geo20150708150627702</value>
-        <value>gps_line20150710131543308</value>
         <value>bend_locations20150713124651924</value>
         <value>clip_path20150713130424679</value>
+        <value>contour_geo20150708150627702</value>
+        <value>gps_line20150710131543308</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>disabled</value>
