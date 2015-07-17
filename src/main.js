@@ -87,7 +87,9 @@ function boot(el) {
 		var decoded = msgpack.decode( this.response );
 		var loader = new JSONLoader();
 		var parsedMountain = loader.parse(decoded);
-		var mountainMesh = new THREE.Mesh( parsedMountain.geometry, new THREE.MeshNormalMaterial() );
+		var material = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('/imgs/defuse_mid.jpg') });
+		//new THREE.MeshNormalMaterial()
+		var mountainMesh = new THREE.Mesh( parsedMountain.geometry, material );
 
 		mountainMesh.rotation.x = (Math.PI / 180) * 90;
 		mountainMesh.rotation.y = (Math.PI / 180) * 90 * -1;
