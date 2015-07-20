@@ -211,7 +211,6 @@ require('./SkyShader.js')(THREE);
 
       // scene
       this.scene = new THREE.Scene();
-      this.scene.fog = new THREE.Fog('#f00', 0.0025 );
 
       this._queryableObjects = [];
       this.queryObjNeedsUpdate = true;
@@ -229,6 +228,29 @@ require('./SkyShader.js')(THREE);
 
       this.modelBuilders = [];
       this._wireframeMode = false;
+
+
+
+    },
+
+
+    toScreenPosition: function(obj, camera) {
+          var vector = new THREE.Vector3();
+          var widthHalf = 0.5 * this.width;
+          var heightHalf = 0.5 * this.height;
+
+          obj.updateMatrixWorld();
+          vector.setFromMatrixPosition(obj.matrixWorld);
+          vector.project(camera);
+
+          vector.x = ( vector.x * widthHalf ) + widthHalf;
+          vector.y = - ( vector.y * heightHalf ) + heightHalf;
+
+          return {
+              x: vector.x,
+              y: vector.y
+          };
+
     },
 
     parseUrlParameters: function () {
@@ -427,9 +449,46 @@ require('./SkyShader.js')(THREE);
       this.updateLabelPosition();
     },
 
+    updateLabelPosition: function() {
+      if (!this.ref || !this.ref.bendGroup) { return; }
+
+      var idx_dist = [];
+      for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {
+        idx_dist.push([i, this.camera.position.distanceTo(this.ref.bendGroup.children[i].position)]);
+      }
+
+      idx_dist.sort(function (a, b) {
+        if (a[1] < b[1]) return 1;
+        if (a[1] > b[1]) return -1;
+        return 0;
+      });
+
+
+
+      idx_dist.forEach(function(item, i) {
+        var bend = this.ref.bendGroup.children[item[0]];
+        var pos = this.toScreenPosition(bend, this.camera);
+
+        // console.log(bend, item);
+        // debugger;
+
+        var distance = (pos.y >  this.height / 2) ? this.height - pos.y : pos.y;
+        var opacity = (distance) / (this.height / 2);
+
+
+          this.labelEls[item[0]].style.opacity = opacity;
+          this.labelEls[item[0]].style.left = pos.x + 'px';
+          this.labelEls[item[0]].style.top = pos.y + 'px';
+          this.labelEls[item[0]].style.zIndex = i + 1;
+
+      }.bind(this))
+    },
+
     // update label position
-    updateLabelPosition: function () {
-      if (!this.labelVisibility || this.labels.length == 0) return;
+    updateLabelPositionOld: function () {
+      //if (!this.labelVisibility) return;
+       if (!this.ref || !this.ref.bendGroup) { return; }
+
 
       var widthHalf = this.width / 2,
           heightHalf = this.height / 2,
@@ -442,10 +501,11 @@ require('./SkyShader.js')(THREE);
 
       // make a list of [label index, distance to camera]
       var idx_dist = [];
-      for (var i = 0, l = this.labels.length; i < l; i++) {
-        idx_dist.push([i, camera_pos.distanceTo(this.labels[i].pt)]);
+      for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {
+        idx_dist.push([i, camera_pos.distanceTo(this.ref.bendGroup.children[i].position)]);
       }
 
+       // console.log(idx_dist);
       // sort label indexes in descending order of distances
       idx_dist.sort(function (a, b) {
         if (a[1] < b[1]) return 1;
@@ -456,20 +516,24 @@ require('./SkyShader.js')(THREE);
       var label, e, x, y, dist, fontSize;
       var minFontSize = Q3D.Options.label.minFontSize;
       for (var i = 0, l = idx_dist.length; i < l; i++) {
-        label = this.labels[idx_dist[i][0]];
-        e = label.e;
-        if (c2l.subVectors(label.pt, camera_pos).dot(c2t) > 0) {
+
+        label = this.ref.bendGroup.children[idx_dist[i][0]];
+        // console.log(label, i);
+        e = this.labelEls[idx_dist[i][0]];
+        if (c2l.subVectors(label.position, camera_pos).dot(c2t) > 0) {
+
           // label is in front
           // calculate label position
-          v.copy(label.pt).project(camera);
-          x = (v.x * widthHalf) + widthHalf;
-          y = -(v.y * heightHalf) + heightHalf;
+          // v.copy(label.position).project(camera);
+          // x = (v.x * widthHalf) + widthHalf;
+          // y = -(v.y * heightHalf) + heightHalf;
+          v = this.toScreenPosition(label, this.camera);
 
           // set label position
           e.style.display = "block";
-          e.style.left = (x - (e.offsetWidth / 2)) + "px";
-          e.style.top = (y - (e.offsetHeight / 2)) + "px";
-          e.style.zIndex = i + 1;
+          e.style.left = (v.x - (e.offsetWidth / 2)) + "px";
+          e.style.top = (v.y - (e.offsetHeight / 2)) + "px";
+          e.style.zIndex = i + 1000;
 
           // set font size
           if (autosize) {
