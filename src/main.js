@@ -75,6 +75,9 @@ function buildScene(el, mountainMesh) {
 	});
 
 
+	// Fix transparency
+	app.renderer.sortObjects = false
+
 	// Store references
 	app.ref = {};
 	app.ref['meshMount'] = mountainMesh;
@@ -84,12 +87,18 @@ function buildScene(el, mountainMesh) {
 	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
 	app.ref['labels'] = app.labelsEl; // Bend labels
 
+	// Add POI
+	var geometry = new THREE.SphereGeometry( 5, 32, 32 );
+	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, transparent: true, opacity: 0 } );
+	app.ref.poi1 = new THREE.Mesh( geometry, material );
+	app.scene.add( app.ref.poi1 );
+
 	app.ref.gpsLines.material.opacity = 0;
 	app.ref.gpsLines.material.linewidth = 3;
 	app.scene.rotation.z = (Math.PI/180) * 90;
 	app.scene.scale.z = 0.01;
 
-	// app.ref.meshMount.material.transparent = false;
+	// app.ref.meshMount.material.transparent = true;
 	app.ref.bends.material.transparent = true;
 	app.camera.far = 2000;
 

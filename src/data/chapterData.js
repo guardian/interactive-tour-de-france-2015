@@ -3,6 +3,11 @@ var anims = require('./chapterAnims.json');
 
 var chapters = [
 	{
+		"id": "ch0",
+		"anim": "anim0",
+		"html": require("../html/chapter0.html")
+	},
+	{
 		"id": "ch1",
 		"anim": "anim1",
 		"html": require("../html/chapter1.html")
@@ -54,6 +59,8 @@ var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
 	params.targets['ref.bends.material'] = item[7];
 	params.targets['labelsEl.style'] = item[8];
 	params.targets['ref.meshMount.position'] = item[9];
+	params.targets['ref.poi1.position'] = item[10];
+	params.targets['ref.poi1.material'] = item[11];
 
 	return params;
 });
