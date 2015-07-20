@@ -53,6 +53,7 @@ var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
 	params.targets['scene.scale'] = item[6];
 	params.targets['ref.bends.material'] = item[7];
 	params.targets['labelsEl.style'] = item[8];
+	params.targets['ref.meshMount.position'] = item[9];
 
 	return params;
 });

@@ -49,6 +49,11 @@ function init(app, chapterAnimJSON) {
 		app.labelsEl.style.opacity = style.opacity;
 	}, 120)
 
+
+	gui.remember(app.ref.meshMount.position);
+	var gMeshPosition = gui.addFolder('Mesh position');
+	gMeshPosition.add(app.ref.meshMount.position, 'z').min(0).max(13).listen();
+
 	return gui;
 }
 
