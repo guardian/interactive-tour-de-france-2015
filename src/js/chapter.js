@@ -4,6 +4,18 @@ var TWEEN = require('tween.js');
 
 function buildTweens(anim, app) {
 	return Object.keys(anim.targets).map(function( key ) {
+
+		// // FIXME: Quick hack
+		// if (key === 'labelsEl') {
+		// 	var tween = new TWEEN.Tween( access(app, key) );
+		// 	tween.to(anim.targets[key], anim.duration)
+		// 	tween.onUpdate(function() {
+
+		// 	});
+		// 	tween.easing( TWEEN.Easing.Quintic.InOut );
+		// 	return tween;
+		// }
+
 		var tween = new TWEEN.Tween( access(app, key) );
 		tween.to(anim.targets[key], anim.duration)
 		tween.easing( TWEEN.Easing.Quintic.InOut );

@@ -37,39 +37,10 @@ function buildScene(el, mountainMesh) {
 
 	window.app = app;
 
+	// Add custom mountain mesh
 	app.scene.add(mountainMesh);
 
-
-	app.ref = {};
-	app.ref['meshMount'] = mountainMesh;
-	app.ref['bendGroup'] =  app.scene.children[3]; // turns
-	app.ref['bends'] =  app.scene.children[3].children[0]; // turns
-	app.ref['contourLines'] =  app.scene.children[5].children[0]; // Contour
-	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
-
-	app.ref.gpsLines.material.opacity = 0;
-	app.ref.gpsLines.material.linewidth = 3;
-	app.scene.rotation.z = (Math.PI/180) * 90;
-	app.scene.scale.z = 0.01;
-
-	// app.ref.meshMount.material.transparent = false;
-	app.ref.bends.material.transparent = true;
-	app.camera.far = 2000;
-
-	// app.ref.contourLines.material.transparent = true;
-	app.ref.contourLines.material.color = { r: 0, g: 0, b: 0 };
-	// app.ref.contourLines.material.transparent = true;
-	app.ref.contourLines.material.opacity = 0.1;
-
-	app.ref.gpsLines.material.transparent = true;
-
-
-	var chapters = require('./data/chapterData.js');
-	var Scene = require('./js/scene.js');
-	var scene = new Scene(el, modalEl, chapters, app);
-
-
-
+	// Labels
 	app.labelsEl = document.querySelector('.gv-labels');
 
 	app.labels = [
@@ -95,7 +66,6 @@ function buildScene(el, mountainMesh) {
 		[2,45.088695,6.060451,1660],
 		[1,45.091468,6.055367,1713],
 	];
-
 	app.labelEls = app.labels.map(function(label) {
 		var el = document.createElement('div');
 		el.classList.add('gv-label');
@@ -103,6 +73,44 @@ function buildScene(el, mountainMesh) {
 		app.labelsEl.appendChild(el);
 		return el;
 	});
+
+
+	// Store references
+	app.ref = {};
+	app.ref['meshMount'] = mountainMesh;
+	app.ref['bendGroup'] =  app.scene.children[3]; // turns
+	app.ref['bends'] =  app.scene.children[3].children[0]; // turns
+	app.ref['contourLines'] =  app.scene.children[5].children[0]; // Contour
+	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
+	app.ref['labels'] = app.labelsEl; // Bend labels
+
+	app.ref.gpsLines.material.opacity = 0;
+	app.ref.gpsLines.material.linewidth = 3;
+	app.scene.rotation.z = (Math.PI/180) * 90;
+	app.scene.scale.z = 0.01;
+
+	// app.ref.meshMount.material.transparent = false;
+	app.ref.bends.material.transparent = true;
+	app.camera.far = 2000;
+
+	app.ref.contourLines.material.transparent = true;
+	// app.ref.contourLines.material.color = { r: 100, g: 100, b: 100 };
+	// app.ref.contourLines.material.transparent = true;
+	app.ref.contourLines.material.opacity = 0.1;
+
+	app.ref.gpsLines.material.transparent = true;
+	app.ref.gpsLines.material.color = { r: 0, g: 219, b: 255 };
+
+	app.ref.bends.material.color = { r: 255, g: 230, b: 0 };
+
+
+	var chapters = require('./data/chapterData.js');
+	var Scene = require('./js/scene.js');
+	var scene = new Scene(el, modalEl, chapters, app);
+
+
+
+
 
 	scene.start();
 

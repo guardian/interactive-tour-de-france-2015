@@ -41,6 +41,14 @@ function init(app, chapterAnimJSON) {
 	var gBends= gui.addFolder('Bends');
 	gBends.add(app.ref.bends.material, 'opacity').min(0).max(1).listen();
 
+	var style = { opacity: 0 };
+	gui.remember(style);
+	var gLabels= gui.addFolder('Labels');
+	gLabels.add(style, 'opacity').min(0).max(1);
+	setInterval(function() {
+		app.labelsEl.style.opacity = style.opacity;
+	}, 120)
+
 	return gui;
 }
 

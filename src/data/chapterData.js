@@ -21,7 +21,23 @@ var chapters = [
 		"id": "ch4",
 		"anim": "anim4",
 		"html": require("../html/chapter4.html")
+	},
+	{
+		"id": "ch5",
+		"anim": "anim5",
+		"html": require("../html/chapter5.html")
 	}
+	,{
+		"id": "ch6",
+		"anim": "anim6",
+		"html": require("../html/chapter6.html")
+	},
+	{
+		"id": "ch7",
+		"anim": "anim7",
+		"html": require("../html/chapter7.html")
+	}
+
 ];
 
 var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
@@ -36,6 +52,7 @@ var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
 	params.targets['ref.gpsLines.material'] = item[5];
 	params.targets['scene.scale'] = item[6];
 	params.targets['ref.bends.material'] = item[7];
+	params.targets['labelsEl.style'] = item[8];
 
 	return params;
 });
