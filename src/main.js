@@ -1,16 +1,27 @@
 var url = require('./js/utils/url.js');
 var html = require('./html/base.html');
-var modalHTML = require('./html/modal.html');
 var animsJSON = require('./data/chapterAnims.json');
 var Q3D = require('./js/libs/Qgis2threejs.js');
 var project = require('./data/qgis3d-data');
 var datView = require('./js/datView.js')
 var _ = require('underscore');
 var msgpack = require('msgpack-js-browser');
+var detect = require('./js/utils/detect.js');
 
 var THREE = require('three');
 var JSONLoader = require('./js/libs/JSONLoader.js')(THREE);
 
+var debug = url.hasParameter('debug');
+var viewportDimensions = detect.getViewport();
+
+var iswebGLSupported = (function () {
+	try {
+		var canvas = document.createElement( 'canvas' );
+		return !! ( window.WebGLRenderingContext && ( canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) ) ); }
+		catch ( e ) { return false; }
+	})();
+
+ console.log('webGL support', iswebGLSupported);
 
 var mountainMesh;
 
@@ -18,7 +29,6 @@ var mountainMesh;
 function buildScene(el, mountainMesh) {
 	el.innerHTML = html;
 	var modalEl = el.querySelector('.gv-modal');
-	modalEl.innerHTML = modalHTML;
 
 	var container = document.getElementById('webgl');
 	container.style.height = '100vh';
@@ -85,6 +95,7 @@ function buildScene(el, mountainMesh) {
 	app.ref['bends'] =  app.scene.children[3].children[0]; // turns
 	app.ref['contourLines'] =  app.scene.children[5].children[0]; // Contour
 	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
+	app.ref['gpsLinesGroup'] = app.scene.children[4].children[0]; // route
 	app.ref['labels'] = app.labelsEl; // Bend labels
 
 	// Add POI
@@ -116,18 +127,11 @@ function buildScene(el, mountainMesh) {
 	var chapters = require('./data/chapterData.js');
 	var Scene = require('./js/scene.js');
 	var scene = new Scene(el, modalEl, chapters, app);
-
-
-
-
-
 	scene.start();
 
 
-
-
 	// DAT GUI
-	if (url.hasParameter('debug')) {
+	if (debug) {
 		datView.init(app, animsJSON);
 	}
 }
@@ -140,20 +144,37 @@ function boot(el) {
 	xhr.responseType = 'arraybuffer';
 
 	xhr.onload = function( e ) {
+		console.log('Mesh pack loaded');
+
 		var decoded = msgpack.decode( this.response );
 		var loader = new JSONLoader();
 		var parsedMountain = loader.parse(decoded);
-		var material = new THREE.MeshPhongMaterial( { map: THREE.ImageUtils.loadTexture('/imgs/defuse_large.jpg') });
-		//new THREE.MeshNormalMaterial()
+
+		var imageSrc = '/imgs/defuse_small.jpg';
+		if (viewportDimensions.width > 480 ) {
+			imageSrc = '/imgs/defuse_mid.jpg';
+			console.log('Upgrading to mid texture');
+		}
+		if (viewportDimensions.width > 1020 ) {
+			imageSrc = '/imgs/defuse_large.jpg';
+			console.log('Upgrading to large texture', viewportDimensions.width);
+		}
+
+		// Enable CORs for images
+		THREE.ImageUtils.crossOrigin = '';
+
+		var imageTexture = THREE.ImageUtils.loadTexture(imageSrc, {}, function() {
+			console.log('Texture image loaded');
+			buildScene(el, mountainMesh);
+		});
+
+		var material = new THREE.MeshPhongMaterial( { map: imageTexture });
 		var mountainMesh = new THREE.Mesh( parsedMountain.geometry, material );
 
 		mountainMesh.rotation.x = (Math.PI / 180) * 90;
 		mountainMesh.rotation.y = (Math.PI / 180) * 90 * -1;
 		mountainMesh.position.z = 13
 		mountainMesh.position.x = 13
-
-		buildScene(el, mountainMesh)
-
 	};
 
 	xhr.send();

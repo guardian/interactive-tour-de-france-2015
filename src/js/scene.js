@@ -10,10 +10,13 @@ var Scene = function(el, modalEl, chapters, app) {
 	this.currentChapter = 0;
 	this.pagination = new Pagination(chapters.length);
 	this.el.appendChild(this.pagination.el);
+	this.qgisApp = app;
 
 	this.chapters = chapters.map(function(item) {
 		return new Chapter(item, app);
 	});
+
+	this.qgisApp.isAnimating = false;
 
 
 	// Animations
@@ -21,16 +24,25 @@ var Scene = function(el, modalEl, chapters, app) {
 	this.modalFadeOut = new TWEEN.Tween(this.modalEl.style);
 	this.modalFadeOut.to({ opacity: 0 }, this.MODAL_FADE_TIME)
 	.easing( TWEEN.Easing.Quartic.Out )
+	.onStart(function() { this.qgisApp.isAnimating = true; }.bind(this))
 	.onComplete(this.setModalHTML.bind(this));
 
 	this.modalFadeIn = new TWEEN.Tween(this.modalEl.style);
 	this.modalFadeIn.to({ opacity: 1 }, this.MODAL_FADE_TIME)
-	.easing( TWEEN.Easing.Quartic.Out );
+	.easing( TWEEN.Easing.Quartic.Out )
+	.onComplete(function() { this.qgisApp.isAnimating = false; }.bind(this));
 
 	this.modalFadeOut.chain(this.modalFadeIn);
 
+	// Interactions - mouse
+	var nextBtn = el.querySelector('.gv-arrow-next');
+	nextBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
-	// Interactions
+	var previousBtn = el.querySelector('.gv-arrow-previous');
+	previousBtn.addEventListener('click', this.previousChapter.bind(this), false);
+
+
+	// Interactions - touch
 	this.touch = new Hammer(el, {});
 	this.touch.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
 	this.touch.on('pan', function(ev) {
@@ -47,6 +59,7 @@ var Scene = function(el, modalEl, chapters, app) {
 		this.modalEl.style.opacity = 1;
 	}.bind(this))
 
+	this.touch.get('swipe').set({velocity: 0.1, threshold: 5 });
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
 
@@ -73,12 +86,14 @@ Scene.prototype.previousChapter = function() {
 
 Scene.prototype.setModalHTML = function() {
 	var chapter = this.chapters[this.currentChapter];
-	this.modalEl.innerHTML = chapter.html
+	this.modalEl.setAttribute('id', chapter._chapterData.id);
+	this.modalEl.innerHTML = chapter._chapterData.html
 }
 
 
 Scene.prototype.transitionChapter = function(val) {
 	this.chapters[this.currentChapter].stop();
+	var oldChapterIndex = this.currentChapter;
 	this.currentChapter += val;
 	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(this.currentChapter);
@@ -87,18 +102,27 @@ Scene.prototype.transitionChapter = function(val) {
 	this.modalFadeIn.stop();
 
 	// Sync show to end of animation tweens
-	var duration = this.chapters[this.currentChapter].duration;
+	var duration;
+	if (val > 0) {
+		duration = this.chapters[this.currentChapter].duration;
+	} else {
+		duration = this.chapters[oldChapterIndex].duration;
+	}
 	var delay = duration - this.MODAL_FADE_TIME * 2;
 	delay = (delay < 0) ? 0 : delay;
 
 	this.modalFadeIn.delay(delay);
 	this.modalFadeOut.start();
+
+
+	this.chapters[this.currentChapter].start(duration);
 }
 
 
 
 Scene.prototype.start = function() {
 	this.animate();
+	this.setModalHTML();
 	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(0);
 

@@ -13,9 +13,15 @@ var chapters = [
 		"html": require("../html/chapter1.html")
 	},
 	{
-		"id": "ch2",
+		"id": "ch2a",
 		"anim": "anim2",
-		"html": require("../html/chapter2.html")
+		"html": require("../html/chapter2a.html")
+	},
+	{
+		"id": "ch2b",
+		"anim": "anim2",
+		"duration": 0,
+		"html": require("../html/chapter2b.html")
 	},
 	{
 		"id": "ch3",

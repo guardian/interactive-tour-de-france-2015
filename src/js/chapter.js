@@ -4,18 +4,6 @@ var TWEEN = require('tween.js');
 
 function buildTweens(anim, app) {
 	return Object.keys(anim.targets).map(function( key ) {
-
-		// // FIXME: Quick hack
-		// if (key === 'labelsEl') {
-		// 	var tween = new TWEEN.Tween( access(app, key) );
-		// 	tween.to(anim.targets[key], anim.duration)
-		// 	tween.onUpdate(function() {
-
-		// 	});
-		// 	tween.easing( TWEEN.Easing.Quintic.InOut );
-		// 	return tween;
-		// }
-
 		var tween = new TWEEN.Tween( access(app, key) );
 		tween.to(anim.targets[key], anim.duration)
 		tween.easing( TWEEN.Easing.Quintic.InOut );
@@ -26,7 +14,15 @@ function buildTweens(anim, app) {
 function Chapter(data, app) {
 	this._chapterData = data;
 	this.html = this._chapterData.html;
-	this.duration = this._chapterData.anim.duration;
+
+	// Animation duration with overrides
+	this.duration = 2000;
+	if (this._chapterData.hasOwnProperty('duration')) {
+		this.duration = this._chapterData.duration;
+	} else if (this._chapterData.hasOwnProperty('anim')) {
+		this.duration = this._chapterData.anim.duration;
+	}
+
 	this._tweens = buildTweens(this._chapterData.anim, app);
 }
 
@@ -37,7 +33,7 @@ Chapter.prototype.stop = function(callback) {
 	if (callback) { callback(); }
 }
 
-Chapter.prototype.start = function(callback) {
+Chapter.prototype.start = function(duration) {
 	var anims = this._tweens.map(function(tween) {
 		return new Promise(function(resolve, reject) {
 			tween.onComplete(resolve);

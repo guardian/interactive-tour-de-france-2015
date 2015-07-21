@@ -450,7 +450,10 @@ require('./SkyShader.js')(THREE);
     },
 
     updateLabelPosition: function() {
-      if (!this.ref || !this.ref.bendGroup) { return; }
+      if (!this.isAnimating || !this.ref || !this.ref.bendGroup) { return; }
+      if (this.labelsEl.style.opacity == "0" ) { return ;}
+
+      console.log('animating labels');
 
       var idx_dist = [];
       for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {
@@ -468,9 +471,6 @@ require('./SkyShader.js')(THREE);
       idx_dist.forEach(function(item, i) {
         var bend = this.ref.bendGroup.children[item[0]];
         var pos = this.toScreenPosition(bend, this.camera);
-
-        // console.log(bend, item);
-        // debugger;
 
         var distance = (pos.y >  this.height / 2) ? this.height - pos.y : pos.y;
         var opacity = (distance) / (this.height / 2);

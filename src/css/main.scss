@@ -19,7 +19,7 @@ body {
 
 // Remove <figure> margin
 .interactive {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .gv-container {
@@ -89,55 +89,171 @@ body {
 
 
 .gv-modal {
+  opacity: 0.9;
+  box-sizing: border-box;
   background-color: #fff;
   border: 1px solid rgba(0,0,0,0.1);
-  padding: 5px 8px;
-  border-radius: 2px;
-  width: 40%;
-  max-width: 380px;
   font-size: 12px;
   font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
   opacity: 1;
-
   position: absolute;
-  bottom: 6%;
-  left: 3%;
+  bottom: 0;
+  left: 0;
   z-index: 100;
 
-  &:before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    border: solid 3px rgba(255, 255, 255, 1);
-    width: calc(100% + 2px);
-    min-height: calc(100% + 2px);
-    z-index: 10;
-    border-radius: 4px;
+  width: 100%;
+  padding: 10px 10px 42px;
+
+
+
+  @include mq(tablet) {
+    bottom: auto;
+    left: auto;
+    right: 2%;
+    top: 6%;
+    width: 40%;
+    max-width: 380px;
+    padding: 5px 8px;
+
+    // Outer border
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      border: solid 3px rgba(255, 255, 255, 1);
+      width: calc(100% + 2px);
+      min-height: calc(100% + 2px);
+      z-index: 10;
+      border-radius: 4px;
+    }
+  }
+
+
+  h1, h2 {
+    margin-top: 0;
+    margin-bottom: 0.4em;
   }
 
   > p {
       margin-top: 0;
   }
+
 }
 
 .gv-modal-img {
+    float: right;
+    margin: 0 0 4px 4px;
     width: 100%;
+    max-width: 90px;
+
+    @include mq(phablet) {
+      max-width: 180px;
+    }
 }
 
 
 .gv-arrow {
-    width: 1em;
-    height: 1em;
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 0.2;
+  cursor: pointer;
+  height: 60px;
+  position: absolute;
+  pointer-events: all;
+  bottom: 10px;
+  width: 33%;
+  height: 73%;
+  z-index: 200;
+
+  @include mq(tablet) {
+    transform: none;
+    top: auto;
+    width: 40px;
+    height: 40px;
+    bottom: 10%;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+.gv-arrow-icon-wrapepr {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+
+
+  @include mq(tablet) {
+    bottom: 10%;
+    top: 50%;
+    top: auto;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+
+.gv-arrow-icon-wrapepr-next {
+  left: auto;
+  right: 10px;
+
+  @include mq(tablet) {
+    top: auto;
+  }
+
+}
+
+.gv-arrow-icon-wrapepr-previous {
+  left: 10px;
+  right: auto;
+
+  @include mq(tablet) {
+    top: auto;
+  }
 }
 
 .gv-arrow-next {
-
+  right: 0;
+  left: auto;
 }
 
 .gv-arrow-previous {
+  left: 0;
+  right: auto;
+}
 
+.gv-arrow-icon {
+  background: no-repeat;
+  background-position: 0 0;
+  height: 20px;
+  width: 20px;
+  background-size: contain;
+  display: inline-block;
+
+  @include mq(tablet) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.gv-arrow-icon-next {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMyAyMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGUvPjxkZXNjLz48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMjMgMTEuNUwxMi43MDQgMjEuNmwtLjk2LS45NkwxOS44IDEySDB2LTJoMTkuOEwxMS43NDUuOTZsLjk2LS45NkwyMyAxMC41djEiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNMTEgMzIuMzEzQy0uNzUgMzIuMzEzLTEwLjMxIDIyLjc1My0xMC4zMSAxMWMwLTExLjc1IDkuNTYtMjEuMzEyIDIxLjMxMy0yMS4zMTIgMTEuNzUyIDAgMjEuMzEzIDkuNTYgMjEuMzEzIDIxLjMxMlMyMi43NTMgMzIuMzEzIDExIDMyLjMxM00xMS0xMWMtMTIuMTUgMC0yMiA5Ljg1LTIyIDIyczkuODUgMjIgMjIgMjIgMjItOS44NSAyMi0yMi05Ljg1LTIyLTIyLTIyIiBmaWxsPSIjNzA3MDcwIi8+PC9nPjwvc3ZnPg==');
+}
+
+.gv-arrow-icon-previous {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMyAyMyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGUvPjxkZXNjLz48ZyBmaWxsPSJub25lIj48cGF0aCBkPSJNMCAxMS41bDEwLjI5NiAxMC4xLjk2LS45NkwzLjIgMTJIMjN2LTJIMy4yTDExLjI1NS45NmwtLjk2LS45NkwwIDEwLjV2MSIgZmlsbD0iI2ZmZiIvPjxwYXRoIGQ9Ik0xMSAzMi4zMTNDLS43NSAzMi4zMTMtMTAuMzEgMjIuNzUzLTEwLjMxIDExYzAtMTEuNzUgOS41Ni0yMS4zMTIgMjEuMzEzLTIxLjMxMiAxMS43NTIgMCAyMS4zMTMgOS41NiAyMS4zMTMgMjEuMzEyUzIyLjc1MyAzMi4zMTMgMTEgMzIuMzEzTTExLTExYy0xMi4xNSAwLTIyIDkuODUtMjIgMjJzOS44NSAyMiAyMiAyMiAyMi05Ljg1IDIyLTIyLTkuODUtMjItMjItMjIiIGZpbGw9IiM3MDcwNzAiLz48L2c+PC9zdmc+');
 }
 
 
@@ -146,14 +262,15 @@ body {
   bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 101;
 }
 
 .gv-pagination-dot {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   background-color: rgba(0,0,0,0.2);
   float: left;
-  margin: 0 7px;
+  margin: 0 3px;
   border-radius: 50%;
 
   &.active {
