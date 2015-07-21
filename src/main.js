@@ -31,7 +31,7 @@ function buildScene(el, mountainMesh) {
 	var modalEl = el.querySelector('.gv-modal');
 
 	var container = document.getElementById('webgl');
-	container.style.height = '100vh';
+	container.style.height = viewportDimensions.height + 'px';
 	container.style.width = '100%';
 	Q3D.Options.bgcolor = '#ffffff';
 
@@ -39,12 +39,8 @@ function buildScene(el, mountainMesh) {
 	app.init(container);
 	app.loadProject(project);
 	app.addEventListeners();
-	app.start();
 
-
-	// Fix sizing
-	setTimeout(app.eventListener.resize.bind(app), 1000);
-
+	// FIXME: Expose for debugging
 	window.app = app;
 
 	// Add custom mountain mesh
@@ -95,8 +91,12 @@ function buildScene(el, mountainMesh) {
 	app.ref['bends'] =  app.scene.children[3].children[0]; // turns
 	app.ref['contourLines'] =  app.scene.children[5].children[0]; // Contour
 	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
-	app.ref['gpsLinesGroup'] = app.scene.children[4].children[0]; // route
+	app.ref['gpsLinesGroup'] = app.scene.children[4]; // route
 	app.ref['labels'] = app.labelsEl; // Bend labels
+
+	// app.ref.gpsLinesGroup.position.z = 0.1;
+	app.ref.gpsLines.material.depthTest = false;
+
 
 	// Add POI
 	var geometry = new THREE.SphereGeometry( 5, 32, 32 );
@@ -129,6 +129,7 @@ function buildScene(el, mountainMesh) {
 	var scene = new Scene(el, modalEl, chapters, app);
 	scene.start();
 
+	app.start();
 
 	// DAT GUI
 	if (debug) {

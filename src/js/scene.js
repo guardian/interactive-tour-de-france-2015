@@ -86,7 +86,8 @@ Scene.prototype.previousChapter = function() {
 
 Scene.prototype.setModalHTML = function() {
 	var chapter = this.chapters[this.currentChapter];
-	this.modalEl.setAttribute('id', chapter._chapterData.id);
+	// this.modalEl.setAttribute('id', chapter._chapterData.id);
+	this.el.setAttribute('id', chapter._chapterData.id);
 	this.modalEl.innerHTML = chapter._chapterData.html
 }
 
@@ -121,9 +122,10 @@ Scene.prototype.transitionChapter = function(val) {
 
 
 Scene.prototype.start = function() {
+	this.jumpToChapter(0)
 	this.animate();
 	this.setModalHTML();
-	this.chapters[this.currentChapter].start();
+	// this.chapters[this.currentChapter].start();
 	this.pagination.goTo(0);
 
 }

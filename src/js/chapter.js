@@ -2,7 +2,7 @@ require('es6-promise').polyfill();
 var access = require('safe-access');
 var TWEEN = require('tween.js');
 
-function buildTweens(anim, app) {
+	function buildTweens(anim, app) {
 	return Object.keys(anim.targets).map(function( key ) {
 		var tween = new TWEEN.Tween( access(app, key) );
 		tween.to(anim.targets[key], anim.duration)
@@ -12,6 +12,7 @@ function buildTweens(anim, app) {
 }
 
 function Chapter(data, app) {
+	this._app = app;
 	this._chapterData = data;
 	this.html = this._chapterData.html;
 
@@ -47,10 +48,10 @@ Chapter.prototype.start = function(duration) {
 }
 
 Chapter.prototype.jumpToEnd = function() {
-	Object.keys(this._chapterData).forEach(function( key ) {
-		Object.keys( this._chapterData[key] ).forEach(function( prop ) {
-			var p = access(this._app, key);
-			p[prop] = this._chapterData[key][prop];
+	Object.keys(this._chapterData.anim.targets).map(function( key ) {
+		var target = access(this._app, key);
+		Object.keys(this._chapterData.anim.targets[key]).forEach(function(propKey) {
+			target[propKey] = this._chapterData.anim.targets[key][propKey];
 		}.bind(this));
 	}.bind(this));
 };

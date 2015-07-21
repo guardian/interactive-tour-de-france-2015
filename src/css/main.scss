@@ -69,6 +69,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 0;
+    overflow: hidden;
 }
 
 
@@ -166,6 +167,8 @@ body {
   width: 33%;
   height: 73%;
   z-index: 200;
+
+  transition: 1s opacity;
 
   @include mq(tablet) {
     transform: none;
@@ -325,4 +328,40 @@ body {
   display: inline-block;
   font-size: 11px;
   margin-left: 5px;
+}
+
+
+
+#ch0 {
+  .gv-modal {
+    top: 11%;
+    bottom: auto;
+    background-color: transparent;
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+    font-family: Guardian Text Egyptian Web,Georgia,serif;
+    font-weight: 700;
+    text-shadow: 0 0 10px #000;
+    padding-right: 20px;
+    border: none;
+
+    @include mq(tablet) {
+      font-size: 24px;
+    }
+
+    h1 {
+      margin: 0;
+      line-height: 1em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 17px;
+    }
+  }
+
+  .gv-arrow {
+    opacity: 0.8;
+  }
 }
