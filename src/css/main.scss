@@ -91,7 +91,7 @@ body {
 .gv-modal {
   opacity: 0.9;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(0,0,0,0.1);
   font-size: 12px;
   font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
@@ -115,19 +115,19 @@ body {
     max-width: 380px;
     padding: 5px 8px;
 
-    // Outer border
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -4px;
-      left: -4px;
-      border: solid 3px rgba(255, 255, 255, 1);
-      width: calc(100% + 2px);
-      min-height: calc(100% + 2px);
-      z-index: 10;
-      border-radius: 4px;
-    }
+    // // Outer border
+    // &:before {
+    //   content: "";
+    //   display: block;
+    //   position: absolute;
+    //   top: -4px;
+    //   left: -4px;
+    //   border: solid 3px rgba(255, 255, 255, 1);
+    //   width: calc(100% + 2px);
+    //   min-height: calc(100% + 2px);
+    //   z-index: 10;
+    //   border-radius: 4px;
+    // }
   }
 
 
