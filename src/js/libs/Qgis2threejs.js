@@ -476,7 +476,7 @@ require('./SkyShader.js')(THREE);
         var opacity = (distance) / (this.height / 2);
 
 
-          this.labelEls[item[0]].style.opacity = opacity;
+          //this.labelEls[item[0]].style.opacity = opacity;
           this.labelEls[item[0]].style.left = pos.x + 'px';
           this.labelEls[item[0]].style.top = pos.y + 'px';
           this.labelEls[item[0]].style.zIndex = i + 1;

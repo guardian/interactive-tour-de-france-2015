@@ -78,7 +78,7 @@ function buildScene(el, mountainMesh) {
 	app.labelEls = app.labels.map(function(label) {
 		var el = document.createElement('div');
 		el.classList.add('gv-label');
-		el.innerHTML = '<p class="gv-label-title">' + label[0] + '<span class="gv-label-elv">Elevation '  + label[3] + '</span></p>';
+		el.innerHTML = '<p class="gv-label-title">' + label[0] + '<span class="gv-label-elv">Elev '  + label[3] + 'm</span></p>';
 		app.labelsEl.appendChild(el);
 		return el;
 	});
@@ -103,7 +103,7 @@ function buildScene(el, mountainMesh) {
 
 	// Add POI
 	var geometry = new THREE.SphereGeometry( 5, 32, 32 );
-	var material = new THREE.MeshBasicMaterial( {color: 0xffffff, transparent: true, opacity: 0 } );
+	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, transparent: true, opacity: 0 } );
 	app.ref.poi1 = new THREE.Mesh( geometry, material );
 	app.ref.poi1.scale.set(1.8,1.8, 1 );
 	app.ref.poi1.position.set(-14, -22, 1);
@@ -118,7 +118,7 @@ function buildScene(el, mountainMesh) {
 
 	app.ref.poi3 = new THREE.Mesh( geometry, material );
 	app.ref.poi3.scale.set(0.4, 0.4, 0.3 );
-	app.ref.poi3.position.set(9, 8, 14.3);
+	app.ref.poi3.position.set(8.9, 9.3, 14.3);
 	app.scene.add( app.ref.poi3 );
 
 	app.ref.poi4 = new THREE.Mesh( geometry, material );
@@ -128,10 +128,22 @@ function buildScene(el, mountainMesh) {
 	app.scene.add( app.ref.poi4 );
 
 
+	app.ref.poi5 = new THREE.Mesh( geometry, material );
+	app.ref.poi5.scale.set(0.4, 0.4, 0.3 );
+	app.ref.poi5.position.set(28, 31.8, 21);
+	app.ref.poi5.rotation.z = -0.1;
+	app.scene.add( app.ref.poi5 );
+
+
+
+
 	app.ref.gpsLines.material.opacity = 0;
 	app.ref.gpsLines.material.linewidth = 3;
 	app.scene.rotation.z = (Math.PI/180) * 90;
 	app.scene.scale.z = 0.01;
+
+
+
 
 	// app.ref.meshMount.material.transparent = true;
 	app.ref.bends.material.transparent = true;
