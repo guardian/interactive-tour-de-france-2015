@@ -64,7 +64,7 @@ module.exports = function (grunt) {
       },
       dev: {
         debug: true,
-        devtool: 'eval'
+        devtool: 'cheap-source-map'
       }
     },
 

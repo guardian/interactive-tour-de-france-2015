@@ -331,20 +331,21 @@ body {
 }
 
 
+// Chapter specific styles
 
-#ch0 {
+#intro {
   .gv-modal {
-    top: 11%;
+     top: 6%;
     bottom: auto;
     background-color: transparent;
     color: #fff;
-    text-align: right;
     font-size: 20px;
     font-family: Guardian Text Egyptian Web,Georgia,serif;
     font-weight: 700;
     text-shadow: 0 0 10px #000;
     padding-right: 20px;
     border: none;
+    left: 0;
 
     @include mq(tablet) {
       font-size: 24px;
@@ -357,9 +358,14 @@ body {
 
     p {
       margin: 0;
-      font-size: 17px;
+      font-size: 16px;
     }
   }
+
+    .gv-modal-img {
+      max-width: 380px;
+      float: none;
+    }
 
   .gv-arrow {
     opacity: 0.8;

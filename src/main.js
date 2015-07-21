@@ -35,6 +35,9 @@ function buildScene(el, mountainMesh) {
 	container.style.width = '100%';
 	Q3D.Options.bgcolor = '#ffffff';
 
+	var wrapperEl = el.querySelector('.gv-wrapper');
+	wrapperEl.style.height = viewportDimensions.height + 'px';
+
 	var app = Q3D.application;
 	app.init(container);
 	app.loadProject(project);
@@ -100,9 +103,30 @@ function buildScene(el, mountainMesh) {
 
 	// Add POI
 	var geometry = new THREE.SphereGeometry( 5, 32, 32 );
-	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, transparent: true, opacity: 0 } );
+	var material = new THREE.MeshBasicMaterial( {color: 0xffffff, transparent: true, opacity: 0 } );
 	app.ref.poi1 = new THREE.Mesh( geometry, material );
+	app.ref.poi1.scale.set(1.8,1.8, 1 );
+	app.ref.poi1.position.set(-14, -22, 1);
 	app.scene.add( app.ref.poi1 );
+
+
+	app.ref.poi2 = new THREE.Mesh( geometry, material );
+	app.ref.poi2.scale.set(1.8,1.8, 1 );
+	app.ref.poi2.position.set(-2, -6, 9);
+	app.scene.add( app.ref.poi2 );
+
+
+	app.ref.poi3 = new THREE.Mesh( geometry, material );
+	app.ref.poi3.scale.set(0.4, 0.4, 0.3 );
+	app.ref.poi3.position.set(9, 8, 14.3);
+	app.scene.add( app.ref.poi3 );
+
+	app.ref.poi4 = new THREE.Mesh( geometry, material );
+	app.ref.poi4.scale.set(2, 0.4, 0.3 );
+	app.ref.poi4.position.set(14, 24, 19.6);
+	app.ref.poi4.rotation.z = -0.1;
+	app.scene.add( app.ref.poi4 );
+
 
 	app.ref.gpsLines.material.opacity = 0;
 	app.ref.gpsLines.material.linewidth = 3;

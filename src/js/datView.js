@@ -61,12 +61,12 @@ function init(app, chapterAnimJSON) {
 	var gMeshPosition = gui.addFolder('Mesh position');
 	gMeshPosition.add(app.ref.meshMount.position, 'z').min(0).max(13).listen();
 
-	gui.remember(app.ref.poi1.position);
+	// gui.remember(app.ref.poi1.position);
 	gui.remember(app.ref.poi1.material);
 	var gpoi1 = gui.addFolder('POI 1');
-	gpoi1.add(app.ref.poi1.position, 'x').min(-30).max(30).listen();
-	gpoi1.add(app.ref.poi1.position, 'y').min(-30).max(30).listen();
-	gpoi1.add(app.ref.poi1.position, 'z').min(-30).max(30).listen();
+	// gpoi1.add(app.ref.poi1.position, 'x').min(-30).max(30).listen();
+	// gpoi1.add(app.ref.poi1.position, 'y').min(-30).max(30).listen();
+	// gpoi1.add(app.ref.poi1.position, 'z').min(-30).max(30).listen();
 	gpoi1.add(app.ref.poi1.material, 'opacity').min(0).max(1).listen();
 
 	return gui;
