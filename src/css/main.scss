@@ -92,7 +92,7 @@ body {
 .gv-modal {
   opacity: 0.9;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.95);
   border: 1px solid rgba(0,0,0,0.1);
   font-size: 12px;
   font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
@@ -103,7 +103,7 @@ body {
   z-index: 100;
 
   width: 100%;
-  padding: 10px 10px 42px;
+  padding: 10px 10px 48px;
 
 
 
@@ -115,20 +115,6 @@ body {
     width: 40%;
     max-width: 380px;
     padding: 5px 8px;
-
-    // // Outer border
-    // &:before {
-    //   content: "";
-    //   display: block;
-    //   position: absolute;
-    //   top: -4px;
-    //   left: -4px;
-    //   border: solid 3px rgba(255, 255, 255, 1);
-    //   width: calc(100% + 2px);
-    //   min-height: calc(100% + 2px);
-    //   z-index: 10;
-    //   border-radius: 4px;
-    // }
   }
 
 
@@ -143,6 +129,11 @@ body {
 
 }
 
+.gv-modal-count {
+  font-size: 12px;
+  color: #999;
+}
+
 .gv-modal-img {
     float: right;
     margin: 0 0 4px 4px;
@@ -150,7 +141,9 @@ body {
     max-width: 90px;
 
     @include mq(phablet) {
-      max-width: 180px;
+      max-width: none;
+      float: none;
+      margin: 0 0 10px 0;
     }
 }
 
@@ -299,7 +292,8 @@ body {
  font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
  color: #FFF;
  text-shadow: 0 0 4px #000;
-   width: 160px;
+ width: 160px;
+ line-height: 1em;
 
   p {
     margin: 0;
@@ -313,7 +307,8 @@ body {
   font-weight: normal;
   display: inline-block;
   font-size: 11px;
-  margin-left: 5px;
+  display: block;
+
 }
 
 
@@ -321,7 +316,7 @@ body {
 
 #intro {
   .gv-modal {
-     top: 6%;
+    top: 16%;
     bottom: auto;
     background-color: transparent;
     color: #fff;
@@ -332,10 +327,7 @@ body {
     padding-right: 20px;
     border: none;
     left: 0;
-
-    @include mq(tablet) {
-      font-size: 24px;
-    }
+    max-width: 600px;
 
     h1 {
       margin: 0;
@@ -346,6 +338,17 @@ body {
       margin: 0;
       font-size: 16px;
     }
+
+    @include mq(tablet) {
+      font-size: 40px;
+
+      p {
+        margin: 0;
+        font-size: 30px;
+      }
+    }
+
+
   }
 
     .gv-modal-img {
@@ -354,6 +357,17 @@ body {
     }
 
   .gv-arrow {
-    opacity: 0.8;
+    opacity: 1;
+  }
+}
+
+#ch1a, #ch1b  {
+  .gv-label {
+    color: #525252;
+    text-shadow: 0 0 4px #FFF;
+  }
+
+  .gv-label-elv {
+      color: #9F9F9F;
   }
 }
