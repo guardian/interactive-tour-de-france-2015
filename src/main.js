@@ -255,12 +255,11 @@ function boot(el) {
 
 		chapters.forEach(function(chapter) {
 			if (viewportDimensions.width <= 480) {
-				var index = chapter.image.lastIndexOf('.');
-				chapter.image = chapter.image.substr(0,index) + '_mobile' + chapter.image.substr(index);
-				chapter.image = chapter.image
+				chapter.imgEl = loader.addImage(chapter.imageMobile);
+			} else {
+				chapter.imgEl = loader.addImage(chapter.image);
 			}
 
-			chapter.imgEl = loader.addImage(chapter.image);
 		})
 
 		var Scene = require('./js/scene.js');
