@@ -20,7 +20,7 @@ var chapters = [
 		"id": "ch1a",
 		"anim": "ch1a",
 		"image": "/imgs/ch1a.png",
-		"imageMobile": "/imgs/ch1a_mobile.jpg",
+		"imageMobile": "/imgs/ch1a_mobile.png",
 		"html": require("../html/chapter1a.html")
 	},
 	{
