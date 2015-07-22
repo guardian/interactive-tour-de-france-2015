@@ -31,7 +31,8 @@ body {
 .loaded .gv-wrapper,
 .loaded .gv-fallback-container,
 .loaded #webgl,
-.loaded .gv-pagination  {
+.loaded .gv-pagination,
+.loaded .gv-arrow  {
   opacity: 1;
 }
 
@@ -107,7 +108,7 @@ body {
 .gv-modal {
   opacity: 0.9;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.95);
   font-size: 14px;
 
   opacity: 1;
@@ -182,6 +183,7 @@ body {
   width: 33%;
   height: 73%;
   z-index: 200;
+  opacity: 0;
 
   transition: 1s opacity;
 
@@ -413,6 +415,20 @@ body {
   .gv-label {
     color: #525252;
     text-shadow: 0 0 4px #FFF;
+    display: none;
+
+    &:first-child,
+    &:last-child {
+      display: block !important;
+      background-color: rgba(255, 255, 255, 0.6);
+      width: auto;
+      padding: 5px;
+      text-align: center;
+      transform: translate(-50%, 0%);
+      border-radius: 2px;
+  }
+
+
   }
 
   .gv-label-elv {

@@ -185,12 +185,12 @@ function buildScene(el, mountainMesh) {
 
 
 function boot(el) {
+	el.classList.add('loading');
 	el.innerHTML = html;
 	loaderEl = el.querySelector('.gv-loader');
 	countEl = el.querySelector('.gv-progress-count');
 	totalEl = el.querySelector('.gv-progress-total');
 
-	el.classList.add('loading');
 
 	if (viewportDimensions.width <= 480) {
 		el.classList.add('gv-mobile');
