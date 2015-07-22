@@ -7,24 +7,27 @@ var datView = require('./js/datView.js')
 var _ = require('underscore');
 var msgpack = require('msgpack-js-browser');
 var detect = require('./js/utils/detect.js');
-
 var THREE = require('three');
 var JSONLoader = require('./js/libs/JSONLoader.js')(THREE);
 
 var debug = url.hasParameter('debug');
 var viewportDimensions = detect.getViewport();
 
-var iswebGLSupported = (function () {
+var webGLEnabled = (function () {
 	try {
 		var canvas = document.createElement( 'canvas' );
 		return !! ( window.WebGLRenderingContext && ( canvas.getContext( 'webgl' ) || canvas.getContext( 'experimental-webgl' ) ) ); }
 		catch ( e ) { return false; }
 	})();
 
- console.log('webGL support', iswebGLSupported);
+ console.log('webGL support', webGLEnabled);
+
+
+ if (url.hasParameter('fallback')) {
+ 	webGLEnabled = false;
+ }
 
 var mountainMesh;
-
 
 function buildScene(el, mountainMesh) {
 	el.innerHTML = html;
@@ -39,6 +42,7 @@ function buildScene(el, mountainMesh) {
 	wrapperEl.style.height = viewportDimensions.height + 'px';
 
 	var app = Q3D.application;
+	app.webGLEnabled = webGLEnabled;
 	app.init(container);
 	app.loadProject(project);
 	app.addEventListeners();
@@ -175,46 +179,56 @@ function buildScene(el, mountainMesh) {
 
 
 function boot(el) {
+	if (webGLEnabled) {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '/data/mesh.pack', true);
+		xhr.responseType = 'arraybuffer';
 
-	var xhr = new XMLHttpRequest();
-	xhr.open('GET', '/data/mesh.pack', true);
-	xhr.responseType = 'arraybuffer';
+		xhr.onload = function( e ) {
+			console.log('Mesh pack loaded');
 
-	xhr.onload = function( e ) {
-		console.log('Mesh pack loaded');
+			var decoded = msgpack.decode( this.response );
+			var loader = new JSONLoader();
+			var parsedMountain = loader.parse(decoded);
 
-		var decoded = msgpack.decode( this.response );
-		var loader = new JSONLoader();
-		var parsedMountain = loader.parse(decoded);
+			var imageSrc = '/imgs/defuse_small.jpg';
+			if (viewportDimensions.width > 480 ) {
+				imageSrc = '/imgs/defuse_mid.jpg';
+				console.log('Upgrading to mid texture');
+			}
+			if (viewportDimensions.width > 1020 ) {
+				imageSrc = '/imgs/defuse_large.jpg';
+				console.log('Upgrading to large texture', viewportDimensions.width);
+			}
 
-		var imageSrc = '/imgs/defuse_small.jpg';
-		if (viewportDimensions.width > 480 ) {
-			imageSrc = '/imgs/defuse_mid.jpg';
-			console.log('Upgrading to mid texture');
-		}
-		if (viewportDimensions.width > 1020 ) {
-			imageSrc = '/imgs/defuse_large.jpg';
-			console.log('Upgrading to large texture', viewportDimensions.width);
-		}
+			// Enable CORs for images
+			THREE.ImageUtils.crossOrigin = '';
 
-		// Enable CORs for images
-		THREE.ImageUtils.crossOrigin = '';
+			var imageTexture = THREE.ImageUtils.loadTexture(imageSrc, {}, function() {
+				console.log('Texture image loaded');
+				buildScene(el, mountainMesh);
+			});
 
-		var imageTexture = THREE.ImageUtils.loadTexture(imageSrc, {}, function() {
-			console.log('Texture image loaded');
-			buildScene(el, mountainMesh);
-		});
+			var material = new THREE.MeshPhongMaterial( { map: imageTexture });
+			var mountainMesh = new THREE.Mesh( parsedMountain.geometry, material );
 
-		var material = new THREE.MeshPhongMaterial( { map: imageTexture });
-		var mountainMesh = new THREE.Mesh( parsedMountain.geometry, material );
+			mountainMesh.rotation.x = (Math.PI / 180) * 90;
+			mountainMesh.rotation.y = (Math.PI / 180) * 90 * -1;
+			mountainMesh.position.z = 13
+			mountainMesh.position.x = 13
+		};
 
-		mountainMesh.rotation.x = (Math.PI / 180) * 90;
-		mountainMesh.rotation.y = (Math.PI / 180) * 90 * -1;
-		mountainMesh.position.z = 13
-		mountainMesh.position.x = 13
-	};
-
-	xhr.send();
+		xhr.send();
+	} else {
+		el.innerHTML = html;
+		var modalEl = el.querySelector('.gv-modal');
+		var chapters = require('./data/chapterData.js');
+		var Scene = require('./js/scene.js');
+		var app = {};
+		app.webGLEnabled = webGLEnabled;
+		var scene = new Scene(el, modalEl, chapters, app);
+		scene.start();
+	}
 
 }
 

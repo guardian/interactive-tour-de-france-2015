@@ -18,6 +18,14 @@ var Scene = function(el, modalEl, chapters, app) {
 
 	this.qgisApp.isAnimating = false;
 
+	// Add fallback images if webgl is not available
+	if (!app.webGLEnabled) {
+		var imageContainer = this.el.querySelector('.gv-fallback-container');
+		this.chapters.forEach(function(chapter) {
+			imageContainer.appendChild(chapter.imgEl);
+		}.bind(this));
+	}
+
 
 	// Animations
 	this.MODAL_FADE_TIME = 400;
@@ -111,6 +119,11 @@ Scene.prototype.transitionChapter = function(val) {
 	}
 	var delay = duration - this.MODAL_FADE_TIME * 2;
 	delay = (delay < 0) ? 0 : delay;
+
+	if (!this.qgisApp.webGLEnabled) {
+		delay = 500;
+		duration = 2000;
+	}
 
 	this.modalFadeIn.delay(delay);
 	this.modalFadeOut.start();

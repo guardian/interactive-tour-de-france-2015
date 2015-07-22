@@ -453,7 +453,7 @@ require('./SkyShader.js')(THREE);
       if (!this.isAnimating || !this.ref || !this.ref.bendGroup) { return; }
       if (this.labelsEl.style.opacity == "0" ) { return ;}
 
-      console.log('animating labels');
+      // console.log('animating labels');
 
       var idx_dist = [];
       for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {

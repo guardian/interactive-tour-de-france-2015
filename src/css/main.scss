@@ -20,6 +20,7 @@ body {
 // Remove <figure> margin
 .interactive {
     margin: 0 !important;
+    overflow: hidden;
 }
 
 .gv-container {
@@ -370,4 +371,22 @@ body {
   .gv-label-elv {
       color: #9F9F9F;
   }
+}
+
+.gv-fallback-container {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.gv-fallback-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: auto;
+  transform: translateX(-50%);
 }

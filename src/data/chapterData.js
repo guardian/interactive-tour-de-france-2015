@@ -5,71 +5,84 @@ var chapters = [
 	{
 		"id": "intro",
 		"anim": "intro",
+		"image": "/imgs/intro.png",
 		"html": require("../html/intro.html")
 	},
 	{
 		"id": "ch0",
 		"anim": "ch0",
+		"image": "/imgs/ch0.png",
 		"html": require("../html/chapter0.html")
 	},
 	{
 		"id": "ch1a",
 		"anim": "ch1a",
+		"image": "/imgs/ch1a.png",
 		"html": require("../html/chapter1a.html")
 	},
 	{
 		"id": "ch1b",
 		"anim": "ch1b",
+		"image": "/imgs/ch1b.png",
 		"duration": 0,
 		"html": require("../html/chapter1b.html")
 	},
 	{
 		"id": "ch2a",
 		"anim": "ch2",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter2a.html")
 	},
 	{
 		"id": "ch2b",
 		"duration": 0,
+		"image": "/imgs/ch-placeholder.jpg",
 		"anim": "ch2",
 		"html": require("../html/chapter2b.html")
 	},
 	{
 		"id": "ch3a",
 		"anim": "ch3",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter3a.html")
 	},
 	{
 		"id": "ch3b",
 		"duration": 0,
 		"anim": "ch3",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter3b.html")
 	},
 	{
 		"id": "ch4a",
 		"anim": "ch4",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter4a.html")
 	},
 	{
 		"id": "ch4b",
 		"duration": 0,
 		"anim": "ch4",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter4b.html")
 	},
 	{
 		"id": "ch5a",
 		"anim": "ch5a",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter5a.html")
 	},
 	{
 		"id": "ch5b",
 		"duration": 0,
 		"anim": "ch5b",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter5b.html")
 	},
 	{
 		"id": "ch6",
 		"anim": "ch6",
+		"image": "/imgs/ch-placeholder.jpg",
 		"html": require("../html/chapter6.html")
 	}
 
