@@ -93,10 +93,9 @@ body {
 .gv-modal {
   opacity: 0.9;
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(0,0,0,0.1);
-  font-size: 12px;
-  font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  background-color: rgba(255, 255, 255, 0.97);
+  font-size: 14px;
+
   opacity: 1;
   position: absolute;
   bottom: 0;
@@ -111,23 +110,31 @@ body {
   @include mq(tablet) {
     bottom: auto;
     left: auto;
-    right: 2%;
-    top: 6%;
+    top: 0;
     width: 40%;
-    max-width: 380px;
-    padding: 5px 8px;
+    max-width: 330px;
+    padding: 20px;
   }
 
 
   h1, h2 {
-    margin-top: 0;
+    margin-top: 0.2em;
     margin-bottom: 0.4em;
+    line-height: 1.1em;
+    font-weight: bold;
+    font-size: 20px;
   }
 
   > p {
       margin-top: 0;
   }
 
+}
+
+.gv-section-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
 }
 
 .gv-modal-count {
@@ -316,45 +323,69 @@ body {
 // Chapter specific styles
 
 #intro {
+
   .gv-modal {
-    top: 16%;
-    bottom: auto;
-    background-color: transparent;
-    color: #fff;
-    font-size: 20px;
-    font-family: Guardian Text Egyptian Web,Georgia,serif;
-    font-weight: 700;
-    text-shadow: 0 0 10px #000;
-    padding-right: 20px;
-    border: none;
-    left: 0;
-    max-width: 600px;
-
     h1 {
-      margin: 0;
-      line-height: 1em;
-    }
+      font-size: 25px;
+      font-weight: bold;
+        margin-top: .2em;
+        margin-bottom: .4em;
 
-    p {
-      margin: 0;
-      font-size: 16px;
-    }
-
-    @include mq(tablet) {
-      font-size: 40px;
-
-      p {
-        margin: 0;
-        font-size: 30px;
+      @include mq(tablet) {
+        font-size: 42px;
+        font-weight: lighter;
       }
     }
-
-
   }
 
+  .gv-section-title {
+    font-size: 16px;
+    @include mq(tablet) {
+      font-size: 20px;
+    }
+  }
+  // .gv-modal {
+  //   top: 16%;
+  //   bottom: auto;
+  //   background-color: transparent;
+  //   color: #fff;
+  //   font-size: 20px;
+  //   font-family: Guardian Text Egyptian Web,Georgia,serif;
+  //   font-weight: 700;
+  //   text-shadow: 0 0 10px #000;
+  //   padding-right: 20px;
+  //   border: none;
+  //   left: 0;
+  //   max-width: 600px;
+
+  //   h1 {
+  //     margin: 0;
+  //     line-height: 1em;
+  //   }
+
+  //   p {
+  //     margin: 0;
+  //     font-size: 16px;
+  //   }
+
+  //   @include mq(tablet) {
+  //     font-size: 40px;
+
+  //     p {
+  //       margin: 0;
+  //       font-size: 30px;
+  //     }
+  //   }
+
+
+  // }
+
     .gv-modal-img {
-      max-width: 380px;
-      float: none;
+
+      @include mq(tablet) {
+        max-width: 380px;
+        float: none;
+      }
     }
 
   .gv-arrow {
