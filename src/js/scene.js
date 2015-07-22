@@ -47,6 +47,9 @@ var Scene = function(el, modalEl, chapters, app) {
 	var nextBtn = el.querySelector('.gv-arrow-next');
 	nextBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
+	var beginBtn = el.querySelector('.gv-arrow-begin');
+	beginBtn.addEventListener('click', this.nextChapter.bind(this), false);
+
 	var previousBtn = el.querySelector('.gv-arrow-previous');
 	previousBtn.addEventListener('click', this.previousChapter.bind(this), false);
 

@@ -185,7 +185,7 @@ body {
   z-index: 200;
   opacity: 0;
 
-  transition: 1s opacity;
+  transition: 0.5s opacity;
 
   @include mq(tablet) {
     transform: none;
@@ -514,3 +514,73 @@ body {
        margin-bottom: auto;
    }
 }
+
+#intro {
+  .gv-arrow-previous {
+    opacity: 0;
+  }
+
+  .gv-arrow-next {
+    opacity: 0;
+  }
+
+   .gv-arrow-begin {
+     opacity: 1;
+   }
+
+}
+
+#intro.loaded .gv-arrow-begin {
+  opacity: 1;
+}
+
+
+#ch6 {
+  .gv-arrow-next {
+    opacity: 0;
+  }
+}
+
+.loaded .gv-arrow-begin {
+  opacity: 0;
+}
+
+ .gv-arrow-begin {
+    opacity: 0;
+    background-color: #ffcb00;
+    color: #fff;
+    border-radius: 60px;
+    width: 110px;
+    font-size: 19px;
+    padding: 3px 2px;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: bold;
+      transform: translate(-8px, -8px);
+
+      @media (max-width: 740px) {
+        height: 41px;
+        font-size: 16px;
+        padding: 0;
+        width: 92px;
+        bottom: 2px;
+        right: 0px;
+      }
+
+
+    .gv-arrow-icon-wrapepr {
+      background-color: transparent;
+      width: auto;
+      padding: 0;
+      top: 8px;
+      right: 13px;
+    }
+
+    .gv-arrow-icon {
+      vertical-align: middle;
+    }
+
+    .gv-begin {
+      display: inline-block;
+    }
+  }
+
