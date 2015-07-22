@@ -74,6 +74,16 @@ var Scene = function(el, modalEl, chapters, app) {
 
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
+	
+	window.addEventListener('keydown', function(event) {
+		if (event.keyCode === 39 || event.keyCode === 38) {
+			this.nextChapter();
+		}
+		if (event.keyCode === 40 || event.keyCode === 37) {
+			this.previousChapter();
+		}
+	}.bind(this));
+	
 
 }
 
@@ -129,12 +139,8 @@ Scene.prototype.transitionChapter = function(val) {
 		duration = 2000;
 	}
 
-	console.log(duration, delay);
-
 	this.modalFadeIn.delay(delay);
 	this.modalFadeOut.start();
-
-
 	this.chapters[this.currentChapter].start(duration);
 }
 
