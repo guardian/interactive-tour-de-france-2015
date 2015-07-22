@@ -107,7 +107,7 @@ function buildScene(el, mountainMesh) {
 
 	// Add POI
 	var geometry = new THREE.SphereGeometry( 5, 32, 32 );
-	var material = new THREE.MeshBasicMaterial( {color: 0xffff00, transparent: true, opacity: 0 } );
+	var material = new THREE.MeshBasicMaterial( {color: '#00aeff', transparent: true, opacity: 0 } );
 	app.ref.poi1 = new THREE.Mesh( geometry, material );
 	app.ref.poi1.scale.set(1.8,1.8, 1 );
 	app.ref.poi1.position.set(-14, -22, 1);
@@ -159,9 +159,10 @@ function buildScene(el, mountainMesh) {
 	app.ref.contourLines.material.opacity = 0.1;
 
 	app.ref.gpsLines.material.transparent = true;
-	app.ref.gpsLines.material.color = { r: 0, g: 219, b: 255 };
+	app.ref.gpsLines.material.color = { r: 255, g: 0, b: 255 };
 
-	app.ref.bends.material.color = { r: 255, g: 230, b: 0 };
+	// app.ref.bends.material.color = { r: 255, g: 230, b: 0 };
+	app.ref.bends.material.visible = false;
 
 
 	var chapters = require('./data/chapterData.js');
