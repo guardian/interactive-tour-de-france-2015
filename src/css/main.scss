@@ -27,17 +27,11 @@ body {
     overflow: hidden;
 }
 
-.loading .gv-wrapper,
-.loading .gv-fallback-container,
-.loading #webgl {
-  // display: none;
-  opacity: 0;
-}
 
 .loaded .gv-wrapper,
 .loaded .gv-fallback-container,
-.loaded #webgl {
-  // display: none;
+.loaded #webgl,
+.loaded .gv-pagination  {
   opacity: 1;
 }
 
@@ -282,6 +276,8 @@ body {
 
 
 .gv-pagination {
+  opacity: 0;
+  transition: 1s opacity;
   position: absolute;
   bottom: 2%;
   left: 50%;

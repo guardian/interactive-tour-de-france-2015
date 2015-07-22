@@ -51,23 +51,23 @@ var Scene = function(el, modalEl, chapters, app) {
 
 
 	// Interactions - touch
-	this.touch = new Hammer(el, {});
-	this.touch.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-	this.touch.on('pan', function(ev) {
-		var delta = Math.abs(ev.deltaX);
-		var opacity = 1 - (Math.log(delta) / 20);
-		var translateDist = Math.log(delta) * 10;
-		if (ev.deltaX < 0) { translateDist *= -1 };
-	   	this.modalEl.style.transform = 'translateX(' + translateDist  + 'px)';
-		this.modalEl.style.opacity = opacity;
-	}.bind(this));
+	this.touch = new Hammer(el, {velocity: 0.1, threshold: 5 });
+	// this.touch.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
+	// this.touch.on('pan', function(ev) {
+	// 	var delta = Math.abs(ev.deltaX);
+	// 	var opacity = 1 - (Math.log(delta) / 20);
+	// 	var translateDist = Math.log(delta) * 10;
+	// 	if (ev.deltaX < 0) { translateDist *= -1 };
+	//    	this.modalEl.style.transform = 'translateX(' + translateDist  + 'px)';
+	// 	this.modalEl.style.opacity = opacity;
+	// }.bind(this));
 
-	this.touch.on('panend', function(ev) {
-		this.modalEl.style.transform = 'translateX(0)';
-		this.modalEl.style.opacity = 1;
-	}.bind(this))
+	// this.touch.on('panend', function(ev) {
+	// 	this.modalEl.style.transform = 'translateX(0)';
+	// 	this.modalEl.style.opacity = 1;
+	// }.bind(this))
 
-	this.touch.get('swipe').set({velocity: 0.1, threshold: 5 });
+
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
 

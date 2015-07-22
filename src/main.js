@@ -23,6 +23,8 @@ var webGLEnabled = (function () {
  console.log('webGL support', webGLEnabled);
 
 var loaderEl;
+var countEl;
+var totalEl;
 
 
  if (url.hasParameter('fallback')) {
@@ -185,6 +187,9 @@ function buildScene(el, mountainMesh) {
 function boot(el) {
 	el.innerHTML = html;
 	loaderEl = el.querySelector('.gv-loader');
+	countEl = el.querySelector('.gv-progress-count');
+	totalEl = el.querySelector('.gv-progress-total');
+
 	el.classList.add('loading');
 
 	if (webGLEnabled) {
@@ -192,8 +197,13 @@ function boot(el) {
 		xhr.open('GET', '/data/mesh.pack', true);
 		xhr.responseType = 'arraybuffer';
 
+		countEl.innerHTML = '0';
+		totalEl.innerHTML = '2';
+
 		xhr.onload = function( e ) {
 			console.log('Mesh pack loaded');
+			countEl.innerHTML = '1';
+			totalEl.innerHTML = '2';
 
 			var decoded = msgpack.decode( this.response );
 			var loader = new JSONLoader();
@@ -214,6 +224,8 @@ function boot(el) {
 
 			var imageTexture = THREE.ImageUtils.loadTexture(imageSrc, {}, function() {
 				console.log('Texture image loaded');
+				countEl.innerHTML = '2';
+				totalEl.innerHTML = '2';
 				buildScene(el, mountainMesh);
 			});
 
@@ -243,15 +255,7 @@ function boot(el) {
 		var app = {};
 		app.webGLEnabled = webGLEnabled;
 
-
-
-		var countEl = el.querySelector('.gv-progress-count');
-		var totalEl = el.querySelector('.gv-progress-total');
-
-		console.log(countEl, totalEl);
-
 		loader.addProgressListener(function(e) {
-			console.log(e);
 			countEl.innerHTML = e.completedCount;
 			totalEl.innerHTML = e.totalCount;
 		});
