@@ -55,7 +55,7 @@ Chapter.prototype.fadeIn = function(duration) {
 Chapter.prototype.fadeOut = function(duration) {
 	if (this.tween) { this.tween.stop(); }
 	this.tween = new TWEEN.Tween(this.imgEl.style);
-	this.tween.to({ opacity: 0 }, 2000);
+	this.tween.to({ opacity: 0 }, 3000);
 	this.tween.easing( TWEEN.Easing.Quintic.InOut );
 	this.tween.start();
 }

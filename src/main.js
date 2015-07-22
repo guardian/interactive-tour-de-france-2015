@@ -209,6 +209,8 @@ function boot(el) {
 			countEl.innerHTML = '1';
 			totalEl.innerHTML = '2';
 
+			loaderEl.setAttribute('style', '');
+
 			var decoded = msgpack.decode( this.response );
 			var loader = new JSONLoader();
 			var parsedMountain = loader.parse(decoded);
@@ -271,6 +273,7 @@ function boot(el) {
 		});
 
 		loader.addCompletionListener(function() {
+			loaderEl.setAttribute('style', '');
 			console.log('all images downloaded');
 			loaderEl.style.opacity = 0;
 			el.classList.remove('loading');
