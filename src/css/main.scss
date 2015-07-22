@@ -192,7 +192,7 @@ body {
     top: auto;
     width: 40px;
     height: 40px;
-    bottom: 10%;
+    bottom: 47%;
     padding: 10px;
     border-radius: 50%;
     opacity: 0.6;
@@ -411,7 +411,13 @@ body {
   }
 }
 
-#ch1a, #ch1b  {
+#intro, #ch6, #ch5a, #ch5b {
+  .gv-label {
+    display: none;
+  }
+}
+
+#ch0, #ch1a, #ch1b  {
   .gv-label {
     color: #525252;
     text-shadow: 0 0 4px #FFF;
@@ -547,7 +553,7 @@ body {
 
  .gv-arrow-begin {
     opacity: 0;
-    background-color: #ffcb00;
+    background-color: #F9B500;
     color: #fff;
     border-radius: 60px;
     width: 110px;
@@ -557,14 +563,6 @@ body {
     font-weight: bold;
       transform: translate(-8px, -8px);
 
-      @media (max-width: 740px) {
-        height: 41px;
-        font-size: 16px;
-        padding: 0;
-        width: 92px;
-        bottom: 2px;
-        right: 0px;
-      }
 
 
     .gv-arrow-icon-wrapepr {
@@ -582,5 +580,19 @@ body {
     .gv-begin {
       display: inline-block;
     }
+    
+    @media (max-width: 740px) {
+        height: 41px;
+        font-size: 16px;
+        padding: 0;
+        width: 92px;
+        bottom: 2px;
+        right: 0px;
+        width: 42px;
+        
+         .gv-begin {
+           display: none;
+         }
+      }
   }
 
