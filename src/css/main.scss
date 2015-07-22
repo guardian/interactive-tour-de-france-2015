@@ -27,11 +27,29 @@ body {
     overflow: hidden;
 }
 
+.loading .gv-wrapper,
+.loading .gv-fallback-container,
+.loading #webgl {
+  // display: none;
+  opacity: 0;
+}
+
+.loaded .gv-wrapper,
+.loaded .gv-fallback-container,
+.loaded #webgl {
+  // display: none;
+  opacity: 1;
+}
+
+
 // Note: Access images using absolute '/imgs/' paths
 .gv-wrapper {
+    opacity: 0;
+    transition: 1s opacity;
     margin: 0 auto;
     height: 100vh;
     position: relative;
+    z-index: 400;
 
     // Pass through pointer events to WebgGL
     pointer-events: none;
@@ -71,6 +89,8 @@ body {
     width: 100%;
     z-index: 0;
     overflow: hidden;
+    opacity: 0;
+    transition: 1s opacity;
 }
 
 
@@ -405,6 +425,8 @@ body {
 }
 
 .gv-fallback-container {
+  transition: 1s opacity;
+  opacity: 0;
   overflow: hidden;
   width: 100%;
   position: absolute;
@@ -420,4 +442,31 @@ body {
   height: 100%;
   width: auto;
   transform: translateX(-50%);
+}
+
+
+.loaded .gv-loader {
+  opacity: 0;
+}
+
+.gv-loader {
+  // display: none;
+  z-index: 300;
+  opacity: 1;
+  transition: 1s opacity;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  font-size: 22px;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+}
+
+.gv-progress {
+  font-size: 16px;
 }

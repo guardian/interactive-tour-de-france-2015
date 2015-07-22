@@ -26,12 +26,9 @@ function Chapter(data, app) {
 	this._chapterData = data;
 	this.html = this._chapterData.html;
 	this.imgSrc = this._chapterData.image;
-	this.imgEl;
+	this.imgEl = this._chapterData.imgEl;
 
 	if (!this._app.webGLEnabled) {
-		// TODO: Load desktop or mobile image
-		this.imgEl = document.createElement('img');
-		this.imgEl.src = this.imgSrc;
 		this.imgEl.classList.add('gv-fallback-image');
 		this.imgEl.classList.add('gv-fallback-image-' + this._chapterData.id);
 	}

@@ -22,6 +22,8 @@ var webGLEnabled = (function () {
 
  console.log('webGL support', webGLEnabled);
 
+var loaderEl;
+
 
  if (url.hasParameter('fallback')) {
  	webGLEnabled = false;
@@ -30,7 +32,8 @@ var webGLEnabled = (function () {
 var mountainMesh;
 
 function buildScene(el, mountainMesh) {
-	el.innerHTML = html;
+	el.classList.remove('loading');
+	el.classList.add('loaded');
 	var modalEl = el.querySelector('.gv-modal');
 
 	var container = document.getElementById('webgl');
@@ -180,6 +183,10 @@ function buildScene(el, mountainMesh) {
 
 
 function boot(el) {
+	el.innerHTML = html;
+	loaderEl = el.querySelector('.gv-loader');
+	el.classList.add('loading');
+
 	if (webGLEnabled) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', '/data/mesh.pack', true);
@@ -221,14 +228,47 @@ function boot(el) {
 
 		xhr.send();
 	} else {
-		el.innerHTML = html;
+
 		var modalEl = el.querySelector('.gv-modal');
+
 		var chapters = require('./data/chapterData.js');
+		var PXloader = require('./js/libs/pxloader.js');
+		var loader = new PXloader();
+
+		chapters.forEach(function(chapter) {
+			chapter.imgEl = loader.addImage(chapter.image);
+		})
+
 		var Scene = require('./js/scene.js');
 		var app = {};
 		app.webGLEnabled = webGLEnabled;
-		var scene = new Scene(el, modalEl, chapters, app);
-		scene.start();
+
+
+
+		var countEl = el.querySelector('.gv-progress-count');
+		var totalEl = el.querySelector('.gv-progress-total');
+
+		console.log(countEl, totalEl);
+
+		loader.addProgressListener(function(e) {
+			console.log(e);
+			countEl.innerHTML = e.completedCount;
+			totalEl.innerHTML = e.totalCount;
+		});
+
+		loader.addCompletionListener(function() {
+			console.log('all images downloaded');
+			loaderEl.style.opacity = 0;
+			el.classList.remove('loading');
+			el.classList.add('loaded');
+			var scene = new Scene(el, modalEl, chapters, app);
+			scene.start();
+		}.bind(this));
+
+		loader.start();
+
+
+
 	}
 
 }
