@@ -117,7 +117,7 @@ body {
   z-index: 100;
 
   width: 100%;
-  padding: 10px 10px 48px;
+  padding: 10px 10px 50px;
 
 
 
@@ -282,7 +282,7 @@ body {
   bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 101;
+  z-index: 501;
 }
 
 .gv-pagination-dot {
@@ -430,6 +430,12 @@ body {
   top: 0;
 }
 
+
+.gv-mobile .gv-fallback-image {
+  width: 100%;
+  height: auto;
+}
+
 .gv-fallback-image {
   opacity: 0;
   position: absolute;
@@ -465,4 +471,30 @@ body {
 
 .gv-progress {
   font-size: 16px;
+}
+
+
+.gv-list {
+    margin: 0;
+    padding-left: 1em;
+
+   span {
+    font-weight: bold;
+   }
+}
+
+.meta__social {
+    pointer-events: all;
+  border: none;
+  margin: 0 auto;
+  width: 160px;
+  display: block;
+  margin-bottom: -19px;
+  transform: translateX(7px);
+
+   @include mq(tablet) {
+      transform: none;
+       width: auto;
+       margin-bottom: auto;
+   }
 }

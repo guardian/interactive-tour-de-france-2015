@@ -29,6 +29,7 @@ var Scene = function(el, modalEl, chapters, app) {
 
 	// Animations
 	this.MODAL_FADE_TIME = 400;
+	this.modalEl.style.opacity = 1;
 	this.modalFadeOut = new TWEEN.Tween(this.modalEl.style);
 	this.modalFadeOut.to({ opacity: 0 }, this.MODAL_FADE_TIME)
 	.easing( TWEEN.Easing.Quartic.Out )
@@ -124,6 +125,8 @@ Scene.prototype.transitionChapter = function(val) {
 		delay = 500;
 		duration = 2000;
 	}
+
+	console.log(duration, delay);
 
 	this.modalFadeIn.delay(delay);
 	this.modalFadeOut.start();

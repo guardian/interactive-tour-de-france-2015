@@ -192,6 +192,10 @@ function boot(el) {
 
 	el.classList.add('loading');
 
+	if (viewportDimensions.width <= 480) {
+		el.classList.add('gv-mobile');
+	}
+
 	if (webGLEnabled) {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', '/data/mesh.pack', true);
@@ -209,7 +213,7 @@ function boot(el) {
 			var loader = new JSONLoader();
 			var parsedMountain = loader.parse(decoded);
 
-			var imageSrc = '/imgs/defuse_small.jpg';
+			var imageSrc = '/imgs/defuse_mid.jpg';
 			if (viewportDimensions.width > 480 ) {
 				imageSrc = '/imgs/defuse_mid.jpg';
 				console.log('Upgrading to mid texture');
@@ -248,6 +252,12 @@ function boot(el) {
 		var loader = new PXloader();
 
 		chapters.forEach(function(chapter) {
+			if (viewportDimensions.width <= 480) {
+				var index = chapter.image.lastIndexOf('.');
+				chapter.image = chapter.image.substr(0,index) + '_mobile' + chapter.image.substr(index);
+				chapter.image = chapter.image
+			}
+
 			chapter.imgEl = loader.addImage(chapter.image);
 		})
 
