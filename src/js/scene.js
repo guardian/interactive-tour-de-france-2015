@@ -44,14 +44,16 @@ var Scene = function(el, modalEl, chapters, app) {
 	this.modalFadeOut.chain(this.modalFadeIn);
 
 	// Interactions - mouse
-	var nextBtn = el.querySelector('.gv-arrow-next');
+	var nextBtn = el.querySelector('.gv-arrow-next-real');
 	nextBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
 	var beginBtn = el.querySelector('.gv-arrow-begin');
 	beginBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
+
 	var previousBtn = el.querySelector('.gv-arrow-previous');
 	previousBtn.addEventListener('click', this.previousChapter.bind(this), false);
+
 
 
 	// Interactions - touch
