@@ -117,17 +117,18 @@ body {
   z-index: 100;
 
   width: 100%;
-  padding: 10px 10px 50px;
+  padding: 10px 10px 60px;
   
-  
-  @media (max-width: 660px) {
-    padding: 10px 20px 50px;
-    
+  @media (max-width: 360px) {
     p {
       font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       font-size: 12px;
-    }
-    
+    } 
+  }
+  
+  
+  @media (max-width: 660px) {
+    padding: 10px 20px 60px;
     .gv-section-title {
       display: none;
       
@@ -196,7 +197,7 @@ body {
   height: 60px;
   position: absolute;
   pointer-events: all;
-  bottom: 10px;
+  bottom: 20px;
   width: 33%;
   height: 73%;
   z-index: 200;
@@ -364,8 +365,8 @@ body {
     h1 {
       font-size: 25px;
       font-weight: bold;
-        margin-top: .2em;
-        margin-bottom: .4em;
+      margin-top: .2em;
+      margin-bottom: .4em;
 
       @include mq(tablet) {
         font-size: 42px;
@@ -515,10 +516,11 @@ body {
 
 
 .gv-list {
-    margin: 0;
+    margin: 10px 10px 19px;
     padding-left: 1.2em;
     
-    @media (max-width: 660px) {
+    
+    @media (max-width: 360px) {
       font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       font-size: 12px;
     }
@@ -610,7 +612,7 @@ body {
         font-size: 16px;
         padding: 0;
         width: 92px;
-        bottom: 2px;
+        bottom: 12px;
         right: 10px;
         width: 42px;
         
