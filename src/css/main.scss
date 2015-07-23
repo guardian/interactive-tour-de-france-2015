@@ -41,7 +41,7 @@ body {
     opacity: 0;
     transition: 1s opacity;
     margin: 0 auto;
-    height: 100vh;
+    // height: 100vh;
     position: relative;
     z-index: 400;
 
@@ -512,7 +512,7 @@ body {
   opacity: 1;
   transition: 1s opacity;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1;

@@ -43,8 +43,7 @@ function buildScene(el, mountainMesh) {
 	container.style.width = '100%';
 	Q3D.Options.bgcolor = '#ffffff';
 
-	var wrapperEl = el.querySelector('.gv-wrapper');
-	wrapperEl.style.height = viewportDimensions.height + 'px';
+
 
 	var app = Q3D.application;
 	app.webGLEnabled = webGLEnabled;
@@ -191,6 +190,13 @@ function boot(el) {
 	loaderEl = el.querySelector('.gv-loader');
 	countEl = el.querySelector('.gv-progress-count');
 	totalEl = el.querySelector('.gv-progress-total');
+
+	var wrapperEl = el.querySelector('.gv-wrapper');
+	wrapperEl.style.height = viewportDimensions.height + 'px';
+
+	// if (!window.gurdian || !window.guardian.api) {
+	// 	el.classList.add('inapp');
+	// }
 
 
 	if (viewportDimensions.width <= 480) {
