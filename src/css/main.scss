@@ -485,6 +485,7 @@ body {
   position: absolute;
   height: 100%;
   top: 0;
+  pointer-events: none;
 }
 
 
@@ -752,3 +753,12 @@ body {
 }
 
 
+
+
+.dg.ac {
+  z-index: 90000;
+
+  select {
+    color: #000 !important;
+  }
+}

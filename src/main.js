@@ -10,9 +10,7 @@ var detect = require('./js/utils/detect.js');
 var THREE = require('three');
 var JSONLoader = require('./js/libs/JSONLoader.js')(THREE);
 
-var debug = url.hasParameter('debug');
 var viewportDimensions = detect.getViewport();
-
 var webGLEnabled = (function () {
 	try {
 		var canvas = document.createElement( 'canvas' );
@@ -20,11 +18,12 @@ var webGLEnabled = (function () {
 		catch ( e ) { return false; }
 	})();
 
- console.log('webGL support', webGLEnabled);
+console.log('webGL support', webGLEnabled);
 
 var loaderEl;
 var countEl;
 var totalEl;
+var wrapperEl;
 
 
  if (url.hasParameter('fallback')) {
@@ -43,16 +42,12 @@ function buildScene(el, mountainMesh) {
 	container.style.width = '100%';
 	Q3D.Options.bgcolor = '#ffffff';
 
-
-
 	var app = Q3D.application;
 	app.webGLEnabled = webGLEnabled;
 	app.init(container);
 	app.loadProject(project);
 	app.addEventListeners();
 
-	// FIXME: Expose for debugging
-	window.app = app;
 
 	// Add custom mountain mesh
 	app.scene.add(mountainMesh);
@@ -169,17 +164,20 @@ function buildScene(el, mountainMesh) {
 	app.ref.bends.material.visible = false;
 
 
-	var chapters = require('./data/chapterData.js');
-	var Scene = require('./js/scene.js');
-	var scene = new Scene(el, modalEl, chapters, app);
-	scene.start();
+
+	if ( url.hasParameter('debug') ) {
+		app.debug = true;
+		wrapperEl.style.display = 'none';
+		container.style.position = 'relative';
+		datView.init(app, animsJSON);
+	} else {
+		var chapters = require('./data/chapterData.js');
+		var Scene = require('./js/scene.js');
+		var scene = new Scene(el, modalEl, chapters, app);
+		scene.start();
+	}
 
 	app.start();
-
-	// DAT GUI
-	if (debug) {
-		datView.init(app, animsJSON);
-	}
 }
 
 
@@ -190,14 +188,8 @@ function boot(el) {
 	loaderEl = el.querySelector('.gv-loader');
 	countEl = el.querySelector('.gv-progress-count');
 	totalEl = el.querySelector('.gv-progress-total');
-
-	var wrapperEl = el.querySelector('.gv-wrapper');
+	wrapperEl = el.querySelector('.gv-wrapper');
 	wrapperEl.style.height = viewportDimensions.height + 'px';
-
-	// if (!window.gurdian || !window.guardian.api) {
-	// 	el.classList.add('inapp');
-	// }
-
 
 	if (viewportDimensions.width <= 480) {
 		el.classList.add('gv-mobile');
@@ -289,8 +281,6 @@ function boot(el) {
 		}.bind(this));
 
 		loader.start();
-
-
 
 	}
 

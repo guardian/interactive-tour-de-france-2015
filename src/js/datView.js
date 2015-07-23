@@ -33,13 +33,7 @@ function init(app, chapterAnimJSON) {
 	gui.remember(app.ref.gpsLines.material);
 	var gGPS= gui.addFolder('Route');
 	gGPS.add(app.ref.gpsLines.material, 'opacity').min(0).max(1).listen();
-	// gGPS.addColor(app.ref.gpsLines.material, 'color').onChange(function (value) {
-	// 	value.r = Math.round(value.r);
-	// 	value.g = Math.round(value.g);
-	// 	value.b = Math.round(value.b);
-	// 	console.log(value);
-    //   app.ref.gpsLines.material.color = value;
-    // });
+
 
 	gui.remember(app.scene.scale);
 	var gScene= gui.addFolder('Scene');

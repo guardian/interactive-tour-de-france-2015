@@ -1,6 +1,6 @@
 {
   "closed": false,
-  "preset": "ch6",
+  "preset": "ch1b",
   "remembered": {
     "intro": {
       "0": {
@@ -396,48 +396,48 @@
   "folders": {
     "Camera": {
       "preset": "Default",
-      "closed": true,
+      "closed": false,
       "folders": {
         "position": {
           "preset": "Default",
-          "closed": true,
+          "closed": false,
           "folders": {}
         },
         "rotation": {
           "preset": "Default",
-          "closed": false,
+          "closed": true,
           "folders": {}
         }
       }
     },
     "Mesh": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Contours": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Route": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Scene": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Bends": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Labels": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     },
     "Mesh position": {
@@ -447,7 +447,7 @@
     },
     "POI 1": {
       "preset": "Default",
-      "closed": false,
+      "closed": true,
       "folders": {}
     }
   }

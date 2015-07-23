@@ -450,10 +450,8 @@ require('./SkyShader.js')(THREE);
     },
 
     updateLabelPosition: function() {
-      if (!this.isAnimating || !this.ref || !this.ref.bendGroup) { return; }
-      if (this.labelsEl.style.opacity == "0" ) { return ;}
-
-      // console.log('animating labels');
+      if (!this.isAnimating && !this.debug) { return; }
+      if (this.labelsEl.style.opacity == "0" || !this.ref || !this.ref.bendGroup) { return ;}
 
       var idx_dist = [];
       for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {
@@ -484,71 +482,6 @@ require('./SkyShader.js')(THREE);
       }.bind(this))
     },
 
-    // update label position
-    updateLabelPositionOld: function () {
-      //if (!this.labelVisibility) return;
-       if (!this.ref || !this.ref.bendGroup) { return; }
-
-
-      var widthHalf = this.width / 2,
-          heightHalf = this.height / 2,
-          autosize = Q3D.Options.label.autoSize,
-          camera = this.camera,
-          camera_pos = camera.position,
-          c2t = this.controls.target.clone().sub(camera_pos),
-          c2l = new THREE.Vector3(),
-          v = new THREE.Vector3();
-
-      // make a list of [label index, distance to camera]
-      var idx_dist = [];
-      for (var i = 0, l = this.ref.bendGroup.children.length; i < l; i++) {
-        idx_dist.push([i, camera_pos.distanceTo(this.ref.bendGroup.children[i].position)]);
-      }
-
-       // console.log(idx_dist);
-      // sort label indexes in descending order of distances
-      idx_dist.sort(function (a, b) {
-        if (a[1] < b[1]) return 1;
-        if (a[1] > b[1]) return -1;
-        return 0;
-      });
-
-      var label, e, x, y, dist, fontSize;
-      var minFontSize = Q3D.Options.label.minFontSize;
-      for (var i = 0, l = idx_dist.length; i < l; i++) {
-
-        label = this.ref.bendGroup.children[idx_dist[i][0]];
-        // console.log(label, i);
-        e = this.labelEls[idx_dist[i][0]];
-        if (c2l.subVectors(label.position, camera_pos).dot(c2t) > 0) {
-
-          // label is in front
-          // calculate label position
-          // v.copy(label.position).project(camera);
-          // x = (v.x * widthHalf) + widthHalf;
-          // y = -(v.y * heightHalf) + heightHalf;
-          v = this.toScreenPosition(label, this.camera);
-
-          // set label position
-          e.style.display = "block";
-          e.style.left = (v.x - (e.offsetWidth / 2)) + "px";
-          e.style.top = (v.y - (e.offsetHeight / 2)) + "px";
-          e.style.zIndex = i + 1000;
-
-          // set font size
-          if (autosize) {
-            dist = idx_dist[i][1];
-            if (dist < 10) dist = 10;
-            fontSize = Math.max(Math.round(1000 / dist), minFontSize);
-            e.style.fontSize = fontSize + "px";
-          }
-        }
-        else {
-          // label is in back
-          e.style.display = "none";
-        }
-      }
-    },
 
     labelVisibilityChanged: function () {
       this.labels = [];
