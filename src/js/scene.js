@@ -9,7 +9,8 @@ var Scene = function(el, modalEl, chapters, app) {
 	this.modalEl = modalEl;
 	this.currentChapter = 0;
 	this.pagination = new Pagination(chapters.length);
-	this.el.appendChild(this.pagination.el);
+	var wrapperEl = this.el.querySelector('.gv-wrapper');
+	wrapperEl.appendChild(this.pagination.el);
 	this.qgisApp = app;
 
 	this.chapters = chapters.map(function(item) {
