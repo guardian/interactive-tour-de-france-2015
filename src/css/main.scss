@@ -68,6 +68,7 @@ body {
     }
 }
 
+
 .gv-header {
     padding: 10px $gs-gutter;
     margin: 0;
@@ -217,6 +218,11 @@ body {
   }
   
   
+}
+
+.gv-arrow.gv-arrow-next.gv-arrow-next-real:hover,
+.gv-arrow.gv-arrow-previous:hover {
+    opacity: 1;
 }
 
 .loaded .gv-arrow {
@@ -566,7 +572,7 @@ body {
 }
 
 
-#ch6 {
+#ch7 {
   .gv-arrow-next {
     opacity: 0;
   }
@@ -622,3 +628,9 @@ body {
       }
   }
 
+.gv-credit-title {
+  font-weight: bold;
+}
+.gv-credit-photos {
+  font-size: 12px;
+}

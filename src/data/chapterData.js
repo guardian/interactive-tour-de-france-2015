@@ -97,6 +97,14 @@ var chapters = [
 		"image": "/imgs/ch6.jpg",
 		"imageMobile": "/imgs/ch6_mobile.jpg",
 		"html": require("../html/chapter6.html")
+	},
+	{
+		"id": "ch7",
+		"anim": "ch6",
+		"duration": 0,
+		"image": "/imgs/ch6.jpg",
+		"imageMobile": "/imgs/ch6_mobile.jpg",
+		"html": require("../html/chapter7.html")
 	}
 
 ];
