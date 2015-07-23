@@ -21,6 +21,7 @@ body {
 .interactive {
     margin: 0 !important;
     overflow: hidden;
+    position: relative;
 }
 
 .gv-container {
@@ -165,6 +166,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   margin: 0;
+  pointer-events: all;
 }
 
 .gv-modal-count {
