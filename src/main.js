@@ -87,7 +87,7 @@ function buildScene(el, mountainMesh) {
 	app.labelEls = app.labels.map(function(label) {
 		var el = document.createElement('div');
 		el.classList.add('gv-label');
-		el.innerHTML = '<p class="gv-label-title">' + label[0] + '<span class="gv-label-elv">'  + label[3] + 'm</span></p>';
+		el.innerHTML = '<p class="gv-label-title"><span class="gv-label-number">' + label[0] + '</span><span class="gv-label-elv">'  + label[3] + 'm</span></p>';
 		app.labelsEl.appendChild(el);
 		return el;
 	});

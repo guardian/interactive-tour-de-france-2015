@@ -76,7 +76,7 @@ var Scene = function(el, modalEl, chapters, app) {
 
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
-	
+
 	window.addEventListener('keydown', function(event) {
 		if (event.keyCode === 39 || event.keyCode === 38) {
 			this.nextChapter();
@@ -85,7 +85,7 @@ var Scene = function(el, modalEl, chapters, app) {
 			this.previousChapter();
 		}
 	}.bind(this));
-	
+
 
 }
 

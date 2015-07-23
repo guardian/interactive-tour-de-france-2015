@@ -119,20 +119,20 @@ body {
 
   width: 100%;
   padding: 10px 10px 60px;
-  
+
   @media (max-width: 360px) {
     p {
       font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       font-size: 12px;
-    } 
+    }
   }
-  
-  
+
+
   @media (max-width: 660px) {
     padding: 10px 20px 60px;
     .gv-section-title {
       display: none;
-      
+
     }
   }
 
@@ -177,11 +177,11 @@ body {
     margin: 0 0 4px 4px;
     width: 100%;
     max-width: 90px;
-    
+
     @include mq(mobileLandscape) {
       max-width: 120px;
     }
-    
+
     @include mq(tablet) {
       max-width: none;
       float: none;
@@ -204,7 +204,7 @@ body {
   z-index: 200;
   opacity: 0;
 
-  
+
 
   @include mq(tablet) {
     transform: none;
@@ -214,10 +214,10 @@ body {
     bottom: 47%;
     padding: 10px;
     border-radius: 50%;
-    opacity: 0.4;
+    opacity: 0.6;
   }
-  
-  
+
+
 }
 
 .gv-arrow.gv-arrow-next.gv-arrow-next-real:hover,
@@ -226,9 +226,9 @@ body {
 }
 
 .loaded .gv-arrow {
-  opacity: 0.4;
+  opacity: 0.6;
   transition: 0.5s opacity;
-} 
+}
 
 .gv-arrow-icon-wrapepr {
     background-color: rgba(0, 0, 0, 0.4);
@@ -310,6 +310,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: 501;
+  width: 172px;
 }
 
 .gv-pagination-dot {
@@ -451,7 +452,8 @@ body {
     &:first-child,
     &:last-child {
       display: block !important;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgb(255, 255, 255);
+      padding: 3px 4px;
       width: auto;
       padding: 5px;
       text-align: center;
@@ -462,10 +464,16 @@ body {
 
   }
 
+  .gv-label-number {
+    display: none;
+  }
+
   .gv-label-elv {
-      color: #9F9F9F;
+      color: #2A2A2A;
+      font-size: 17px;
   }
 }
+
 
 .gv-fallback-container {
   transition: 1s opacity;
@@ -524,8 +532,8 @@ body {
 .gv-list {
     margin: 10px 10px 19px;
     padding-left: 1.2em;
-    
-    
+
+
     @media (max-width: 360px) {
       font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
       font-size: 12px;
@@ -576,6 +584,13 @@ body {
   .gv-arrow-next {
     opacity: 0;
   }
+
+  .gv-arrow-previous {
+    opacity: 1;
+    .gv-arrow-icon-wrapepr {
+      background-color: #F9B500;
+    }
+  }
 }
 
 .loaded .gv-arrow-begin {
@@ -612,7 +627,7 @@ body {
     .gv-begin {
       display: inline-block;
     }
-    
+
     @media (max-width: 740px) {
         height: 41px;
         font-size: 16px;
@@ -621,7 +636,7 @@ body {
         bottom: 12px;
         right: 10px;
         width: 42px;
-        
+
          .gv-begin {
            display: none;
          }
