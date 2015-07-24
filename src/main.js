@@ -171,14 +171,13 @@ function buildScene(el, mountainMesh) {
 		wrapperEl.style.display = 'none';
 		container.style.position = 'relative';
 		datView.init(app, animsJSON);
+		app.start();
 	} else {
 		var chapters = require('./data/chapterData.js');
 		var Scene = require('./js/scene.js');
 		var scene = new Scene(el, modalEl, chapters, app);
 		scene.start();
 	}
-
-	app.start();
 }
 
 
