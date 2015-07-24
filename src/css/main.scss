@@ -2,12 +2,12 @@
  * Project: Project name
  * File:    Main SCSS
  */
-@import 'modules/_typography';
+
 @import 'modules/_palette';
 @import 'modules/_grid-system';
 @import 'modules/_breakpoints';
 
-// Optional side margins
+// // Optional side margins
 @import 'modules/_mq';
 @import 'modules/_side-margins';
 
@@ -91,7 +91,6 @@ body {
 
 
 .gv-header {
-    text-shadow: 0 0 12px #FFF;
     display: none;
 }
 
@@ -341,11 +340,10 @@ body {
 }
 .gv-label {
   position: absolute;
- font-size: 15px;
+ font-size: 18px;
  font-weight: bold;
  font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
  color: #FFF;
- text-shadow: 0 0 4px #000;
  width: 160px;
  line-height: 1em;
 
@@ -390,44 +388,7 @@ body {
       font-size: 20px;
     }
   }
-  // .gv-modal {
-  //   top: 16%;
-  //   bottom: auto;
-  //   background-color: transparent;
-  //   color: #fff;
-  //   font-size: 20px;
-  //   font-family: Guardian Text Egyptian Web,Georgia,serif;
-  //   font-weight: 700;
-  //   text-shadow: 0 0 10px #000;
-  //   padding-right: 20px;
-  //   border: none;
-  //   left: 0;
-  //   max-width: 600px;
-
-  //   h1 {
-  //     margin: 0;
-  //     line-height: 1em;
-  //   }
-
-  //   p {
-  //     margin: 0;
-  //     font-size: 16px;
-  //   }
-
-  //   @include mq(tablet) {
-  //     font-size: 40px;
-
-  //     p {
-  //       margin: 0;
-  //       font-size: 30px;
-  //     }
-  //   }
-
-
-  // }
-
     .gv-modal-img {
-
       @include mq(tablet) {
         max-width: 380px;
         float: none;
@@ -439,16 +400,10 @@ body {
   }
 }
 
-#intro, #ch6, #ch5a, #ch5b {
-  .gv-label {
-    display: none;
-  }
-}
 
 #ch0, #ch1a, #ch1b  {
   .gv-label {
     color: #525252;
-    text-shadow: 0 0 4px #FFF;
     display: none;
 
     &:first-child,
@@ -502,6 +457,17 @@ body {
   height: 100%;
   width: auto;
   transform: translateX(-50%);
+  transition: 0.5s opacity;
+
+  &.active {
+    opacity: 1;
+    transition: 1s opacity;
+  }
+
+  &.hide {
+    opacity: 0;
+    transition: 2s opacity;
+  }
 }
 
 
@@ -690,8 +656,6 @@ body {
 .meta__social {
   border-top: none;
   padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 

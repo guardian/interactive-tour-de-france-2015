@@ -34,14 +34,11 @@ var Scene = function(el, modalEl, chapters, app) {
 	this.modalFadeOut = new TWEEN.Tween(this.modalEl.style);
 	this.modalFadeOut.to({ opacity: 0 }, this.MODAL_FADE_TIME)
 	.easing( TWEEN.Easing.Quartic.Out )
-	.onStart(function() { this.qgisApp.isAnimating = true; }.bind(this))
 	.onComplete(this.setModalHTML.bind(this));
 
 	this.modalFadeIn = new TWEEN.Tween(this.modalEl.style);
 	this.modalFadeIn.to({ opacity: 1 }, this.MODAL_FADE_TIME)
-	.easing( TWEEN.Easing.Quartic.Out )
-	.onComplete(function() { this.qgisApp.isAnimating = false; }.bind(this));
-
+	.easing( TWEEN.Easing.Quartic.Out );
 	this.modalFadeOut.chain(this.modalFadeIn);
 
 	// Interactions - mouse
@@ -51,30 +48,12 @@ var Scene = function(el, modalEl, chapters, app) {
 	var beginBtn = el.querySelector('.gv-arrow-begin');
 	beginBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
-
 	var previousBtn = el.querySelector('.gv-arrow-previous');
 	previousBtn.addEventListener('click', this.previousChapter.bind(this), false);
 
 
-
 	// Interactions - touch
 	this.touch = new Hammer(el, {velocity: 0.1, threshold: 5 });
-	// this.touch.get('pan').set({ direction: Hammer.DIRECTION_HORIZONTAL });
-	// this.touch.on('pan', function(ev) {
-	// 	var delta = Math.abs(ev.deltaX);
-	// 	var opacity = 1 - (Math.log(delta) / 20);
-	// 	var translateDist = Math.log(delta) * 10;
-	// 	if (ev.deltaX < 0) { translateDist *= -1 };
-	//    	this.modalEl.style.transform = 'translateX(' + translateDist  + 'px)';
-	// 	this.modalEl.style.opacity = opacity;
-	// }.bind(this));
-
-	// this.touch.on('panend', function(ev) {
-	// 	this.modalEl.style.transform = 'translateX(0)';
-	// 	this.modalEl.style.opacity = 1;
-	// }.bind(this))
-
-
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
 
@@ -86,8 +65,6 @@ var Scene = function(el, modalEl, chapters, app) {
 			this.previousChapter();
 		}
 	}.bind(this));
-
-
 }
 
 Scene.prototype.jumpToChapter = function(chapterNumber) {
@@ -111,21 +88,21 @@ Scene.prototype.previousChapter = function() {
 
 Scene.prototype.setModalHTML = function() {
 	var chapter = this.chapters[this.currentChapter];
-	// this.modalEl.setAttribute('id', chapter._chapterData.id);
 	this.el.setAttribute('id', chapter._chapterData.id);
 	this.modalEl.innerHTML = chapter._chapterData.html
 }
 
 
 Scene.prototype.transitionChapter = function(val) {
+	TWEEN.removeAll();
 	this.chapters[this.currentChapter].stop();
 	var oldChapterIndex = this.currentChapter;
 	this.currentChapter += val;
 	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(this.currentChapter);
 
-	this.modalFadeOut.stop();
-	this.modalFadeIn.stop();
+	// this.modalFadeOut.stop();
+	// this.modalFadeIn.stop();
 
 	// Sync show to end of animation tweens
 	var duration;
@@ -144,6 +121,8 @@ Scene.prototype.transitionChapter = function(val) {
 
 	this.modalFadeIn.delay(delay);
 	this.modalFadeOut.start();
+	TWEEN.add(this.modalFadeOut);
+
 	this.chapters[this.currentChapter].start(duration);
 }
 
@@ -151,11 +130,17 @@ Scene.prototype.transitionChapter = function(val) {
 
 Scene.prototype.start = function() {
 	this.jumpToChapter(0)
-	this.animate();
 	this.setModalHTML();
-	// this.chapters[this.currentChapter].start();
 	this.pagination.goTo(0);
 
+	// Render the first frame
+	if (this.qgisApp.webGLEnabled) {
+		this.qgisApp.isAnimating = true;
+		this.qgisApp.render();
+		this.qgisApp.isAnimating = false;
+	}
+
+	this.animate();
 }
 
 Scene.prototype.stop = function() {
@@ -165,6 +150,7 @@ Scene.prototype.stop = function() {
 
 Scene.prototype.animate = function() {
     TWEEN.update();
+	if (this.qgisApp.webGLEnabled) { this.qgisApp.render(); }
     requestAnimationFrame(this.animate.bind(this));
 }
 

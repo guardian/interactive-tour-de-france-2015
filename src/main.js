@@ -4,7 +4,6 @@ var animsJSON = require('./data/chapterAnims.json');
 var Q3D = require('./js/libs/Qgis2threejs.js');
 var project = require('./data/qgis3d-data');
 var datView = require('./js/datView.js')
-var _ = require('underscore');
 var msgpack = require('msgpack-js-browser');
 var detect = require('./js/utils/detect.js');
 var THREE = require('three');
@@ -156,9 +155,11 @@ function buildScene(el, mountainMesh) {
 	// app.ref.contourLines.material.color = { r: 100, g: 100, b: 100 };
 	// app.ref.contourLines.material.transparent = true;
 	app.ref.contourLines.material.opacity = 0.1;
+	app.ref.contourLines.material.color.setHex(0xCCCCCC );
 
 	app.ref.gpsLines.material.transparent = true;
-	app.ref.gpsLines.material.color = { r: 255, g: 0, b: 255 };
+	app.ref.gpsLines.material.color.setHex(0xFF00FF );
+
 
 	// app.ref.bends.material.color = { r: 255, g: 230, b: 0 };
 	app.ref.bends.material.visible = false;
@@ -166,7 +167,7 @@ function buildScene(el, mountainMesh) {
 
 
 	if ( url.hasParameter('debug') ) {
-		app.debug = true;
+		app.isAnimating = true;
 		wrapperEl.style.display = 'none';
 		container.style.position = 'relative';
 		datView.init(app, animsJSON);
@@ -197,7 +198,7 @@ function boot(el) {
 
 	if (webGLEnabled) {
 		var xhr = new XMLHttpRequest();
-		xhr.open('GET', '/data/mesh.pack', true);
+		xhr.open('GET', '/data/alpe-dhuez.pack', true);
 		xhr.responseType = 'arraybuffer';
 
 		countEl.innerHTML = '0';

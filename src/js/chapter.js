@@ -2,23 +2,18 @@ var access = require('safe-access');
 var TWEEN = require('tween.js');
 
 function buildTweens(anim, app, imgEl) {
-	var tweens = [];
 
-	if (app.webGLEnabled) {
-		tweens = Object.keys(anim.targets).map(function( key ) {
-			var tween = new TWEEN.Tween( access(app, key) );
-			tween.to(anim.targets[key], anim.duration)
-			tween.easing( TWEEN.Easing.Quintic.InOut );
-			return tween;
-		});
-	} else {
-		var tween = new TWEEN.Tween(imgEl.style);
-		tween.to({ opacity: 1}, anim.duration);
-		tween.easing( TWEEN.Easing.Quintic.InOut );
-		tweens.push(tween);
-	}
-
-	return tweens;
+	return Object.keys(anim.targets).map(function( key ) {
+		return new TWEEN.Tween( access(app, key) )
+			.to(anim.targets[key], anim.duration)
+			.onUpdate(function() {
+				app.isAnimating = true;
+			})
+			.onComplete(function() {
+				app.isAnimating = false;
+			})
+			.easing( TWEEN.Easing.Quintic.InOut );
+	});
 }
 
 function Chapter(data, app) {
@@ -28,9 +23,11 @@ function Chapter(data, app) {
 	this.imgSrc = this._chapterData.image;
 	this.imgEl = this._chapterData.imgEl;
 
-	if (!this._app.webGLEnabled) {
+
+	if (this._app.webGLEnabled) {
+		this.tweens = buildTweens(this._chapterData.anim, app, this.imgEl);
+	} else {
 		this.imgEl.classList.add('gv-fallback-image');
-		this.imgEl.classList.add('gv-fallback-image-' + this._chapterData.id);
 	}
 
 	// Animation duration with overrides
@@ -41,43 +38,22 @@ function Chapter(data, app) {
 		this.duration = this._chapterData.anim.duration;
 	}
 
-	this._tweens = buildTweens(this._chapterData.anim, app, this.imgEl);
-}
-
-Chapter.prototype.fadeIn = function(duration) {
-	if (this.tween) { this.tween.stop(); }
-	this.tween = new TWEEN.Tween(this.imgEl.style);
-	this.tween.to({ opacity: 1 },  2000);
-	this.tween.easing( TWEEN.Easing.Quintic.InOut );
-	this.tween.start();
-}
-
-Chapter.prototype.fadeOut = function(duration) {
-	if (this.tween) { this.tween.stop(); }
-	this.tween = new TWEEN.Tween(this.imgEl.style);
-	this.tween.to({ opacity: 0 }, 3000);
-	this.tween.easing( TWEEN.Easing.Quintic.InOut );
-	this.tween.start();
 }
 
 Chapter.prototype.stop = function(callback) {
-	if (this._app.webGLEnabled) {
-		this._tweens.forEach(function(tween) {
-			tween.stop();
-		})
-		if (callback) { callback(); }
-	} else {
-		this.fadeOut();
+	if (!this._app.webGLEnabled) {
+		this.imgEl.classList.remove('active');
+		this.imgEl.classList.add('hide');
 	}
 }
 
 Chapter.prototype.start = function(duration) {
 	if (this._app.webGLEnabled) {
-		this._tweens.forEach(function(tween) {
-				tween.start();
-		});
+		this.tweens.forEach(TWEEN.add);
+		TWEEN.getAll().forEach(function(t) { t.start(); });
 	} else {
-		this.fadeIn();
+		this.imgEl.classList.add('active');
+		this.imgEl.classList.remove('hide');
 	}
 }
 
@@ -89,8 +65,9 @@ Chapter.prototype.jumpToEnd = function() {
 				target[propKey] = this._chapterData.anim.targets[key][propKey];
 			}.bind(this));
 		}.bind(this));
+
 	} else {
-		this.imgEl.style.opacity = 1;
+		this.imgEl.classList.add('active');
 	}
 };
 
