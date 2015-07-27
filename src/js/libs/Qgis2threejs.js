@@ -232,8 +232,8 @@ var detach = require('./detach.js');
       this.project = project;
 
       // light
-      if (project.buildCustomLights) project.buildCustomLights(this.scene);
-      else this.buildDefaultLights(this.scene);
+      //if (project.buildCustomLights) project.buildCustomLights(this.scene);
+      //else this.buildDefaultLights(this.scene);
 
       // camera
       if (project.buildCustomCamera) project.buildCustomCamera();

@@ -47,7 +47,7 @@ function buildScene(el, mountainMesh) {
 	app.loadProject(project);
 	app.addEventListeners();
 
-
+	
 	// Add custom mountain mesh
 	app.scene.add(mountainMesh);
 
@@ -92,11 +92,11 @@ function buildScene(el, mountainMesh) {
 	// Store references
 	app.ref = {};
 	app.ref['meshMount'] = mountainMesh;
-	app.ref['bendGroup'] =  app.scene.children[3]; // turns
-	app.ref['bends'] =  app.scene.children[3].children[0]; // turns
-	app.ref['contourLines'] =  app.scene.children[5].children[0]; // Contour
-	app.ref['gpsLines'] = app.scene.children[4].children[0]; // route
-	app.ref['gpsLinesGroup'] = app.scene.children[4]; // route
+	app.ref['bendGroup'] =  app.scene.children[0]; // turns
+	app.ref['bends'] =  app.scene.children[0].children[0]; // turns
+	app.ref['contourLines'] =  app.scene.children[2].children[0]; // Contour
+	app.ref['gpsLines'] = app.scene.children[1].children[0]; // route
+	app.ref['gpsLinesGroup'] = app.scene.children[1]; // route
 	app.ref['labels'] = app.labelsEl; // Bend labels
 
 	// app.ref.gpsLinesGroup.position.z = 0.1;
@@ -234,7 +234,7 @@ function boot(el) {
 				buildScene(el, mountainMesh);
 			});
 
-			var material = new THREE.MeshPhongMaterial( { map: imageTexture });
+			var material = new THREE.MeshBasicMaterial( { map: imageTexture });
 			var mountainMesh = new THREE.Mesh( parsedMountain.geometry, material );
 
 			mountainMesh.rotation.x = (Math.PI / 180) * 90;
