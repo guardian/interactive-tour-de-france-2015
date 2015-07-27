@@ -13,6 +13,8 @@ var Scene = function(el, modalEl, chapters, app) {
 	wrapperEl.appendChild(this.pagination.el);
 	this.qgisApp = app;
 
+	this.MODAL_FADE_TIME = 400;
+
 	this.chapters = chapters.map(function(item) {
 		return new Chapter(item, app);
 	});
@@ -27,19 +29,6 @@ var Scene = function(el, modalEl, chapters, app) {
 		}.bind(this));
 	}
 
-
-	// Animations
-	this.MODAL_FADE_TIME = 400;
-	this.modalEl.style.opacity = 1;
-	this.modalFadeOut = new TWEEN.Tween(this.modalEl.style);
-	this.modalFadeOut.to({ opacity: 0 }, this.MODAL_FADE_TIME)
-	.easing( TWEEN.Easing.Quartic.Out )
-	.onComplete(this.setModalHTML.bind(this));
-
-	this.modalFadeIn = new TWEEN.Tween(this.modalEl.style);
-	this.modalFadeIn.to({ opacity: 1 }, this.MODAL_FADE_TIME)
-	.easing( TWEEN.Easing.Quartic.Out );
-	this.modalFadeOut.chain(this.modalFadeIn);
 
 	// Interactions - mouse
 	var nextBtn = el.querySelector('.gv-arrow-next-real');
@@ -101,8 +90,6 @@ Scene.prototype.transitionChapter = function(val) {
 	this.chapters[this.currentChapter].start();
 	this.pagination.goTo(this.currentChapter);
 
-	// this.modalFadeOut.stop();
-	// this.modalFadeIn.stop();
 
 	// Sync show to end of animation tweens
 	var duration;
@@ -112,16 +99,22 @@ Scene.prototype.transitionChapter = function(val) {
 		duration = this.chapters[oldChapterIndex].duration;
 	}
 	var delay = duration - this.MODAL_FADE_TIME * 2;
-	delay = (delay < 0) ? 0 : delay;
+	delay = (delay < 400) ? 400 : delay;
 
 	if (!this.qgisApp.webGLEnabled) {
 		delay = 500;
 		duration = 2000;
 	}
 
-	this.modalFadeIn.delay(delay);
-	this.modalFadeOut.start();
-	TWEEN.add(this.modalFadeOut);
+	this.modalEl.classList.add('hidden');
+	this.modalEl.classList.remove('active');
+	clearTimeout(this.timeout);
+	this.timeout = setTimeout(function() {
+		this.setModalHTML();
+		this.modalEl.classList.add('active');
+		this.modalEl.classList.remove('hidden');
+	}.bind(this), delay);
+
 
 	this.chapters[this.currentChapter].start(duration);
 }
