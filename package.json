@@ -1,12 +1,12 @@
 {
   "name": "interactive-tdf2015",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Guardian interactive project.",
   "repository": {
     "type": "git",
     "url": "https://github.com/guardian/interactive-tdf2015/"
   },
-  "author": "Guardian Visuals",
+  "author": "Guardian Visuals - Andrew Mason",
   "license": "Apache-2.0",
   "dependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -23,7 +23,6 @@
     "grunt-postcss": "^0.5.1",
     "grunt-sass": "^1.0.0",
     "grunt-text-replace": "^0.4.0",
-    "grunt-webpack": "^1.0.10",
     "hammerjs": "^2.0.4",
     "jit-grunt": "^0.9.1",
     "json-loader": "^0.5.2",
@@ -31,6 +30,8 @@
     "raw-loader": "^0.5.1",
     "safe-access": "^0.1.0",
     "three": "^0.71.0",
-    "tween.js": "^15.0.0"
+    "tween.js": "^15.0.0",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
   }
 }

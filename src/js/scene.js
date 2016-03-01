@@ -31,18 +31,18 @@ var Scene = function(el, modalEl, chapters, app) {
 
 
 	// Interactions - mouse
-	var nextBtn = el.querySelector('.gv-arrow-next-real');
+	var nextBtn = this.el.querySelector('.gv-arrow-next-real');
 	nextBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
-	var beginBtn = el.querySelector('.gv-arrow-begin');
+	var beginBtn = this.el.querySelector('.gv-arrow-begin');
 	beginBtn.addEventListener('click', this.nextChapter.bind(this), false);
 
-	var previousBtn = el.querySelector('.gv-arrow-previous');
+	var previousBtn = this.el.querySelector('.gv-arrow-previous');
 	previousBtn.addEventListener('click', this.previousChapter.bind(this), false);
 
 
 	// Interactions - touch
-	this.touch = new Hammer(el, {velocity: 0.1, threshold: 5 });
+	this.touch = new Hammer(this.el, {velocity: 0.1, threshold: 5 });
 	this.touch.on('swipeleft', this.nextChapter.bind(this));
 	this.touch.on('swiperight', this.previousChapter.bind(this));
 

@@ -109,7 +109,9 @@ var chapters = [
 
 ];
 
-var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
+var parsedAnims = {};
+Object.keys(anims.remembered).map(function(key) {
+    var item = anims.remembered[key];
 	var params = {
 		duration: item[0].duration,
 		targets: {}
@@ -124,8 +126,7 @@ var parsedAnims = _.mapObject(anims.remembered, function(item, key) {
 	params.targets['labelsEl.style'] = item[8];
 	params.targets['ref.meshMount.position'] = item[9];
 	params.targets['ref.poi1.material'] = item[10];
-
-	return params;
+    parsedAnims[key] = params;
 });
 
 var parsedChapters = chapters.map(function(chapter) {

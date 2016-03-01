@@ -23,7 +23,6 @@ function Chapter(data, app) {
 	this.imgSrc = this._chapterData.image;
 	this.imgEl = this._chapterData.imgEl;
 
-
 	if (this._app.webGLEnabled) {
 		this.tweens = buildTweens(this._chapterData.anim, app, this.imgEl);
 	} else {

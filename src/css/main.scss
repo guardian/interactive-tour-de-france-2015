@@ -31,7 +31,7 @@ body {
 
 .loaded .gv-wrapper,
 .loaded .gv-fallback-container,
-.loaded #webgl,
+.loaded .webgl,
 .loaded .gv-pagination {
   opacity: 1;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 
-#webgl {
+.webgl {
     width: 100%;
     height: 100%;
     position: absolute;
